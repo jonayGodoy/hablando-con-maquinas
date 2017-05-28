@@ -11,7 +11,7 @@ const MenuMobile = () => {
     return (
         <div>
             <div className="row jumbotron hidden-sm hidden-md hidden-lg hidden-sm hidden-md hidden-lg">
-                <h2 className="col-xs-10 text-center">{config.blogTitle}</h2>
+                <a href="/"><h2 className="col-xs-10 text-center">{config.blogTitle}</h2></a>
                 <button className="btn btn-default" onClick={managerMenu.toogle}>
                     <span className="glyphicon glyphicon-menu-hamburger" aria-hidden="true" />
                 </button>

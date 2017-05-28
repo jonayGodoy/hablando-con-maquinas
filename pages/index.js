@@ -30,22 +30,8 @@ class BlogIndex extends React.Component {
         />
         <ul>
           {visiblePages.map((page) => (
-              <div>
-                  <li
-                    key={page.path}
-                    style={{
-                        marginBottom: rhythm(1/4),
-                    }}
-                  >
-                    <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
-                        {get(page, 'data.title', page.path)}
-                    </Link>
-                  </li>
-
-
-                  <BoxArticle post={page.data} pages={this.props.route.pages} />
-              </div>
-          ))}
+              <BoxArticle post={page.data} pages={this.props.route.pages} />
+          )).reverse()}
         </ul>
       </div>
     )

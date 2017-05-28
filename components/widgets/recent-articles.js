@@ -11,6 +11,8 @@ import include from 'underscore.string/include'
 
 class RecentArticles extends React.Component {
     render () {
+        const NUM_MAX_ARTICLES = 5;
+
         // Sort pages.
         const sortedPages = sortBy(this.props.route.pages, 'data.date')
         // Posts are those with md extension that are not 404 pages OR have a date (meaning they're a react component post).
@@ -26,13 +28,12 @@ class RecentArticles extends React.Component {
                         key={page.path}
                         style={{
                 marginBottom: rhythm(1/4),
-            }}
-                    >
+            }}>
                         <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
                             {get(page, 'data.title', page.path)}
                         </Link>
                     </li>
-                ))}
+                )).reverse().slice(0,NUM_MAX_ARTICLES-1)}
             </div>
         )
     }

@@ -8,7 +8,6 @@ import { rhythm, scale } from 'utils/typography'
 class BoxArticles extends React.Component {
   render () {
     const { pages, post } = this.props;
-      console.log(post);
       const  readNext  = post.path;
     let nextPost
     if (readNext) {
@@ -28,15 +27,6 @@ class BoxArticles extends React.Component {
 
       return (
         <div>
-          <h6
-            style={{
-              ...scale(-0.5),
-              margin: 0,
-              letterSpacing: -0.25,
-            }}
-          >
-            READ THIS NEXT:
-          </h6>
           <h3
             style={{
               marginTop: 0,
@@ -65,6 +55,6 @@ class BoxArticles extends React.Component {
 BoxArticles.propTypes = {
   post: React.PropTypes.object.isRequired,
   pages: React.PropTypes.array,
-}
+};
 
 export default BoxArticles
