@@ -9,7 +9,7 @@ const MenuNav = () => {
                 <div className="row ">
                     <a href="/"><img className="col-xs-5 col-md-5 img_logo img-responsive " src={img_head}/></a>
                     <nav className="blog-nav col-md-offset-1 col-md-6">
-                        <a className="blog-nav-item" href="#">Inicio</a>
+                        <a className="blog-nav-item" href="/">Inicio</a>
                     </nav>
                 </div>
                 <hr className="head" />

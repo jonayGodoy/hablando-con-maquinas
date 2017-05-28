@@ -96,9 +96,15 @@ hr.head {
 
 
 /* Sidebar modules for boxing content */
+.sidebar-module-title {
+    font-size: 100%;
+    font-weight: bold;
+    color: #999;
+}
+
 .sidebar-module {
     padding: 15px;
-    margin: 0 -15px 15px;
+    margin: 0 15px 15px -15px;
 }
 .sidebar-module-inset {
     padding: 15px;

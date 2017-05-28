@@ -24,7 +24,7 @@ const MenuMobile = () => {
                     </div>
                     <div>
                         <hr/>
-                        <a className="blog-nav-item" href="#">Inicio</a>
+                        <a className="blog-nav-item" href="/">Inicio</a>
                     </div>
 
                     <span className="button-exit-menu glyphicon glyphicon-menu-left" onClick={managerMenu.toogle}/>

@@ -7,6 +7,7 @@ import { config } from 'config'
 
 import Menu from 'components/commons/menu/MenuNav'
 import MenuMobile from 'components/commons/menu/MenuMobile'
+import RecentArticlesWidget from 'components/widgets/recent-articles';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import '../css/blog.css'
@@ -29,10 +30,10 @@ class Template extends React.Component {
                     <div className="col-sm-8">
                         {children}
                     </div>
-                    {/* Sidebar
+
                      <div className="col-sm-3 col-sm-offset-1 blog-sidebar">
-                     partial('_partial/sidebar')
-                     </div> */}
+                            <RecentArticlesWidget {...this.props}/>
+                     </div>
 
                 </div>
             </div>

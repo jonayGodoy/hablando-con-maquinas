@@ -7,6 +7,7 @@ import { config } from 'config'
 
 //import '../css/zenburn.css'
 
+
 class MarkdownWrapper extends React.Component {
   render () {
     const { route } = this.props
