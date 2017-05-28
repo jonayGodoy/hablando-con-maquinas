@@ -8,6 +8,8 @@ import Helmet from "react-helmet"
 import { config } from 'config'
 import include from 'underscore.string/include'
 
+import BoxArticle from '../components/commons/BoxArticle';
+
 
 class BlogIndex extends React.Component {
   render () {
@@ -28,16 +30,21 @@ class BlogIndex extends React.Component {
         />
         <ul>
           {visiblePages.map((page) => (
-              <li
-                key={page.path}
-                style={{
-                    marginBottom: rhythm(1/4),
-                }}
-              >
-                <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
-                    {get(page, 'data.title', page.path)}
-                </Link>
-              </li>
+              <div>
+                  <li
+                    key={page.path}
+                    style={{
+                        marginBottom: rhythm(1/4),
+                    }}
+                  >
+                    <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
+                        {get(page, 'data.title', page.path)}
+                    </Link>
+                  </li>
+
+
+                  <BoxArticle post={page.data} pages={this.props.route.pages} />
+              </div>
           ))}
         </ul>
       </div>
