@@ -1,0 +1,102 @@
+/*
+ * Override Bootstrap's default container.
+ */
+
+.glyphicon { font-size: 150%; }
+.glyphicon-menu-left { font-size: 250%; }
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-menu {
+    height: auto;
+    width: 100%;
+}
+
+
+/* Nav links */
+.blog-nav{
+    padding-top: 10%;
+}
+
+div .blog-nav-mobile{
+    position: fixed; /* Stay in place */
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    z-index: 1;
+
+    top: 0;
+
+    margin-left: -3%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    overflow-x: hidden; /* Disable scroll */
+    overflow-y: hidden; /* Disable scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+
+    border-right: 1px inset;
+}
+
+
+.blog-nav-mobile:hover{
+    width: 100%
+}
+
+.blog-nav-item {
+    font-size: 85%;
+    font-family: Consolas;
+
+    padding: 10px;
+    color: #a5a5a5;
+}
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #727272;
+    text-decoration: none;
+}
+
+
+.blog-nav-item-mobile {
+  font-size: 150%;
+  font-family: Consolas;
+  padding: 5%;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+    color: #fff;
+}
+.blog-nav .active:after {
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -5px;
+    vertical-align: middle;
+    content: " ";
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid;
+    border-left: 5px solid transparent;
+}
+
+.img_logo {
+    padding: 5% 2%;
+}
+.img_logo_mobile {
+    padding: 0% 2%;
+}
+
+.button-exit-menu{
+    position:absolute;
+    bottom:-1%;
+    right: 1%;
+    top: inherit;
+
+    padding: 10%;
+}
+
+
