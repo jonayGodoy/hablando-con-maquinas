@@ -1,4 +1,7 @@
 import React, {PropTypes} from 'react';
+import { Link } from 'react-router';
+import { prefixLink } from 'gatsby-helpers';
+
 import '../../../css/menuNav.css';
 import img_head from '../../../pages/global-img/head.png';
 
@@ -7,9 +10,11 @@ const MenuNav = () => {
         <div className="blog-menu navbar-btn">
             <div className="hidden visible-sm visible-md visible-lg">
                 <div className="row ">
-                    <a href="/"><img className="col-xs-5 col-md-5 img_logo img-responsive " src={img_head}/></a>
+                    <Link to={prefixLink('/')}>
+                        <img className="col-xs-5 col-md-5 img_logo img-responsive " src={img_head}/>
+                    </Link>
                     <nav className="blog-nav col-md-offset-1 col-md-6">
-                        <a className="blog-nav-item" href="/">Inicio</a>
+                        <Link className="blog-nav-item" to={prefixLink('/')}>Inicio</Link>
                     </nav>
                 </div>
                 <hr className="head" />

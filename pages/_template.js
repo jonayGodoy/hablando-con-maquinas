@@ -1,21 +1,21 @@
-import React from 'react'
-import { Link } from 'react-router'
-import { Container } from 'react-responsive-grid'
-import { prefixLink } from 'gatsby-helpers'
-import { rhythm, scale } from 'utils/typography'
-import { config } from 'config'
+import React from 'react';
+import { Container } from 'react-responsive-grid';
+import { prefixLink } from 'gatsby-helpers';
 
-import Menu from 'components/commons/menu/MenuNav'
-import MenuMobile from 'components/commons/menu/MenuMobile'
+import { rhythm, scale } from 'utils/typography';
+import { config } from 'config';
+
+import Menu from 'components/commons/menu/MenuNav';
+import MenuMobile from 'components/commons/menu/MenuMobile';
 import RecentArticlesWidget from 'components/widgets/recent-articles';
 
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import '../css/blog.css'
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../css/blog.css';
 
 
 class Template extends React.Component {
   render () {
-    const { location, children } = this.props
+    const { location, children } = this.props;
 
     return (
         <div className="container-fluid">
