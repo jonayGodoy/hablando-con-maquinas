@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'react-router'
-import { prefixLink } from 'gatsby-helpers'
-import { prune, include as includes } from 'underscore.string'
-import find from 'lodash/find'
-import { rhythm, scale } from 'utils/typography'
+import React from 'react';
+import { Link } from 'react-router';
+import { prefixLink } from 'gatsby-helpers';
+import { prune, include as includes } from 'underscore.string';
+import find from 'lodash/find';
+//import { rhythm, scale } from 'utils/typography';
 
 class BoxArticles extends React.Component {
   render () {
@@ -27,16 +27,12 @@ class BoxArticles extends React.Component {
 
       return (
         <div>
-          <img className="img-thumbnail" src={prefixLink(nextPost.path)+nextPost.data.image_article} />
-          <h3 style={{
-              marginTop: 0,
-              marginBottom: rhythm(1/4),
-            }}
-          >
+          <img className="img-thumbnail image-article-BoxArticle" src={prefixLink(nextPost.path)+nextPost.data.image_article} />
+          <h3>
             <Link to={{
                 pathname: prefixLink(nextPost.path),
                 query: {
-                  readNext: true,
+                  readNext: true
                 },
               }}
             >
@@ -53,7 +49,7 @@ class BoxArticles extends React.Component {
 
 BoxArticles.propTypes = {
   post: React.PropTypes.object.isRequired,
-  pages: React.PropTypes.array,
+  pages: React.PropTypes.array
 };
 
 export default BoxArticles

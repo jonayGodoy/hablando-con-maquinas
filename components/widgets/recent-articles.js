@@ -3,7 +3,7 @@ import { Link } from 'react-router';
 import sortBy from 'lodash/sortBy';
 import get from 'lodash/get';
 import { prefixLink } from 'gatsby-helpers';
-import { rhythm } from 'utils/typography';
+//import { rhythm } from 'utils/typography';
 import Helmet from "react-helmet";
 import { config } from 'config';
 import include from 'underscore.string/include';
@@ -26,9 +26,7 @@ class RecentArticles extends React.Component {
                 {visiblePages.map((page) => (
                     <li
                         key={page.path}
-                        style={{
-                marginBottom: rhythm(1/4),
-            }}>
+                    >
                         <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
                             {get(page, 'data.title', page.path)}
                         </Link>
