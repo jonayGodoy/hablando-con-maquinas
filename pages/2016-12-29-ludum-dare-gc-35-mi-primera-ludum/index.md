@@ -2,8 +2,9 @@
 title: Ludum Dare GC 35, Mi primera Ludum
 date: "2016-12-29T22:40:32.169Z"
 path: "/ludum-dare-gc-35-mi-primera-ludum/"
+image_article: "Cd1hwvbXEAAXPog.jpglarge.jpg"
 ---
-![LudumGc 35](./Cd1hwvbXEAAXPog.jpglarge.jpg)
+
 
 Buenas, hoy quería hablar sobre mi primera experiencia ludum. Aunque antes os voy a poner en contexto para todo aquel que desconozca el evento.
 
