@@ -2,7 +2,7 @@
 title: La Historia De Mi Blog
 date: "2017-05-30T02:40:32.169Z"
 path: "/la-historia-de-mi-blog/"
-image_article: "joomla-version.jpg"
+image_article: "image-article.jpg"
 ---
 
 Me parecía adecuado escribir como uno de los primeros artículos
@@ -82,17 +82,17 @@ estáticos que al hecho de usar Gatsby js.
 ![Gastby](./gastby-version.jpg)
 
 
--¿Por qué no Jekyll?
+#### - ¿Por qué no Jekyll?
 Puede que me cambie y lo utilice. Simplemente aún no he trabajado
  con él. Pense que me seria más comodo la
 curva de aprendizaje con algo basado en JavaScript que con
 Ruby. Puede que me equivocará.
 
--¿Por qué no hexo?
+#### - ¿Por qué no hexo?
 Porque los componentes de hexo .ejs son poco legibles y hay muy
 poco material con que trabajar.
 
--¿Por qué Gastby?
+#### - ¿Por qué Gastby?
 Tenía algo de experiencia con React y estaba en JavaScript.
 Sí al igual que hexo también tiene un comunidad pequeña.
 Pero se nota que a diferencia de hexo el material que hay
@@ -117,29 +117,28 @@ Por supuesto el servidor que tengo a día de hoy es la propia página de github.
 
 ## Problemas con los generadores estáticos
 
--No tienes gestión de usuarios como tal.No tienes bases de datos no puedes
+- No tienes gestión de usuarios como tal. No tienes bases de datos no puedes
 gestionar datos.
 
--Para tener servicios basicos como comentarios, formularios, etc.
+- Para tener servicios basicos como comentarios, formularios, etc.
 es obligatorio usar herramientas externas como Disqus.
 
--Hoy por lo que sé es muy complicado de manejar por alguien no iniciado
+- Hoy por lo que sé es muy complicado de manejar por alguien no iniciado
 en la programación o en el control de versiones.
 Aunque he visto por encima algunos backend que me dan esperanza
 en que más pronto que tarde para blog y landing page se dejen
 de usar cms que tiren de base de datos (claro, jonay, lo que tú digas mi niño).
 
 
-En consecuencia, la principal razón por la que no me gustan lo cms que se basan en
-base de datos. Es que al ser difíciles de modificar. Me dificultan enormemente
-integrar cualquier posible mejora en mi trabajo una vez puesta en producción
-traducido al lenguaje Agile se corresponde por cada mejora que no puedo
-integrar el cliente pierde un factor diferenciador que le distinguiría
-de la compentecia.
+La conclusión a la que llegue despues de todo esto no me gustan los cms que
+tiran de bases de datos. Al ser difíciles de modificar, Me dificultan enormemente
+integrar cualquier posible mejora en mi trabajo sobretodo una vez puesta en producción
+traducido al lenguaje Agile por cada mejora que no puedo integrar
+el cliente pierde un factor diferenciador que le distinguiría de la compentecia.
 
 
 
 
 Por ultimo me gustaria agradecerle a Carlos que me diese el último empujón porque
-es muy posible que blog no viera la luz del día
+es muy posible que blog no viera la luz del día de
 no ser por él y de verla no seria hasta después de bastante tiempo.
