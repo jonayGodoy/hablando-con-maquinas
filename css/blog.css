@@ -134,6 +134,10 @@ hr.head {
 /*
  * Blog posts
  */
+.image-article-BoxArticle{
+    max-height: 350px;
+}
+
 
 .blog-post {
     margin-left: 30px;
