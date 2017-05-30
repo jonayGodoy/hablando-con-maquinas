@@ -9,7 +9,7 @@ class BoxArticles extends React.Component {
   render () {
     const { pages, post } = this.props;
       const  readNext  = post.path;
-    let nextPost
+    let nextPost;
     if (readNext) {
       nextPost = find(pages, (page) =>
         includes(page.path, readNext)
@@ -20,21 +20,20 @@ class BoxArticles extends React.Component {
     } else {
       nextPost = find(pages, (page) =>
         includes(page.path, readNext.slice(1, -1))
-      )
+      );
       // Create pruned version of the body.
-      const html = nextPost.data.body
-      const body = prune(html.replace(/<[^>]*>/g, ''), 200)
+      const html = nextPost.data.body;
+      const body = prune(html.replace(/<[^>]*>/g, ''), 200);
 
       return (
         <div>
-          <h3
-            style={{
+          <img className="img-thumbnail" src={prefixLink(nextPost.path)+nextPost.data.image_article} />
+          <h3 style={{
               marginTop: 0,
               marginBottom: rhythm(1/4),
             }}
           >
-            <Link
-              to={{
+            <Link to={{
                 pathname: prefixLink(nextPost.path),
                 query: {
                   readNext: true,
