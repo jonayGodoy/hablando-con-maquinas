@@ -27,7 +27,16 @@ class BoxArticles extends React.Component {
 
       return (
         <div>
-          <img className="img-thumbnail image-article-BoxArticle" src={prefixLink(nextPost.path)+nextPost.data.image_article} />
+          <Link to={{
+                pathname: prefixLink(nextPost.path),
+                query: {
+                  readNext: true
+                },
+              }}
+          >
+            <img className="img-thumbnail image-article-BoxArticle" src={prefixLink(nextPost.path)+nextPost.data.image_article} />
+          </Link>
+
           <h3>
             <Link to={{
                 pathname: prefixLink(nextPost.path),
