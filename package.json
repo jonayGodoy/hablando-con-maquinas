@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog",
-  "description": "Starter Gatsby Blog",
+  "name": "hablando-con-maquinas",
+  "description": "Personal Blog",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Jonay Godoy <jonay.godoy.reyes@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": ""
   },
   "dependencies": {
     "bootstrap": "^3.3.7",
@@ -34,7 +34,7 @@
     "mock-require": "^2.0.2",
     "react-addons-test-utils": "^15.5.1"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/jonayGodoy/hablando-con-maquinas",
   "keywords": [
     "gatsby"
   ],
@@ -42,7 +42,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/jonayGodoy/hablando-con-maquinas.git"
   },
   "scripts": {
     "dev": "gatsby develop",
