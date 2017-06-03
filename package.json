@@ -23,9 +23,16 @@
   "devDependencies": {
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.0.1",
     "css-modules-require-hook": "^4.0.6",
+    "enzyme": "^2.8.2",
     "gh-pages": "^0.12.0",
-    "ignore-styles": "^5.0.1"
+    "ignore-styles": "^5.0.1",
+    "jsdom": "11.0.0",
+    "jsdom-global": "3.0.2",
+    "mocha": "^3.4.2",
+    "mock-require": "^2.0.2",
+    "react-addons-test-utils": "^15.5.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
@@ -44,6 +51,6 @@
     "develop": "gatsby develop",
     "build": "gatsby build",
     "deploy": "gatsby build --prefix-links && gh-pages -d public",
-    "mocha":"mocha \"./{,!(node_modules)/**/}*.spec.js\" --recursive --compilers js:babel-core/register --require tools\\test\\index.js"
+    "mocha": "mocha \"./{,!(node_modules)/**/}*.spec.js\" --recursive --compilers js:babel-core/register --require tools\\test\\index.js"
   }
 }

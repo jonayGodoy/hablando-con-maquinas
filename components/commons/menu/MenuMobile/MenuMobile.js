@@ -2,10 +2,10 @@ import React, {PropTypes} from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
-import ManagerMenu from '../../../src/ManagerMenuResponsive';
+import ManagerMenu from '../../../../src/ManagerMenuResponsive';
 
-import '../../../css/menuNav.css';
-import img_head from '../../../pages/global-img/head.png';
+import '../../../../css/menuNav.css';
+import img_head from '../../../../pages/global-img/head.png';
 
 const MenuMobile = () => {
     let managerMenu = new ManagerMenu('menu-mobile-lateral');
