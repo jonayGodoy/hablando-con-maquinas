@@ -1,7 +1,6 @@
 import React from 'react'
 import moment from 'moment'
 import Helmet from "react-helmet"
-import ReadNext from '../components/ReadNext'
 import { prefixLink } from 'gatsby-helpers'
 import { rhythm } from 'utils/typography'
 import { config } from 'config'
@@ -33,7 +32,6 @@ class MarkdownWrapper extends React.Component {
             marginBottom: rhythm(2)
           }}
         />
-        <ReadNext post={post} pages={route.pages} />
       </div>
     )
   }

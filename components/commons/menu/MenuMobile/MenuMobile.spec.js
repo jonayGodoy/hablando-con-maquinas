@@ -12,7 +12,7 @@ function getButtonHead(wrapper){
     return wrapper.find('button').first();
 }
 
-describe("suite test", function(){
+describe("<MenuMobile/>", function(){
     it("Mobile menu panel start hidden", function () {
         let wrapper = shallow(<MenuMobile />);
         let sidePanel = wrapper.find("#menu-mobile-lateral");

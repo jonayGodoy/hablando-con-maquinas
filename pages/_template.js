@@ -6,8 +6,8 @@ import { rhythm, scale } from 'utils/typography';
 import { config } from 'config';
 
 import Menu from 'components/commons/menu/MenuNav';
-import MenuMobile from 'components/commons/menu/MenuMobile';
-import RecentArticlesWidget from 'components/widgets/recent-articles';
+import MenuMobile from 'components/commons/menu/MenuMobile/MenuMobile';
+import RecentArticlesWidget from 'components/widgets/RecentArticles/RecentArticles.js';
 
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../css/blog.css';
@@ -47,7 +47,7 @@ class Template extends React.Component {
 Template.propTypes = {
   children: React.PropTypes.any,
   location: React.PropTypes.object,
-  route: React.PropTypes.object,
+  route: React.PropTypes.object
 };
 
 export default Template;
