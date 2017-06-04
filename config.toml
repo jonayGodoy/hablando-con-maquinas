@@ -1,3 +1,5 @@
 blogTitle = "Hablando Con Máquinas"
 authorName = "Jonay Godoy"
 linkPrefix = "/hablando-con-maquinas"
+
+disqus_shortname = "hablandoconmaquinas"
