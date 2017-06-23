@@ -2,32 +2,32 @@
 title: Kata Gilded Rose Switch
 date: "2017-05-30T02:40:32.169Z"
 path: "/kata-gilded-rose-switch/"
-image_article: "PENDIENTE"
+image_article: "kata.jpg"
 ---
 
 Últimamente me encontrado con muchos programadores que no ven el switch como un mal olor.
-Es más hace alrededor de un año yo tampoco lo sabia. Por lo que me he propuesto crear un kata
+Es más hace alrededor de un año yo tampoco lo sabía. Por lo que me he propuesto crear un kata
 para que los programadores que se encuentre en este punto en su camino del aprendizaje
-le sea más fácil  avanzar.
+le sea más fácil avanzar.
 
 Emplee la Kata de Gilded como base para mi kata. Una
-kata cuyo fin principal es ayudar trabajar con código heredado partiendo arnes de seguridad de test creado previamente.
+kata cuyo fin principal es ayudar trabajar con código heredado partiendo arnés de seguridad de test creado previamente.
 He conservado el problema que empleaba esta kata pero he cambiado las restricciones
 y el formato para que sirvan a este propósito.
 
-Si no podeís esperar y quereis ir ya a la kata aqui tenéis el [enlace](https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch).
+Si no podéis esperar y queréis ir ya a la kata aquí tenéis el [enlace](https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch).
 
-Lo que aun estaís leyendo esto, a continuación voy a desarrollar un poco de porque el switch es
-considerado un mal olor asi como de que consta la kata.
+Lo que aun estáis leyendo esto, a continuación voy a desarrollar un poco de porque el switch es
+considerado un mal olor así como de que consta la kata.
 
-En la practica el switch no es necesario en el 90% de los proyectos.
+En la practica el switch no es necesario.
 Porque para cada una de las funcionalidades que aporta suele existir una alternativa que
-una vez se interiorizan simplica el codigo aunque para la gente que esta empezando con el
+una vez se interiorizan simplica el código aunque para la gente que está empezando con el
 polimorfismo le puede costar un poco más verlo.
 
 
 Para empezar, voy a explicar como refactorizar el tipico ejemplo que nos muestra cuando vemos
-un switch por primera vez. Es un caso muy basico, pero tambien se puede extrapolar a los maps
+un switch por primera vez. Es un caso muy basico, pero también se puede extrapolar a los maps
 o arrays asociativos.
 
 ### Switch
@@ -57,11 +57,10 @@ message = vector[n];
 System.out.print(message);
 ```
 
-> Aqui podeís empezar a ver el concepto del problema de los switch.
+> Aquí podéis empezar a ver el concepto del problema de los switch.
 Con ellos lo que hacemos controlar los estados. Es decir, en el switch comprobamos si n es 1
-y en consecuencia retornamos un valor en cambio cuando usamos una array no que gestionar los estados
-porque es n es 1 y el sistema en esta caso el array no se necesita que estemos preguntando que es
-y que deja de ser.
+y en consecuencia retornamos un valor en cambio cuando usamos una array no hay que comprobar
+porque n es 1 y ya tiene dentro por el simple hecho de ser 1, toda la información que el array necesita.
 
 Vale, recordad este concepto.
 
@@ -69,36 +68,36 @@ Vale, recordad este concepto.
 
 Ahora el problema que da origen a esta kata. Cuando en cada cases tenemos métodos o estructuras distintas.
 
-Lo que más duele del switch y asi aprovecho para meter un nuevo concepto es que rompe
+Lo que más duele del switch y así aprovecho para meter un nuevo concepto es que rompe
 de una manera bastante bestia el segundo principio de SOLID el open/close
 
 > **Open-Closed Principle / Principio Abierto-Cerrado**
-> **Vuestro codigo debe permitir extensiones pero no modificaciones.**
+> **Vuestro código debe permitir extensiones pero no modificaciones.**
 
 
 No quiero meterme mucho en el tema de SOLID porque es largo de explicar.
 Simplemente aclarar, que para añadir una nueva funcionalidad a nuestra aplicación
-que tenga relacion con lo que estaís comparando en el switch a la fuerza hay volver
-a modificar el codigo escrito con anterioridad.
+que tenga relación con lo que estáis comparando en el switch a la fuerza hay volver
+a modificar el código escrito con anterioridad.
 
 
 Como tantas cosas en la programación esto se ve mucho ver programando que intentado explicarlo con
-palabras asi que empiezo a explicar la kata(ejercicio de programación).
+palabras así que empiezo a explicar la kata(ejercicio de programación).
 
 > [https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch](https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch)
 
-Cuando entraís a la kata tanto si es la versión en Java o en Javascript teneís un codigo
-que ya funciona y unas carpetas de test.Tambien teneís la solucion en la carpeta "solution" por
-si tenéis problemas.Cualquier duda podeís comentarla.
+Cuando entráis a la kata tanto si es la versión en Java o en Javascript teneís un código
+que ya funciona y unas carpetas de test.También tenéis la solución en la carpeta "solution" por
+si tenéis problemas.Cualquier duda podéis comentarla.
 
 
 ## Para instalar
-- la versión de java las librerias de test teneís el pom.xml para instalar las dependencias de java o
-podeís descargaros las librerias
+- la versión de java las librerías de test teneís el pom.xml para instalar las dependencias de java o
+podéis descargaros las librerías
     - [Junit](https://mvnrepository.com/artifact/junit/junit/4.10)
     - [Hamcrest Core](https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core/1.3)
 
-- Para la version de javascript bastara con hacer
+- Para la versión de javascript bastara con hacer
 
 	``` npm install```
 
@@ -106,103 +105,122 @@ podeís descargaros las librerias
 
 	``` npm run test```
 
-Recomiendo, la version de java si teneís problemas con el Polimorfismo.
-La herencia en javascript tiene distintos estilo y todos pueden muy buenos por lo que
-preferiria que aunque no fuera java usaraís un lenguaje de lado sevidor(node no cuenta).
-Pero si por vuestro contexto preferis hacerlo en javascript de acuerdo pero sé consientes
-de que tiene un dificultad añadida.
+Recomiendo, la versión de java si teneís problemas con el Polimorfismo.
+La herencia en javascript tiene distintos estilos y todos pueden muy buenos por lo que
+preferiría que aunque no fuera java usarais un lenguaje de lado sevidor (node no cuenta).
+Pero si por vuestro contexto preferís hacerlo en javascript de acuerdo pero sé consientes
+de que tiene una dificultad añadida.
 
 ## Test
 
 La kata está enfocada para hacerse con los test
-que os darán feedback inmediato cuando rompais un funcionalidad del codigo.También
-podeís construir vuestro propio arnes de seguridad antes para practicar los test o simplemente
+que os darán feedback inmediato cuando rompáis una funcionalidad del código. También
+podéis construir vuestro propio arnés de seguridad antes para practicar los test o simplemente
 pasar de los test y imprimir los resultados por consola como esteís más comodos.
 
 
 ## El problema principal eliminar el switch
 
-
-Basicamente teneis un item y depenpendiendo de como se llame(o que tipo de item sea)
-ejecutara un codigo o otro. Teneís la [explicacion de que hace cada Item en github](https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch#gilded-rose-switch-1)
-La idea principal es refactorizar este switch con polimorfismo. Teneís libertad para
-crear la clases que creaís necesarias. Una vez logrado esto tendreís que añadir una nueva
-funcionalidad alterando nada o practicamente nada la clase GildedRoseSwitch.
+ 
+Básicamente tenéis un ítem y dependiendo de como se llame (o que tipo de ítem sea)
+ejecutara un código o otro. Tenéis la [explicacion de que hace cada ítem en github](https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch#gilded-rose-switch-1)
+La idea principal es refactorizar este switch con polimorfismo. Tenéis libertad para
+crear la clases que creáis necesarias. Una vez logrado esto tendréis que añadir una nueva
+funcionalidad alterando nada o prácticamente nada la clase GildedRoseSwitch.
 
 ```Java
 package issue;
 
 class GildedRoseSwitch {
-    private Item[] items;
+    private ítem[] ítems;
 
-     GildedRoseSwitch(Item[] items) {
-        this.items = items;
+     GildedRoseSwitch(ítem[] ítems) {
+        this.ítems = ítems;
     }
 
      void updateQuality() {
-        for (Item item : items) {
-         switch (item.getName()){
+        for (ítem ítem : ítems) {
+         switch (ítem.getName()){
              case "Aged Brie":
-                if(item.getSellIn() >= 0){
-                    if(item.getQuality() < 50) {item.setQuality(item.getQuality() + 1);}
+                if(ítem.getSellIn() >= 0){
+                    if(ítem.getQuality() < 50) {ítem.setQuality(ítem.getQuality() + 1);}
                 }else{
-                    updateItemGenericQuality(item);
+                    updateítemGenericQuality(ítem);
                 }
                  break;
              case "Sulfuras, Hand of Ragnaros":
-                 if(item.getQuality() != 80){
-                     item.setQuality(80);
+                 if(ítem.getQuality() != 80){
+                     ítem.setQuality(80);
                  }
-                 item.setSellIn(item.getSellIn()-1);
+                 ítem.setSellIn(ítem.getSellIn()-1);
                  break;
              case "Backstage passes to a TAFKAL80ETC concert":
-                 item.setSellIn(item.getSellIn()-1);
+                 ítem.setSellIn(ítem.getSellIn()-1);
 
-                 if(item.getSellIn() <= 0){
-                     item.setQuality(0);
+                 if(ítem.getSellIn() <= 0){
+                     ítem.setQuality(0);
                  }else {
-                     if (item.getSellIn() <= 5) {
-                         if (item.getQuality() < 50) {
-                             item.setQuality(item.getQuality() + 3);
+                     if (ítem.getSellIn() <= 5) {
+                         if (ítem.getQuality() < 50) {
+                             ítem.setQuality(ítem.getQuality() + 3);
                          }
-                     } else if (item.getSellIn() <= 10) {
-                         if (item.getQuality() < 50) {
-                             item.setQuality(item.getQuality() + 2);
+                     } else if (ítem.getSellIn() <= 10) {
+                         if (ítem.getQuality() < 50) {
+                             ítem.setQuality(ítem.getQuality() + 2);
                          }
                      }
                  }
                  break;
              default:
-                 item.setSellIn(item.getSellIn()-1);
-                 updateItemGenericQuality(item);
+                 ítem.setSellIn(ítem.getSellIn()-1);
+                 updateítemGenericQuality(ítem);
                  break;
          }
         }
     }
 
-    private void updateItemGenericQuality(Item item) {
-        if(item.getQuality() > 0){
-            if(item.getSellIn() <= 0){
-                item.setQuality(item.getQuality()-2);
-                }else{item.setQuality(item.getQuality()-1);}
+    private void updateítemGenericQuality(ítem ítem) {
+        if(ítem.getQuality() > 0){
+            if(ítem.getSellIn() <= 0){
+                ítem.setQuality(ítem.getQuality()-2);
+                }else{ítem.setQuality(ítem.getQuality()-1);}
         }
     }
 }
 ```
+<details>
+<summary>Spolier no queréis ver la solución pero estáis muy pero que muy perdidos.Aquí tenéis unas buenas pistas.</summary>
+    <details>
+        <summary> 
+        Estáis seguros de que queréis verlo, luego no hay vuelta atrás
+        ¿Por qué no lo intentas un poco más?
+        </summary>
 
-Spolier no quereís ver la solución pero estaís muy pero que muy perdidos.Aqui tenés un buenas pista.
+        - El primer paso olvidaos que teneís diferentes ítems. Empezar a programar como si solo tuvierais uno.
+        - Borrar el switch ya que no teneis varios ítems ya no lo necesitáis.
+        - A continuación, crear un método updateítem en el ítem.
+        - Tiene sentido es mejor que el ítem tenga la responsabilidad de como se actualiza.
+        - Ahora gilde rose simplemente recorrerá los ítems y los mandará a actualizar.
+        - Por último crear una clase una clase que herede de ítem. Pero ahora Como por ejemplo AgeBrie.
+        - ¿Qué pasará ahora si sobrescribes el método updateítem con el comportamiento de Age Bried y después lo metes en la lista de ítems?
+    
+   </details>
+</details>
 
-    Estaís seguros que quereís verlo, luego noy vuelta atras
-    ¿Por que no lo intentaís un poco más?
 
-        - El primer paso olvidaos que teneís diferentes items.Empezar a picar como si solo tuvierais uno.
-        - Borrar el switch ya que no teneis varios items ya no lo necesitaís.
-        - A continuación crear un metodo updateItem en el item.
-        - Tiene sentido es mejor que el item tenga la resposabilidad de como se actualiza.
-        - Ahora gilde rose simplemente recorrerá los items y los mandará a actualizar.
-        - Por ultimo crear una clase una clase que herede de item. Pero ahora Como por ejemplo AgeBrie.
-        - ¿Que pasará ahora si sobreescribes el metodo updateItem con el comportamiento de Age Bried y despues lo metes en la lista de items?
+Mis Conclusiones
+En la practica, yo hice el ejercicio de nunca usar el switch y hoy en día
+continuo siguiendo esta regla, mi código desde entonces es más limpio sobretodo
+ he conseguido aprovechar bastante mejor la potencia de la [POO](https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos).
+  Aunque como todo hay casos limite donde lo sigo usando por ejemplo uno es cuando tengo una
+tecnología o una arquitectura donde ya viene estandarizado, por ejemplo
+[RabbitMq](https://es.wikipedia.org/wiki/RabbitMQ) un gestor de colas utiliza variable como si fueran tipos para conseguir
+evitar cualquier tipo de acoplamiento, es decir, le da igual que información le pases
+y en que formato se la pase siempre que la asocies a una key. Con
+esto consigue cosas como trasmitir mensajes entre distintos lenguajes. Pero como digo
+son casos limites.
 
 
 Espero que la kata os ayude a avanzar un poco más en vuestro camino del aprendizaje y
-me encanta recibir feeback por lo que si tenéis creis que pueda mejorar o cambiar algo estoy deseando escucharlo.
+me encanta recibir feeback por lo que si tienes una opinion distinta o piensa que
+deberia cambiar cualquier cosa o para lo que necesites deja un comentario estoy deseando escucharlo. 
