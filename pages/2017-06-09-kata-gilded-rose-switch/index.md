@@ -218,7 +218,7 @@ continuo siguiendo esta regla, mi código desde entonces es más limpio sobretod
   Aunque como todo hay casos limite donde lo sigo usando. Por ejemplo, cuando tengo una
 tecnología o una arquitectura donde ya viene estandarizado, como con
 [RabbitMq](https://es.wikipedia.org/wiki/RabbitMQ) un gestor de colas que utiliza
- variable para diferenciar, una cola de otra, como resultado consigue
+ una variable tipo para diferenciar, una cola de otra, como resultado consigue
 evitar cualquier acoplamiento, es decir, le da igual que información le pases
 y en que formato se la pase siempre que la asocies a una key. Como resultado,
 puede trasmitir mensajes entre distintos lenguajes. Pero como digo
