@@ -6,6 +6,7 @@ import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 import DisqusComments  from 'react-disqus-comments';
 
+import '../css/md.css';
 import '../css/zenburn.css';
 
 class MarkdownWrapper extends React.Component {
