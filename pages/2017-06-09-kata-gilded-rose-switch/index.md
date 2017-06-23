@@ -224,7 +224,7 @@ y en que formato se la pase siempre que la asocies a una key. Como resultado,
 puede trasmitir mensajes entre distintos lenguajes. Pero como digo
 son casos limites.
 
-
+ 
 Espero que la kata os ayude a avanzar un poco más en vuestro camino del aprendizaje y
 me encanta recibir feeback por lo que si tienes una opinion distinta o piensa que
 deberia cambiar cualquier cosa o para lo que necesites deja un comentario estoy deseando escucharlo. 
