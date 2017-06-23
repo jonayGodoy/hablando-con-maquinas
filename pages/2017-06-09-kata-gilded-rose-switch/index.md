@@ -60,7 +60,7 @@ System.out.print(message);
 > Aquí podéis empezar a ver el concepto del problema de los switch.
 Con ellos lo que hacemos controlar los estados. Es decir, en el switch comprobamos si n es 1
 y en consecuencia retornamos un valor en cambio cuando usamos una array no hay que comprobar
-porque n es 1 y ya tiene dentro por el simple hecho de ser 1, toda la información que el array necesita.
+porque n es 1, ya tiene dentro por el simple hecho de ser 1, toda la información que el array necesita.
 
 Vale, recordad este concepto.
 
@@ -188,36 +188,40 @@ class GildedRoseSwitch {
     }
 }
 ```
+
 <details>
-<summary>Spolier no queréis ver la solución pero estáis muy pero que muy perdidos.Aquí tenéis unas buenas pistas.</summary>
+<summary>Spolier no queréis ver la solución pero estáis muy pero que muy perdidos. Aquí tenéis unas buenas pistas.</summary>
     <details>
         <summary> 
-        Estáis seguros de que queréis verlo, luego no hay vuelta atrás
+         Estáis seguros de que queréis verlo, luego no hay vuelta atrás
         ¿Por qué no lo intentas un poco más?
         </summary>
-
-        - El primer paso olvidaos que teneís diferentes ítems. Empezar a programar como si solo tuvierais uno.
-        - Borrar el switch ya que no teneis varios ítems ya no lo necesitáis.
-        - A continuación, crear un método updateítem en el ítem.
-        - Tiene sentido es mejor que el ítem tenga la responsabilidad de como se actualiza.
-        - Ahora gilde rose simplemente recorrerá los ítems y los mandará a actualizar.
-        - Por último crear una clase una clase que herede de ítem. Pero ahora Como por ejemplo AgeBrie.
-        - ¿Qué pasará ahora si sobrescribes el método updateítem con el comportamiento de Age Bried y después lo metes en la lista de ítems?
-    
+        <ul>
+           <li>El primer paso olvidaos que teneís diferentes ítems. Empezar a programar con uno solo, es decir solo
+           con el comportamiento base.
+           <li>Borrar el switch ya que no teneis varios ítems ya no lo necesitáis.
+           <li>A continuación, crear un método updateítem en el ítem.
+           <li>Tiene sentido es mejor que el ítem tenga la responsabilidad de como se actualiza.
+           <li>Ahora gilde rose simplemente recorrerá los ítems y los mandará a actualizar.
+           <li>Por último crear una clase una clase que herede de ítem. Pero ahora Como por ejemplo AgeBrie.
+           <li>¿Qué pasará ahora si sobrescribes el método updateítem con el comportamiento de Age Bried y después lo metes en la lista de ítems?
+        </ul>
+      
    </details>
 </details>
 
 
-Mis Conclusiones
+### Mis Conclusiones
 En la practica, yo hice el ejercicio de nunca usar el switch y hoy en día
 continuo siguiendo esta regla, mi código desde entonces es más limpio sobretodo
  he conseguido aprovechar bastante mejor la potencia de la [POO](https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos).
   Aunque como todo hay casos limite donde lo sigo usando por ejemplo uno es cuando tengo una
 tecnología o una arquitectura donde ya viene estandarizado, por ejemplo
-[RabbitMq](https://es.wikipedia.org/wiki/RabbitMQ) un gestor de colas utiliza variable como si fueran tipos para conseguir
-evitar cualquier tipo de acoplamiento, es decir, le da igual que información le pases
-y en que formato se la pase siempre que la asocies a una key. Con
-esto consigue cosas como trasmitir mensajes entre distintos lenguajes. Pero como digo
+[RabbitMq](https://es.wikipedia.org/wiki/RabbitMQ) un gestor de colas que utiliza
+ variable para diferenciar, una cola de otra, como resultado consigue
+evitar cualquier acoplamiento, es decir, le da igual que información le pases
+y en que formato se la pase siempre que la asocies a una key. Como resultado,
+puede trasmitir mensajes entre distintos lenguajes. Pero como digo
 son casos limites.
 
 
