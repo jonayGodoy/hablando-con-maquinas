@@ -6,6 +6,8 @@ import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 import DisqusComments  from 'react-disqus-comments';
 
+import '../css/md.css';
+import '../css/zenburn.css';
 
 class MarkdownWrapper extends React.Component {
 
@@ -19,7 +21,7 @@ class MarkdownWrapper extends React.Component {
     const post = route.page.data;
 
     return (
-      <div>
+      <div  className="markdown">
         <img className="img-thumbnail" src={prefixLink(post.path)+post.image_article} />
         <Helmet
           title={`${post.title} | ${config.blogTitle}`}
