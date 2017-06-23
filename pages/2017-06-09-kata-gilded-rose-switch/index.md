@@ -193,7 +193,7 @@ class GildedRoseSwitch {
 <summary>Spolier no queréis ver la solución pero estáis muy pero que muy perdidos. Aquí tenéis unas buenas pistas.</summary>
     <details>
         <summary> 
-         Estáis seguros de que quieres verlo, luego no hay vuelta atrás
+         Estás seguro de que quieres verlo, luego no hay vuelta atrás
         ¿Por qué no lo intentas un poco más?
         </summary>
         <ul>
