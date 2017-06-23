@@ -200,10 +200,10 @@ class GildedRoseSwitch {
            <li>El primer paso olvidaos que teneís diferentes ítems. Empezar a programar con uno solo, es decir solo
            con el comportamiento base.
            <li>Borrar el switch ya que no teneis varios ítems ya no lo necesitáis.
-           <li>A continuación, crear un método updateítem en el ítem.
+           <li>A continuación, crear un método updateítem en el ítem y mover el comportamiento base al método.
            <li>Tiene sentido es mejor que el ítem tenga la responsabilidad de como se actualiza.
            <li>Ahora gilde rose simplemente recorrerá los ítems y los mandará a actualizar.
-           <li>Por último crear una clase una clase que herede de ítem. Pero ahora Como por ejemplo AgeBrie.
+           <li>Por último crear una clase una clase que herede de ítem. Como por ejemplo AgeBrie.
            <li>¿Qué pasará ahora si sobrescribes el método updateítem con el comportamiento de Age Bried y después lo metes en la lista de ítems?
         </ul>
       
