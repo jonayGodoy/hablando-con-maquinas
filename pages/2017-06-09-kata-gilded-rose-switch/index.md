@@ -17,7 +17,7 @@ y el formato para que sirvan a este propósito.
 
 Si no podéis esperar y queréis ir ya a la kata aquí tenéis el [enlace](https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch).
 
-Lo que aun estáis leyendo esto, a continuación voy a desarrollar un poco de porque el switch es
+Si aun estáis leyendo esto, a continuación voy a desarrollar un poco de porque el switch es
 considerado un mal olor así como de que consta la kata.
 
 En la practica el switch no es necesario.
@@ -57,7 +57,7 @@ message = vector[n];
 System.out.print(message);
 ```
 
-> Aquí podéis empezar a ver el concepto del problema de los switch.
+> Aquí podéis empezar a ver el problema de los switch.
 Con ellos lo que hacemos controlar los estados. Es decir, en el switch comprobamos si n es 1
 y en consecuencia retornamos un valor en cambio cuando usamos una array no hay que comprobar
 porque n es 1, ya tiene dentro por el simple hecho de ser 1, toda la información que el array necesita.
@@ -81,7 +81,7 @@ que tenga relación con lo que estáis comparando en el switch a la fuerza hay v
 a modificar el código escrito con anterioridad.
 
 
-Como tantas cosas en la programación esto se ve mucho ver programando que intentado explicarlo con
+Como tantas cosas en la programación esto se ve mucho mejor programando que intentado explicarlo con
 palabras así que empiezo a explicar la kata(ejercicio de programación).
 
 > [https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch](https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch)
@@ -92,7 +92,7 @@ si tenéis problemas.Cualquier duda podéis comentarla.
 
 
 ## Para instalar
-- la versión de java las librerías de test teneís el pom.xml para instalar las dependencias de java o
+- La versión de java tiene el pom.xml para instalar las dependencias si usais maven o
 podéis descargaros las librerías
     - [Junit](https://mvnrepository.com/artifact/junit/junit/4.10)
     - [Hamcrest Core](https://mvnrepository.com/artifact/org.hamcrest/hamcrest-core/1.3)
@@ -108,7 +108,7 @@ podéis descargaros las librerías
 Recomiendo, la versión de java si teneís problemas con el Polimorfismo.
 La herencia en javascript tiene distintos estilos y todos pueden muy buenos por lo que
 preferiría que aunque no fuera java usarais un lenguaje de lado sevidor (node no cuenta).
-Pero si por vuestro contexto preferís hacerlo en javascript de acuerdo pero sé consientes
+Pero si por vuestro contexto preferís hacerlo en javascript de acuerdo pero sé consiente
 de que tiene una dificultad añadida.
 
 ## Test
@@ -193,7 +193,7 @@ class GildedRoseSwitch {
 <summary>Spolier no queréis ver la solución pero estáis muy pero que muy perdidos. Aquí tenéis unas buenas pistas.</summary>
     <details>
         <summary> 
-         Estáis seguros de que queréis verlo, luego no hay vuelta atrás
+         Estáis seguros de que quieres verlo, luego no hay vuelta atrás
         ¿Por qué no lo intentas un poco más?
         </summary>
         <ul>
@@ -215,8 +215,8 @@ class GildedRoseSwitch {
 En la practica, yo hice el ejercicio de nunca usar el switch y hoy en día
 continuo siguiendo esta regla, mi código desde entonces es más limpio sobretodo
  he conseguido aprovechar bastante mejor la potencia de la [POO](https://es.wikipedia.org/wiki/Programaci%C3%B3n_orientada_a_objetos).
-  Aunque como todo hay casos limite donde lo sigo usando por ejemplo uno es cuando tengo una
-tecnología o una arquitectura donde ya viene estandarizado, por ejemplo
+  Aunque como todo hay casos limite donde lo sigo usando. Por ejemplo, cuando tengo una
+tecnología o una arquitectura donde ya viene estandarizado, como con
 [RabbitMq](https://es.wikipedia.org/wiki/RabbitMQ) un gestor de colas que utiliza
  variable para diferenciar, una cola de otra, como resultado consigue
 evitar cualquier acoplamiento, es decir, le da igual que información le pases
