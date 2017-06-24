@@ -13,7 +13,7 @@ function getButtonHead(wrapper){
 }
 
 function sidePanelcomponent(wrapper){
-    return wrapper.find(".blog-nav-mobile").parent();
+    return wrapper.find("#drawer");
 }
 
 describe("<MenuMobile/>", function(){
@@ -41,13 +41,13 @@ describe("<MenuMobile/>", function(){
 
         expect(sidePanel.hasClass('hidden')).to.equal(true);
     });
-    it("Mobile menu panel, the button work ", function () {
+    it("Mobile menu panel, the background work ", function () {
         let wrapper = getWrapperMount();
         let sidePanel = sidePanelcomponent(wrapper);
-        let button = sidePanel.find('span').first();
+        let background = sidePanel.parent();
 
-        button.simulate('click');
+        background.simulate('click');
 
-        expect(sidePanel.hasClass('hidden')).to.equal(false);
+        expect(sidePanel.hasClass('hidden')).to.equal(true);
     });
 });

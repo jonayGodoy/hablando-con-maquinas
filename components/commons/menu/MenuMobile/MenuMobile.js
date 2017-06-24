@@ -42,7 +42,7 @@ class MenuMobile extends React.Component {
                     </button>
                 </div>
 
-                <div className={this.state.isHidden ? "hidden" : "background-menu-mobile "+responsiveMainStyleBootstrap}
+                <div id="drawer" className={this.state.isHidden ? "hidden" : "background-menu-mobile "+responsiveMainStyleBootstrap}
                      onClick={this.toggleOneElement}>
                     <div className="drawer panel"
                          style={this.state.isHidden ? {width: "0"} :{width: "60%"}}>
