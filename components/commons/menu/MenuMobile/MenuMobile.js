@@ -20,12 +20,9 @@ class MenuMobile extends React.Component {
     }
     toggle(){
         this.setState(Object.assign({}, this.state, {isHidden: !this.state.isHidden}));
-
     };
     toggleOneElement(event){
-        if(event.currentTarget === event.target){
-            this.toggle()
-        }
+        if(event.currentTarget === event.target){this.toggle()}
     }
     render(){
         return (
@@ -34,8 +31,8 @@ class MenuMobile extends React.Component {
                     <Link to={prefixLink('/')}>
                         <h2 className="col-xs-10 text-center">{config.blogTitle}</h2>
                     </Link>
-                    <button className="btn btn-default" >
-                        <span className="glyphicon glyphicon-menu-hamburger" onClick={this.toggle}/>
+                    <button className="btn btn-default" onClick={this.toggle}>
+                        <span className="glyphicon glyphicon-menu-hamburger" />
                     </button>
                 </div>
 
@@ -49,7 +46,10 @@ class MenuMobile extends React.Component {
                             </Link>
                             <div onClick={this.toggle}>
                                 <hr/>
-                                <Link className="blog-nav-item" to={prefixLink('/')}>Inicio</Link>
+                                <Link className="blog-nav-item " to={prefixLink('/')}
+                                >Inicio</Link>
+                                <div className="blog-nav-item"
+                                >Inicio</div>
                             </div>
                         </div>
                     </div>
