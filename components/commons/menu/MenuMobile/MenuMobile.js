@@ -24,7 +24,13 @@ class MenuMobile extends React.Component {
     toggleOneElement(event){
         if(event.currentTarget === event.target){this.toggle()}
     }
+
+    updateBlockScroll(){
+        document.documentElement.style.overflowY = !this.state.isHidden ? "hidden" : "";
+    }
+
     render(){
+        this.updateBlockScroll();
         return (
             <div>
                 <div className={"row jumbotron"+ responsiveMainStyleBootstrap}>
