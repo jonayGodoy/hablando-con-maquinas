@@ -11,11 +11,6 @@ import '../css/zenburn.css';
 
 class MarkdownWrapper extends React.Component {
 
-    handleNewComment(comment) {
-        /* eslint no-console:0 */
-        console.log(comment);
-    };
-
   render () {
     const { route } = this.props;
     const post = route.page.data;
