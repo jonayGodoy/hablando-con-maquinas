@@ -28,7 +28,7 @@ class MarkdownWrapper extends React.Component {
         />
         <h1>{post.title}</h1>
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
-        <em>Posted {moment(post.date).format('MMMM D, YYYY')}</em>
+        <em>Publicado el {moment(post.date,'YYYY MM DD',"es").format('dddd[,] MM MMMM [del] YYYY')}</em>
         <hr/>
           <DisqusComments
               shortname={config.disqus_shortname}
