@@ -38,7 +38,7 @@ class MenuMobile extends React.Component {
 
                 <div className={this.state.isHidden ? "hidden" : "background-menu-mobile "+responsiveMainStyleBootstrap}
                      onClick={this.toggleOneElement}>
-                    <div className="blog-nav-mobile panel"
+                    <div className="drawer panel"
                          style={this.state.isHidden ? {width: "0"} :{width: "60%"}}>
                         <div>
                             <Link to={prefixLink('/')} onClick={this.toggle}>
@@ -46,10 +46,9 @@ class MenuMobile extends React.Component {
                             </Link>
                             <div onClick={this.toggle}>
                                 <hr/>
-                                <Link className="blog-nav-item " to={prefixLink('/')}
-                                >Inicio</Link>
-                                <div className="blog-nav-item"
-                                >Inicio</div>
+                                <Link to={prefixLink('/')}>
+                                    <div className="blog-nav-item-mobile">Inicio</div>
+                                </Link>
                             </div>
                         </div>
                     </div>
