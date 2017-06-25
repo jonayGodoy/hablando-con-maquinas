@@ -2,6 +2,7 @@ import React, {PropTypes} from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
+import * as routesPath from "../../../../pages/routePath";
 
 import '../../../../css/menuNav.css';
 import img_head from '../../../../pages/global-img/head.png';
@@ -52,10 +53,14 @@ class MenuMobile extends React.Component {
                                 <img className="img-responsive img_logo_mobile" src={img_head}/>
                             </Link>
                             <div onClick={this.toggle}>
-                                <hr/>
-                                <Link to={prefixLink('/')}>
-                                    <div className="blog-nav-item-mobile">Inicio</div>
-                                </Link>
+                                {routesPath.menu.map((routePath) =>(
+                                    <div>
+                                        <hr/>
+                                        <Link to={prefixLink(routePath.path)}>
+                                            <div className="blog-nav-item-mobile">{routePath.name}</div>
+                                        </Link>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
