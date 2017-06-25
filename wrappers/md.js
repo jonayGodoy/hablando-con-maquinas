@@ -9,31 +9,34 @@ import DisqusComments  from 'react-disqus-comments';
 import '../css/md.css';
 import '../css/zenburn.css';
 
-class MarkdownWrapper extends React.Component {
+import BlogTemplate from '../components/blogTemplate/BlogTemplate';
 
-  render () {
-    const { route } = this.props;
-    const post = route.page.data;
 
-    return (
-      <div  className="markdown">
-        <img className="img-thumbnail" src={prefixLink(post.path)+post.image_article} />
-        <Helmet
-          title={`${post.title} | ${config.blogTitle}`}
-        />
-        <h1>{post.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.body }} />
-        <em>Publicado el {moment(post.date,'YYYY MM DD',"es").format('dddd[,] MM MMMM [del] YYYY')}</em>
-        <hr/>
-          <DisqusComments
-              shortname={config.disqus_shortname}
-              identifier={post.path}
-              title={post.title}
-              onNewComment={this.handleNewComment}
-          />
-      </div>
-    )
-  }
+class MarkdownWrapper extends BlogTemplate {
+
+    getContain () {
+        const { route } = this.props;
+        const post = route.page.data;
+
+        return (
+          <div  className="markdown">
+            <img className="img-thumbnail" src={prefixLink(post.path)+post.image_article} />
+            <Helmet
+              title={`${post.title} | ${config.blogTitle}`}
+            />
+            <h1>{post.title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: post.body }} />
+            <em>Publicado el {moment(post.date,'YYYY MM DD',"es").format('dddd[,] MM MMMM [del] YYYY')}</em>
+            <hr/>
+              <DisqusComments
+                  shortname={config.disqus_shortname}
+                  identifier={post.path}
+                  title={post.title}
+                  onNewComment={this.handleNewComment}
+              />
+          </div>
+        )
+    }
 }
 
 MarkdownWrapper.propTypes = {

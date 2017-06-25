@@ -8,33 +8,34 @@ import { config } from 'config'
 import include from 'underscore.string/include'
 
 import BoxArticle from '../components/commons/BoxArticle';
+import BlogTemplate from '../components/blogTemplate/BlogTemplate';
 
 
-class BlogIndex extends React.Component {
-  render () {
-    // Sort pages.
-    const sortedPages = sortBy(this.props.route.pages, 'data.date');
-    // Posts are those with md extension that are not 404 pages OR have a date (meaning they're a react component post).
-    const visiblePages = sortedPages.filter(page => (
-      get(page, 'file.ext') === 'md' && !include(page.path, '/404') || get(page, 'data.date')
-    ));
-    return (
-      <div>
-        <Helmet
-          title={config.blogTitle}
-          /*
-          meta={[
-            {"name": "description", "content": "Sample blog"},
-            {"name": "keywords", "content": "blog, articles"},
-          ]}*/
-        />
-        <ul>
-          {visiblePages.map((page) => (
-              <BoxArticle post={page.data} pages={this.props.route.pages} />
-          )).reverse()}
-        </ul>
-      </div>
-    )
+class BlogIndex extends BlogTemplate {
+    getContain() {
+        // Sort pages.
+        const sortedPages = sortBy(this.props.route.pages, 'data.date');
+        // Posts are those with md extension that are not 404 pages OR have a date (meaning they're a react component post).
+        const visiblePages = sortedPages.filter(page => (
+          get(page, 'file.ext') === 'md' && !include(page.path, '/404') || get(page, 'data.date')
+        ));
+        return (
+          <div>
+            <Helmet
+              title={config.blogTitle}
+              /* meta={[
+                {"name": "description", "content": "Sample blog"},
+                {"name": "keywords", "content": "blog, articles"},
+              ]}*/
+            />
+
+              <ul>
+                  {visiblePages.map((page) => (
+                      <BoxArticle post={page.data} pages={this.props.route.pages} />
+                  )).reverse()}
+              </ul>
+          </div>
+        )
   }
 }
 
