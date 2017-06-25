@@ -9,35 +9,35 @@ class ConocemePage extends React.Component {
 
     render () {
         return (
-            <div className="container-fluid">
+            <div className="cv container-fluid">
                 <div className="row center-block">
-                    <img className="img-responsive col-md-2 center-block"
+                    <img className="img-thumbnail col-md-2 center-block"
                         src={imgCV}
                     />
-                    <div className="col-md-9">
+                    <div className="col-md-9 summaryMain">
                         <h1>{cv.basics.name}</h1>
-                        <h6>{config.email}</h6>
+                        <h6><a href={"mailo:"+config.email}>{config.email}</a></h6>
                         <h3>{cv.basics.label}</h3>
                     </div>
                 </div>
-                <hr className="row"/>
+                <hr/>
                 <div className="row text-center">
                     <h3 >{cv.basics.summary}</h3>
                 </div>
-                <hr className="row"/>
+                <hr/>
                 <div className="row">
-                    <h3 className="col-md-3">Skills</h3>
-                    <table className="col-md-9">
+                    <h3 className="col-md-4">Skills</h3>
+                    <table className="col-md-8 tableSkills">
                         {cv.skills.map((skill) =>(<td>{skill.name}</td>))
                             .map((skillTD, index ,array) => array.splice(index,index+3))
                             .map((skillsGrouped) => <tr>{skillsGrouped}</tr>)
                         }
                     </table>
                 </div>
-                <hr className="row"/>
+                <hr/>
                 <div className="row">
-                    <h3 className="col-md-3">Experiencia</h3>
-                    <div className="col-md-9">
+                    <h3 className="col-md-4">Experiencia</h3>
+                    <div className="col-md-8">
                         {cv.work.map((work) => (
                             <div >
                                 <div className="row">
@@ -50,10 +50,10 @@ class ConocemePage extends React.Component {
                         ))}
                     </div>
                 </div>
-                <hr className="row"/>
+                <hr/>
                 <div className="row">
-                    <h3 className="col-md-3">Educación</h3>
-                    <div className="col-md-9">
+                    <h3 className="col-md-4 text">Educación</h3>
+                    <div className="col-md-8">
                         {cv.education.map((study) => (
                             <div >
                                 <h3>{study.institution}</h3>
@@ -63,10 +63,10 @@ class ConocemePage extends React.Component {
                         ))}
                     </div>
                 </div>
-                <hr className="row"/>
+                <hr/>
                 <div className="row">
-                    <h3 className="col-md-3">Reconocimientos y premios</h3>
-                    <div className="col-md-9">
+                    <h3 className="col-md-4">Reconocimientos y premios</h3>
+                    <div className="col-md-8">
                         {cv.honors_awards.map((honor_award) => (
                             <div >
                                 <h3>{honor_award.Title}</h3>
