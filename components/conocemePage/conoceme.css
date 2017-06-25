@@ -1,0 +1,9 @@
+.summaryMain{
+    text-align: left;
+}
+
+@media (min-width: 500px){
+    .summaryMain{
+        text-align: justify;
+    }
+}

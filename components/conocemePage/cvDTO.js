@@ -1,6 +1,6 @@
 export default {
 "basics": {
-    "name": "Jonay Godoy Reyes",
+    "name": "Jonay Eliezer Godoy Reyes",
     "label": "Developer",
     "phone": "",
     "website": "",

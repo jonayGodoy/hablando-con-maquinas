@@ -2,25 +2,32 @@ import React from 'react'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 import cv from "./cvDTO"
-
+import imgCV from '../../pages/global-img/fot_carnet.png';
+import './conoceme.css';
 
 class ConocemePage extends React.Component {
 
     render () {
         return (
             <div className="container-fluid">
-                <div className="row">
-                    <h1>{cv.basics.name}</h1>
-                    <h3>{cv.basics.label}</h3>
+                <div className="row center-block">
+                    <img className="img-responsive col-md-2 center-block"
+                        src={imgCV}
+                    />
+                    <div className="col-md-9">
+                        <h1>{cv.basics.name}</h1>
+                        <h6>{config.email}</h6>
+                        <h3>{cv.basics.label}</h3>
+                    </div>
+                </div>
+                <hr className="row"/>
+                <div className="row text-center">
+                    <h3 >{cv.basics.summary}</h3>
                 </div>
                 <hr className="row"/>
                 <div className="row">
-                    <h3>{cv.basics.summary}</h3>
-                </div>
-                <hr className="row"/>
-                <div className="row">
-                    <h3 className="col-md-2">Skills</h3>
-                    <table className="col-md-10">
+                    <h3 className="col-md-3">Skills</h3>
+                    <table className="col-md-9">
                         {cv.skills.map((skill) =>(<td>{skill.name}</td>))
                             .map((skillTD, index ,array) => array.splice(index,index+3))
                             .map((skillsGrouped) => <tr>{skillsGrouped}</tr>)
