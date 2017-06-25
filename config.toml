@@ -3,4 +3,6 @@ blogDescription = "Blog personal sobre informática y programación"
 authorName = "Jonay Godoy"
 linkPrefix = "/hablando-con-maquinas"
 
+email = "jonay.godoy.reyes@gmail.com"
+
 disqus_shortname = "hablandoconmaquinas"

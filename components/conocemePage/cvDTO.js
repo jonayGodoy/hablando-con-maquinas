@@ -1,17 +1,16 @@
-
 export default {
 "basics": {
     "name": "Jonay Godoy Reyes",
-        "label": "Alumno Practicas en Instituto Tecnológico de Canarias",
-        "phone": "",
-        "website": "",
-        "summary": "Apasionado por el aprendizaje",
-        "location": {
-        "address": "",
-            "postalCode": "",
-            "city": "",
-            "countryCode": "",
-            "region": ""
+    "label": "Developer",
+    "phone": "",
+    "website": "",
+    "summary": "Apasionado por el aprendizaje",
+    "location": {
+    "address": "",
+        "postalCode": "",
+        "city": "",
+        "countryCode": "",
+        "region": ""
     },
     "profiles": []
 },
@@ -46,7 +45,7 @@ export default {
         "endDate": "2016-01-01"
     },
     {
-        "institution": "C.I.F.P. Villa De Agüimes, Las Palmas (España)",
+        "institution": "CIFP Villa de Agüimes",
         "area": "",
         "studyType": "Técnico Superior En Desarrollo De Aplicaciones Web",
         "startDate": "2016-01-01",
@@ -56,6 +55,16 @@ export default {
     }
 ],
     "skills": [
+    {
+        "name": "Programación extrema",
+        "level": "",
+        "keywords": []
+    },
+    {
+        "name": "TDD",
+        "level": "",
+        "keywords": []
+    },
     {
         "name": "Java",
         "level": "",
@@ -72,14 +81,24 @@ export default {
         "keywords": []
     },
     {
-        "name": "Programación extrema",
-        "level": "",
-        "keywords": []
-    },
-    {
         "name": "React.js",
         "level": "",
         "keywords": []
     }
+],
+    "Courses": [
+        {
+            "Course Name": "Curso intensivo de iniciación al TDD(2 días)",
+            "Course Number": ""
+        }
+],
+    "honors_awards": [
+    {
+        "Title": "Ganador de segundo puesto en el HackForGood 2017 en Las Palmas con el proyecto Amidi",
+        "Description": "HackForGood es un evento promovido por Telefónica y organizado junto a la ETSI de Telecomunicación de la Universidad Politécnica de Madrid, la Fundación HazloPosible y la startup MashmeTV con el apoyo de la Red de Cátedras Telefónica en el que Hackers ForGood de toda España proponen retos y desarrollan soluciones para construir un mundo mejor.",
+        "Issuer": "Fundación Parque Cientifico Tecnologico de la ULPGC",
+        "Issue_Date": "3/2017"
+    }
+
 ]
 };
