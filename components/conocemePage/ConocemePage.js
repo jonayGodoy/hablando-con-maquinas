@@ -39,14 +39,12 @@ class ConocemePage extends React.Component {
                     <h3 className="col-md-4">Experiencia</h3>
                     <div className="col-md-8">
                         {cv.work.map((work) => (
-                            <div >
-                                <div className="row">
-                                    <h3 >{work.company}</h3>
-                                    <h4>{work.position}</h4>
-                                    <h5 className="right">{work.startDate+"|"+work.endDate}</h5>
-                                </div>
-                                <p className="row">{work.summary}</p>
-                            </div>
+                          <div >
+                            <h3 >{work.company}</h3>
+                            <h4>{work.position}</h4>
+                            <h5 className="right">{work.startDate+"|"+work.endDate}</h5>
+                            <p>{work.summary}</p>
+                          </div>
                         ))}
                     </div>
                 </div>
