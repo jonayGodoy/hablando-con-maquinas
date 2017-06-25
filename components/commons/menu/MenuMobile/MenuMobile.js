@@ -40,6 +40,7 @@ class MenuMobile extends React.Component {
                     <button className="btn btn-default" onClick={this.toggle}>
                         <span className="glyphicon glyphicon-menu-hamburger" />
                     </button>
+                    <hr/>
                 </div>
 
                 <div id="drawer" className={this.state.isHidden ? "hidden" : "background-menu-mobile "+responsiveMainStyleBootstrap}
