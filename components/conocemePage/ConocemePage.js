@@ -16,7 +16,7 @@ class ConocemePage extends React.Component {
                     />
                     <div className="col-md-9 summaryMain">
                         <h1>{cv.basics.name}</h1>
-                        <h6><a href={"mailo:"+config.email}>{config.email}</a></h6>
+                        <h6><a href={"mailto:"+config.email}>{config.email}</a></h6>
                         <h3>{cv.basics.label}</h3>
                     </div>
                 </div>
