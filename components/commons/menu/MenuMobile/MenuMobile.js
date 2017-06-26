@@ -18,6 +18,7 @@ class MenuMobile extends React.Component {
         };
         this.toggle = this.toggle.bind(this);
         this.toggleOneElement = this.toggleOneElement.bind(this);
+        this.updateBlockScroll = this.updateBlockScroll.bind(this);
     }
     toggle(){
         this.setState(Object.assign({}, this.state, {isHidden: !this.state.isHidden}));
