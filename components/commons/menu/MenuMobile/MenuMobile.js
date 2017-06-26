@@ -28,7 +28,7 @@ class MenuMobile extends React.Component {
     }
 
     updateBlockScroll(){
-        document.documentElement.style.overflowY = !this.state.isHidden ? "hidden" : "";
+      //  document.documentElement.style.overflowY = !this.state.isHidden ? "hidden" : "";
     }
 
     render(){
