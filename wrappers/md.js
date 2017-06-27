@@ -14,6 +14,11 @@ import BlogTemplate from '../components/blogTemplate/BlogTemplate';
 
 class MarkdownWrapper extends BlogTemplate {
 
+    constructor(props, context){
+        super(props, context);
+        this.getContain = this.getContain.bind(this);
+    }
+
     getContain () {
         const { route } = this.props;
         const post = route.page.data;

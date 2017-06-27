@@ -12,6 +12,12 @@ import BlogTemplate from '../components/blogTemplate/BlogTemplate';
 
 
 class BlogIndex extends BlogTemplate {
+
+    constructor(props, context){
+        super(props, context);
+        this.getContain = this.getContain.bind(this);
+    }
+
     getContain() {
         // Sort pages.
         const sortedPages = sortBy(this.props.route.pages, 'data.date');
