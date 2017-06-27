@@ -2,7 +2,7 @@ import React, {PropTypes} from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
-import * as routesPath from "../../../../pages/routePath";
+import * as routesPath from "../../../../routePath";
 
 import '../../../../css/menuNav.css';
 import img_head from '../../../../pages/global-img/head.png';
