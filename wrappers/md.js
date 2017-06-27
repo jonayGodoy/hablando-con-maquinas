@@ -32,7 +32,6 @@ class MarkdownWrapper extends BlogTemplate {
                   shortname={config.disqus_shortname}
                   identifier={post.path}
                   title={post.title}
-                  onNewComment={this.handleNewComment}
               />
           </div>
         )
