@@ -33,7 +33,11 @@ class MarkdownWrapper extends BlogTemplate {
             <div dangerouslySetInnerHTML={{ __html: post.body }} />
             <em>Publicado el {moment(post.date,'YYYY MM DD',"es").format('dddd[,] MM MMMM [del] YYYY')}</em>
             <hr/>
-
+              <DisqusComments
+                  shortname={config.disqus_shortname}
+                  identifier={post.path}
+                  title={post.title}
+              />
           </div>
         )
     }
