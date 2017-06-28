@@ -8,7 +8,7 @@ class BlogTemplate extends React.Component {
 
     constructor(props, context){
         super(props, context);
-        this.getContain = this.getContain.bind(this);
+       this.getContain = this.getContain.bind(this);
     }
 
     getContain(){}
