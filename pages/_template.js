@@ -15,7 +15,8 @@ class Template extends React.Component {
   render () {
     const { location, children } = this.props;
 
-    return (
+      console.log(location);
+      return (
         <div className="container-fluid">
             <div id="menu_mobile">
                 <MenuMobile/>
