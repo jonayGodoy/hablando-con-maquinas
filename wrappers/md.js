@@ -31,7 +31,6 @@ class MarkdownWrapper extends BlogTemplate {
             />
             <h1>{post.title}</h1>
             <div dangerouslySetInnerHTML={{ __html: post.body }} />
-            <em>Publicado el {moment(post.date,'YYYY MM DD',"es").format('dddd[,] MM MMMM [del] YYYY')}</em>
             <hr/>
               <DisqusComments
                   shortname={config.disqus_shortname}
@@ -42,7 +41,6 @@ class MarkdownWrapper extends BlogTemplate {
         )
     }
 }
-
 MarkdownWrapper.propTypes = {
   route: React.PropTypes.object
 };
