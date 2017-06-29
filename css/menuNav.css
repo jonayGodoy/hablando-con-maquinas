@@ -21,11 +21,26 @@
     padding-top: 5%;
 }
 
+a {
+    box-shadow: 0 0px 0 0 currentColor;
+    text-decoration: none;
+}
+
+
+
+.title_nav_mobile{
+    margin-left: 18%;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
 .drawer{
     position: fixed; /* Stay in place */
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 60%; /* 0 width - change this with JavaScript */
     z-index: 1;
+    left: -500px;
 
     top: 0;
 

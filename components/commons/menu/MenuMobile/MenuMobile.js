@@ -34,20 +34,20 @@ class MenuMobile extends React.Component {
     render(){
         return (
             <div>
-                <div className={"row jumbotron"+ responsiveMainStyleBootstrap}>
-                    <Link to={prefixLink('/')}>
-                        <h2 className="col-xs-10 text-center">{config.blogTitle}</h2>
-                    </Link>
-                    <button className="btn btn-default" onClick={this.toggle}>
-                        <span className="glyphicon glyphicon-menu-hamburger" />
-                    </button>
+                <div style={{marginTop: "5px"}} className={"container "+responsiveMainStyleBootstrap}>
+                        <button className="btn"  onClick={this.toggle}>
+                            <span className="text-center glyphicon glyphicon-menu-hamburger" />
+                        </button>
+                        <Link to={prefixLink('/')}>
+                            <h2 className="col-xs-10">{config.blogTitle}</h2>
+                        </Link>
                     <hr/>
                 </div>
 
-                <div id="drawer" className={this.state.isHidden ? "hidden" : "background-menu-mobile "+responsiveMainStyleBootstrap}
+                <div id="drawer" className={ this.state.isHidden ? responsiveMainStyleBootstrap : "background-menu-mobile "+responsiveMainStyleBootstrap}
                      onClick={this.toggleOneElement}>
                     <div className="drawer panel"
-                         style={this.state.isHidden ? {width: "0"} :{width: "60%"}}>
+                         style={this.state.isHidden ? { left: "-500px"} :{left: "0" }}>
                         <div>
                             <Link to={prefixLink('/')} onClick={this.toggle}>
                                 <img className="img-responsive img_logo_mobile" src={img_head}/>
