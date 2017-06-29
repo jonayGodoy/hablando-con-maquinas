@@ -18,8 +18,8 @@ class MenuMobile extends React.Component {
         };
         this.toggle = this.toggle.bind(this);
         this.toggleOneElement = this.toggleOneElement.bind(this);
-        this.updateBlockScroll = this.updateBlockScroll.bind(this);
     }
+
     toggle(){
         this.setState(Object.assign({}, this.state, {isHidden: !this.state.isHidden}));
     };
@@ -27,12 +27,11 @@ class MenuMobile extends React.Component {
         if(event.currentTarget === event.target){this.toggle()}
     }
 
-    updateBlockScroll(){
-      //  document.documentElement.style.overflowY = !this.state.isHidden ? "hidden" : "";
+    componentDidUpdate(){
+        document.documentElement.style.overflowY = !this.state.isHidden ? "hidden" : "";
     }
 
     render(){
-        this.updateBlockScroll();
         return (
             <div>
                 <div className={"row jumbotron"+ responsiveMainStyleBootstrap}>
