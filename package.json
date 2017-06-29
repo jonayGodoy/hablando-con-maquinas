@@ -46,12 +46,15 @@
     "url": "git+https://github.com/jonayGodoy/hablando-con-maquinas.git"
   },
   "scripts": {
+    "cleanGitCache": "rm -rf node_modules/gh-pages/.cache",
     "dev": "gatsby develop",
+    "dev:deploy": "gatsby build --prefix-links && rm public/CNAME && npm run cleanGitCache && node tools/git/git_deploy_dev",
+    "info": "gh-pages --help",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "npm run mocha",
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "deploy": "gatsby build --prefix-links && gh-pages -d public",
+    "deploy": "gatsby build && npm run cleanGitCache && gh-pages -d public",
     "mocha": "mocha \"./{,!(node_modules)/**/}*.spec.js\" --recursive --compilers js:babel-core/register --require tools\\test\\index.js"
   }
 }
