@@ -21,6 +21,30 @@ module.exports = React.createClass({
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
     }
 
+        let isDevDeploy = !!prefixLink("");
+      if(isDevDeploy){
+         console.log("meta ignorada "+ isDevDeploy);
+          return (
+              <html lang="en">
+              <head>
+                <meta charSet="utf-8" />
+                <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+                <meta
+                    name="viewport"
+                    content="width=device-width, initial-scale=1.0"
+                />
+                  {head.title.toComponent()}
+                  <meta name="robots" content="NoIndex, NoFollow" />
+                <TypographyStyle typography={typography} />
+                <GoogleFont typography={typography} />
+                  {css}
+              </head>
+              <body>
+              <div id="react-mount" dangerouslySetInnerHTML={{ __html: body }} />
+              <script src={prefixLink(`/bundle.js?t=${BUILD_TIME}`)} />
+              </body>
+              </html>)
+      }else{
     return (
       <html lang="en">
         <head>
@@ -81,5 +105,6 @@ module.exports = React.createClass({
         </body>
       </html>
     )
+      }
   },
 });
