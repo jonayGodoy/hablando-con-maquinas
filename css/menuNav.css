@@ -18,14 +18,29 @@
 
 /* Nav links */
 .blog-nav{
-    padding-top: 10%;
+    padding-top: 5%;
 }
 
-div .blog-nav-mobile{
+a {
+    box-shadow: 0 0px 0 0 currentColor;
+    text-decoration: none;
+}
+
+
+
+.title_nav_mobile{
+    margin-left: 18%;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+
+.drawer{
     position: fixed; /* Stay in place */
     height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
+    width: 60%; /* 0 width - change this with JavaScript */
     z-index: 1;
+    left: -500px;
 
     top: 0;
 
@@ -33,13 +48,11 @@ div .blog-nav-mobile{
     padding-top: 5%;
     padding-bottom: 5%;
 
-    overflow-x: hidden; /* Disable scroll */
-    overflow-y: hidden; /* Disable scroll */
+
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 
     border-right: 1px inset;
 }
-
 
 .blog-nav-mobile:hover{
     width: 100%
@@ -53,6 +66,8 @@ div .blog-nav-mobile{
     color: #a5a5a5;
 }
 
+
+
 .blog-nav-item:hover,
 .blog-nav-item:focus {
     color: #727272;
@@ -61,10 +76,14 @@ div .blog-nav-mobile{
 
 
 .blog-nav-item-mobile {
-  font-size: 150%;
-  font-family: Consolas;
-  padding: 5%;
+    text-decoration: none;
+    font-size: 2em;
+    padding-left: 15%;
+    font-family: Consolas;
+
+    color: #a5a5a5;
 }
+
 
 /* Active state gets a caret at the bottom */
 .blog-nav .active {
@@ -87,7 +106,7 @@ div .blog-nav-mobile{
     padding: 5% 2%;
 }
 .img_logo_mobile {
-    padding: 0% 2%;
+    padding: 0% 5% 0% 10%;
 }
 
 .button-exit-menu{
@@ -98,5 +117,13 @@ div .blog-nav-mobile{
 
     padding: 10%;
 }
+.background-menu-mobile{
+    height: 100%;
+    background: rgba(0,0,0,.6);
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 10;
+}
+
 
 

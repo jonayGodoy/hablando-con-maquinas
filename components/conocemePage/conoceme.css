@@ -1,0 +1,25 @@
+.cv{
+    background-color: #f3f3f3;
+    border-style: dashed;
+    padding: 40px;
+    margin: 20px;
+}
+
+.summaryMain{
+    text-align: center;
+}
+@media (min-width: 991px){
+    .summaryMain{
+        text-align: left;
+    }
+}
+
+.tableSkills{
+    height: 100px;
+    font-size: 1em;
+}
+
+.cv hr{
+    height: 0.2em;
+}
+

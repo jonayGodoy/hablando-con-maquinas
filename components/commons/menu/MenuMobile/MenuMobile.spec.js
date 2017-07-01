@@ -9,41 +9,45 @@ function getWrapperMount(){
 }
 
 function getButtonHead(wrapper){
-    return wrapper.find('button').first();
+    return wrapper.find('button').find('span').first();
+}
+
+function sidePanelcomponent(wrapper){
+    return wrapper.find("#drawer");
 }
 
 describe("<MenuMobile/>", function(){
     it("Mobile menu panel start hidden", function () {
         let wrapper = shallow(<MenuMobile />);
-        let sidePanel = wrapper.find("#menu-mobile-lateral");
+        let sidePanel = sidePanelcomponent(wrapper);
         expect(sidePanel.hasClass('hidden')).to.equal(true);
     });
     it("Mobile menu panel is show when click button ", function () {
         let wrapper = getWrapperMount();
-        let sidePanel = wrapper.find("#menu-mobile-lateral");
+        let sidePanel = sidePanelcomponent(wrapper);
         let button = getButtonHead(wrapper);
 
         button.simulate('click');
 
         expect(sidePanel.hasClass('hidden')).to.equal(false);
     });
-    it("Mobile menu panel is hidden when twice click button ", function () {
+    it("Mobile menu panel is hidden when twice click ", function () {
         let wrapper = getWrapperMount();
-        let sidePanel = wrapper.find("#menu-mobile-lateral");
+        let sidePanel = sidePanelcomponent(wrapper);
         let button = getButtonHead(wrapper);
 
         button.simulate('click');
-        button.simulate('click');
+        sidePanel.simulate('click');
 
-        expect(sidePanel.hasClass('hidden')).to.equal(false);
+        expect(sidePanel.hasClass('hidden')).to.equal(true);
     });
-    it("Mobile menu panel, the button work ", function () {
+    it("Mobile menu panel, the background work ", function () {
         let wrapper = getWrapperMount();
-        let sidePanel = wrapper.find("#menu-mobile-lateral");
-        let button = sidePanel.find('span').first();
+        let sidePanel = sidePanelcomponent(wrapper);
+        let background = sidePanel.parent();
 
-        button.simulate('click');
+        background.simulate('click');
 
-        expect(sidePanel.hasClass('hidden')).to.equal(false);
+        expect(sidePanel.hasClass('hidden')).to.equal(true);
     });
 });

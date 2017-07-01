@@ -9,38 +9,38 @@ import DisqusComments  from 'react-disqus-comments';
 import '../css/md.css';
 import '../css/zenburn.css';
 
-class MarkdownWrapper extends React.Component {
+import BlogTemplate from '../components/blogTemplate/BlogTemplate';
 
-    handleNewComment(comment) {
-        /* eslint no-console:0 */
-        console.log(comment);
-    };
 
-  render () {
-    const { route } = this.props;
-    const post = route.page.data;
+class MarkdownWrapper extends BlogTemplate {
 
-    return (
-      <div  className="markdown">
-        <img className="img-thumbnail" src={prefixLink(post.path)+post.image_article} />
-        <Helmet
-          title={`${post.title} | ${config.blogTitle}`}
-        />
-        <h1>{post.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.body }} />
-        <em>Posted {moment(post.date).format('MMMM D, YYYY')}</em>
-        <hr/>
-          <DisqusComments
-              shortname={config.disqus_shortname}
-              identifier={post.path}
-              title={post.title}
-              onNewComment={this.handleNewComment}
-          />
-      </div>
-    )
-  }
+    constructor(props, context){
+        super(props, context);
+        this.getContain = this.getContain.bind(this);
+    }
+
+    getContain () {
+        const { route } = this.props;
+        const post = route.page.data;
+
+        return (
+          <div  className="markdown">
+            <img className="img-thumbnail" src={prefixLink(post.path)+post.image_article} />
+            <Helmet
+              title={`${post.title} | ${config.blogTitle}`}
+            />
+            <h1>{post.title}</h1>
+            <div dangerouslySetInnerHTML={{ __html: post.body }} />
+            <hr/>
+              <DisqusComments
+                  shortname={config.disqus_shortname}
+                  identifier={post.path}
+                  title={post.title}
+              />
+          </div>
+        )
+    }
 }
-
 MarkdownWrapper.propTypes = {
   route: React.PropTypes.object
 };
