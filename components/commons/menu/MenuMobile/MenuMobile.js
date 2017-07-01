@@ -5,7 +5,7 @@ import { config } from 'config';
 import * as routesPath from "../../../../routePath";
 
 import '../../../../css/menuNav.css';
-import img_head from '../../../../pages/global-img/head.png';
+import img_head from '../../../../pages/global-img/head.jpg';
 
 
 const responsiveMainStyleBootstrap = "hidden-sm hidden-md hidden-lg hidden-sm hidden-md hidden-lg";
