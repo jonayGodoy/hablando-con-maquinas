@@ -8,7 +8,7 @@ image_article: "image-article.jpg"
 
 Los métodos estáticos en general, es una de esa cosas que son útiles pero si tienes la misma mínima duda de si deberías utilizarlo lo mejor es no utilizarlo.
 
-Si venís solo a por la solución os podéis [SALTAR]() la siguiente explicación.
+Si venís solo a por la solución os podéis [SALTAR](#abajo) la siguiente explicación.
 
 La razón principal, por la que es difícil testear estáticos es que estáis escribiendo a fuego una llamada en vuestro código. Voy a comparar un solución con un estático y otra con objeto para explicar las diferencias.
 
@@ -59,22 +59,23 @@ Aun así yo uso estáticos cuando esta muy claro que es clase de utilidad. Una c
 
 
 
-Unas pequeñas normas personales que uso para saber si usar estático.
+### Unas pequeñas normas personales que uso para saber si usar estático.
 
-- *Me cuesta ponerle nombre a una clase.*
+- ***Me cuesta ponerle nombre a una clase.***
 Lo único que se me ocurre son cosas de estilo ManagerFile, EmailUtils esto es señal de que la clase no tiene relación con tu lógica de negocio, es decir las funcionalidades que estas desarrollando.
 
-- *No contienen estados.*
+- ***No contienen estados.***
 Una vez en un clase tenéis un estado y este cambia significa que estáis dándole a un estático la funcionalidad que utilizáis para los objetos. Es decir, tenéis comportamientos que cambian dependiendo de un estado a menos que este bien justificado esto nunca se debería hacer con estáticos. Ojo esto no es lo mismo que tener un clase estática solo con contantes que nunca van a cambiar.
 
-- *No la voy a testear.*
+- ***No la voy a testear.***
 Como veremos hoy testear un estáticos es algo que puede resultar muy difícil, sobretodo si respetáis la norma de que el código de producción no debe alterarse para crear un test. Alguna vez cuando veo que necesito testear y tiene las características de una clase de utilidad la utilizo como un objeto para simplificar.
 
-- *Ante la duda no uso estáticos.* Los estáticos se suelen usar por comodidad y rapidez a la hora de trabajar si tiene dudas de que vas a tener problemas con ellos no los uses.
+- ***Ante la duda no uso estáticos.*** Los estáticos se suelen usar por comodidad y rapidez a la hora de trabajar si tiene dudas de que vas a tener problemas con ellos no los uses.
+`
 
 
-
-### Ahora empecemos con los test.
+<a name="abajo"></a>
+### Ahora empecemos con los test. 
 Supongamos que queremos testear con usuario con solo puedes borrar sus propios comentarios pero un Administrador puede borrar cualquier comentario.
 
 ```java
@@ -136,7 +137,7 @@ Supongamos que queremos testear con usuario con solo puedes borrar sus propios c
        }
    ```
    
-   Ahora mismo esto falla porque no hay manera de decirle al usuario que Authentification tiene.No hay manera desde fuera de User de indicarle cual es su validación pues es el framework quien guarda su validación.
+   Ahora mismo esto falla porque no hay manera de decirle al usuario que Authentification le corresponde . No hay manera desde fuera de User de indicarle cual es su validación pues es el framework quien guarda su validación.
    Si nunca habéis tenido este problemas no seria una mala idea parar aquí y intentar pensar un rato como podríais hacerlo por vuestra cuenta y luego seguir leyendo.
    
    
