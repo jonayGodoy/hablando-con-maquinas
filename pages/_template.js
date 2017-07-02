@@ -6,11 +6,6 @@ import { config } from 'config';
 
 import MainTemplate from 'src/components/commons/template/MainTemplate';
 
-
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../css/blog.css';
-
-
 class Template extends React.Component {
   render () {
       const { location, children } = this.props;

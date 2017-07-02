@@ -9,7 +9,8 @@ import MenuMobile from '../../commons/menu/MenuMobile/MenuMobile';
 
 
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../../../../css/blog.css';
+import '../../../styles.css';
+import './template.css';
 
 
 class MainTemplate extends React.Component {
