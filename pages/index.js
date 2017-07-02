@@ -7,8 +7,8 @@ import Helmet from "react-helmet"
 import { config } from 'config'
 import include from 'underscore.string/include'
 
-import BoxArticle from '../components/commons/BoxArticle';
-import BlogTemplate from '../components/blogTemplate/BlogTemplate';
+import BoxArticle from '../src/components/commons/BoxArticle';
+import BlogTemplate from '../src/components/blogTemplate/BlogTemplate';
 
 
 class BlogIndex extends BlogTemplate {

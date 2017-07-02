@@ -57,7 +57,7 @@ hr.head {
         box-sizing:border-box;
     }
     body{
-        background-image: url("../pages/global-img/background.jpg") ;
+        background-image: url("../src/assets/img/background.jpg") ;
     }
 }
 

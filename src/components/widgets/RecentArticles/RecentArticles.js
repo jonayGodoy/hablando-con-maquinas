@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router';
-import sortBy from '../../../node_modules/lodash/sortBy';
-import get from '../../../node_modules/lodash/get';
+import sortBy from '../../../../node_modules/lodash/sortBy';
+import get from '../../../../node_modules/lodash/get';
 import { prefixLink } from 'gatsby-helpers';
 import Helmet from "react-helmet";
 import { config } from 'config';
-import include from '../../../node_modules/underscore.string/include';
+import include from '../../../../node_modules/underscore.string/include';
 
 
 class RecentArticles extends React.Component {
