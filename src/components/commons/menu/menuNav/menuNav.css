@@ -1,0 +1,69 @@
+.img-logo {
+    padding-top: 5%;
+}
+
+.blog-nav{
+    padding-top: 5%;
+}
+
+.blog-nav-item {
+    font-size: 1em;
+    font-family: Consolas;
+
+    padding: 10px;
+    color: #a5a5a5;
+    text-decoration: none;
+    /*parch of a*/
+     box-shadow: 0 0;
+}
+
+
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+    color: #4d4d4d;
+
+    /*parch of a:focus*/
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 import * as routesPath from "../../../../../routePath";
 
-import '../../../../../css/menuNav.css';
+//import '../../../../../css/menuNav1.css';
 import img_head from '../../../../assets/img/head.jpg';
 
 
