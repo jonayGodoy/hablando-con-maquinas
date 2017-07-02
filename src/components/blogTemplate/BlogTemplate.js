@@ -17,7 +17,7 @@ class BlogTemplate extends React.Component {
     render () {
         return (
         <div className="row">
-            <div className="col-sm-8">
+            <div className="col-sm-8" style={{paddingLeft: "5%"}}>
                 {this.getContain()}
             </div>
             <div className="col-sm-4">
