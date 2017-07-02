@@ -7,7 +7,7 @@ import Helmet from "react-helmet"
 import { config } from 'config'
 import include from 'underscore.string/include'
 
-import BoxArticle from '../src/components/commons/BoxArticle';
+import BoxArticle from '../src/components/commons/boxArticle/BoxArticle';
 import BlogTemplate from '../src/components/blogTemplate/BlogTemplate';
 
 

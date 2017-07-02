@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers';
 //import { rhythm, scale } from 'utils/typography';
 import { config } from 'config';
 
-import MenuNav from '../../commons/menu/MenuNav';
+import MenuNav from '../menu/menuNav/MenuNav';
 import MenuMobile from '../../commons/menu/MenuMobile/MenuMobile';
 
 
