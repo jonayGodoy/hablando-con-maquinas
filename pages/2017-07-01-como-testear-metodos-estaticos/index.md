@@ -6,11 +6,11 @@ image_article: "image-article.jpg"
 ---
 
 
-Los métodos estáticos en general, es una de esa cosas que son útiles pero si tienes la misma mínima duda de si deberías utilizarlo lo mejor es no utilizarlo.
+Los métodos estáticos en general, hace nuestro día a día un poco más cómodo pero si tienes una mínima duda de si deberías utilizarlo lo mejor es no utilizarlo.
 
 Si venís solo a por la solución os podéis [SALTAR](#abajo) la siguiente explicación.
 
-La razón principal, por la que es difícil testear estáticos es que estáis escribiendo a fuego una llamada en vuestro código. Voy a comparar un solución con un estático y otra con objeto para explicar las diferencias.
+La razón principal, por la que es difícil testear estáticos es que estáis escribiendo a fuego una llamada en vuestro código. Voy a comparar una solución con un estático y otra con objeto para explicar las diferencias.
 
 ```java 
  public class User {
@@ -62,7 +62,7 @@ Aun así yo uso estáticos cuando esta muy claro que es clase de utilidad. Una c
 ### Unas pequeñas normas personales que uso para saber si usar estático.
 
 - ***Me cuesta ponerle nombre a una clase.***
-Lo único que se me ocurre son cosas de estilo ManagerFile, EmailUtils esto es señal de que la clase no tiene relación con tu lógica de negocio, es decir las funcionalidades que estas desarrollando.
+Lo único que se me ocurre son cosas de estilo ManagerFile, EmailUtils esto es señal de que la clase no tiene relación con tu lógica de negocio, es decir no influye en las funcionalidades que estas desarrollando directamente.
 
 - ***No contienen estados.***
 Una vez en un clase tenéis un estado y este cambia significa que estáis dándole a un estático la funcionalidad que utilizáis para los objetos. Es decir, tenéis comportamientos que cambian dependiendo de un estado a menos que este bien justificado esto nunca se debería hacer con estáticos. Ojo esto no es lo mismo que tener un clase estática solo con contantes que nunca van a cambiar.
@@ -76,7 +76,7 @@ Como veremos hoy testear un estáticos es algo que puede resultar muy difícil, 
 
 <a name="abajo"></a>
 ### Ahora empecemos con los test. 
-Supongamos que queremos testear con usuario con solo puedes borrar sus propios comentarios pero un Administrador puede borrar cualquier comentario.
+Supongamos que queremos testear un usuario este solo puedes borrar sus propios comentarios pero un Administrador puede borrar cualquier comentario.
 
 ```java
  
@@ -104,7 +104,7 @@ Supongamos que queremos testear con usuario con solo puedes borrar sus propios c
      }
  ```
  
- Solución sin estáticos así es fácil solo tenemos según necesitemos le inyectamos Authentification o AdminAuthentication. Ahora vamos a suponer que la Authentification viene de nuestro framework y tiene que ser un estático si o si y lo queremos testear. 
+ Solución sin estáticos así es fácil solo tenemos que pasarle por el constructor Authentification o AdminAuthentication. Ahora vamos a suponer que la Authentification viene de nuestro framework y tiene que ser un estático si o si y lo queremos testear. 
  
  
  
@@ -137,15 +137,18 @@ Supongamos que queremos testear con usuario con solo puedes borrar sus propios c
        }
    ```
    
-   Ahora mismo esto falla porque no hay manera de decirle al usuario que Authentification le corresponde . No hay manera desde fuera de User de indicarle cual es su validación pues es el framework quien guarda su validación.
-   Si nunca habéis tenido este problemas no seria una mala idea parar aquí y intentar pensar un rato como podríais hacerlo por vuestra cuenta y luego seguir leyendo.
-   
+   ***Ahora mismo esto falla***, porque si os fijáis en la inicialización de user, no hay manera de decirle al usuario que Authentification le corresponde. Desde fuera de la clase User no se puede indicar cual es su validación pues es el framework quien la guarda.
+   Si nunca habéis tenido este problemas no seria una mala idea parar aquí e intentar pensar un rato como podríais hacerlo por vuestra cuenta y luego seguir leyendo.
    
    
    ## Mi Solución
    
    
    Hay casos donde hay mejores soluciones, para este contexto probablemente intentaría crear un nueva Authentication y pasársela al framework se podría mover el estático a otro sitio pero seguramente ese otro sitio también necesite testeo de algún tipo. Este es un mecanismo que os sirve para la mayoría de los contextos. Primero de todo rompemos la regla de que nunca se puede modificar el código para hacer un test y nos vamos ayudar del [patron template](https://es.wikipedia.org/wiki/Template_Method_(patr%C3%B3n_de_dise%C3%B1o)).
+   
+   El patron template es simplemente coger una clase, y a través de una interface o una herencia modificar un método, seguro que muchos ya lo habian hecho pero no sabian el nombre en mi caso también fue asi.
+   Se llama template simplemente porque cogemos una clase como "plantilla" para crear nuevas.
+      
    
    No me gusta modificar el código para pasar un test, lo test deben de ser siempre inocuos pero este es uno de lo casos limites que te atan de pies y manos . Por lo que regresamos a nuestra clase User con nuestro estático.
    
@@ -249,13 +252,6 @@ Supongamos que queremos testear con usuario con solo puedes borrar sus propios c
    }
    ```
    
-   De esta manera sobrescribimos el método getAuthentication a partir de el generamos dos Stub en nuestro test, UserStub y AdminStub falseando la Autentificación sin apenas modificar el código.
-   El patron template es simplemente coger una clase, y a través de una interface o una herencia seguro que muchos ya lo habian hecho pero no sabian el nombre en mi caso también fue asi.
-   Se llama template simplemente porque cogemos una clase como "plantilla" para crear nuevas.
+   De esta manera podemos sobrescribimos el método getAuthentication, gracias a eso, generamos dos Stub en nuestro test, UserStub y AdminStub falseando la Autentificación sin apenas modificar el código.
    
-   Resumiendo, usar estáticos pueden ser muy rápidos a la hora de trabajar con utilidades pero pueden traer problemas. De todas maneras para los casos limites donde un estáticos se nos atasca el patrón template nos puede dar una solución.
-  
-    
-  
-   
-   
+   Resumiendo, usar estáticos pueden ser muy rápidos a la hora de trabajar con utilidades pero pueden traer problemas y cuando los utilizas renuncias a la herancia y al polimorfismo donde quiera que los uses. De todas maneras para los casos limites donde un estáticos se nos atasca el patrón template nos puede dar una solución.
