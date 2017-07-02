@@ -4,7 +4,7 @@ import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
 import * as routesPath from "../../../../../routePath";
 
-//import '../../../../../css/menuNav1.css';
+import './menuMobile.css';
 import img_head from '../../../../assets/img/head.jpg';
 
 
@@ -33,22 +33,21 @@ class MenuMobile extends React.Component {
 
     render(){
         return (
-            <div>
-                <div style={{marginTop: "5px"}} className={"container "+responsiveMainStyleBootstrap}>
-                        <button className="btn"  onClick={this.toggle}>
-                            <span className="text-center glyphicon glyphicon-menu-hamburger" />
-                        </button>
+            <div className={responsiveMainStyleBootstrap}>
+                <div className="head-mobile row">
+                        <div className="col-xs-1">
+                            <button className="btn"  onClick={this.toggle}>
+                                <span className="text-center glyphicon glyphicon-menu-hamburger" />
+                            </button>
+                        </div>
                         <Link to={prefixLink('/')}>
-                            <h2 className="col-xs-10">{config.blogTitle}</h2>
+                            <h2 className="col-xs-offset-1 col-xs-9 text-center">{config.blogTitle}</h2>
                         </Link>
-                    <hr/>
                 </div>
-
-                <div id="drawer" className={ this.state.isHidden ?
-                    responsiveMainStyleBootstrap
-                    : "background-menu-mobile "+responsiveMainStyleBootstrap}
+                <hr/>
+                <div id="drawer" className={ this.state.isHidden ? "" : "background-menu-mobile"}
                      onClick={this.toggleOneElement}>
-                    <div className="drawer panel"
+                    <div className="drawer-panel panel"
                          style={this.state.isHidden ? { left: "-500px"} :{left: "0" }}>
                         <div>
                             <Link to={prefixLink('/')} onClick={this.toggle}>
@@ -59,7 +58,7 @@ class MenuMobile extends React.Component {
                                     <div>
                                         <hr/>
                                         <Link to={prefixLink(routePath.path)}>
-                                            <div className="blog-nav-item-mobile">{routePath.name}</div>
+                                            <h3 className="blog-nav-item-mobile">{routePath.name}</h3>
                                         </Link>
                                     </div>
                                 ))}
