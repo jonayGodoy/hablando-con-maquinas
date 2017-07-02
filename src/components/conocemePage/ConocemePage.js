@@ -2,7 +2,7 @@ import React from 'react'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 import cv from "./cvDTO"
-import imgCV from '../../assets/img/fot_carnet.png';
+import imgCV from '../../assets/img/fot_carnet.jpg';
 import './conoceme.css';
 
 class ConocemePage extends React.Component {
