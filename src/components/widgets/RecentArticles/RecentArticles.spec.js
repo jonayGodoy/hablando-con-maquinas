@@ -31,20 +31,20 @@ function getStubPages(numPages){
 describe("<RecentArticle />",function(){
     it("three post show three links", function () {
         let wrapper = shallow(<RecentArticle route={getStubPages(3)} />);
-        let linkPages = wrapper.find("li");
+        let linkPages = wrapper.find("ul");
 
         expect(linkPages.length).to.equal(3);
     });
     it("max limit five pages", function () {
         let wrapper = shallow(<RecentArticle route={getStubPages(8)} />);
-        let linkPages = wrapper.find("li");
+        let linkPages = wrapper.find("ul");
 
         expect(linkPages.length).to.equal(5);
     });
     it("Items are sorted from most recent to oldest", function () {
         let pages = getStubPages(8);
         let wrapper = shallow(<RecentArticle route={pages} />);
-        let linkPages = wrapper.find("li");
+        let linkPages = wrapper.find("ul");
 
         pages = pages.pages.reverse().slice(0,5);
 
