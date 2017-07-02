@@ -25,11 +25,25 @@ h6, .h6 {
     color: #333;
 }
 
+
 a{
     color: #a9a9a9;
 }
 a:hover{
     color: #404040;
+}
+
+a:hover,
+a:focus {
+    /*parch of a:focus*/
+    text-decoration: none;
+}
+
+
+p a:hover,
+p a:focus {
+    /*parch of a:focus*/
+    text-decoration: underline;
 }
 
 hr.head {

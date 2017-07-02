@@ -21,9 +21,6 @@
 .blog-nav-item:hover,
 .blog-nav-item:focus {
     color: #4d4d4d;
-
-    /*parch of a:focus*/
-    text-decoration: none;
 }
 
 
