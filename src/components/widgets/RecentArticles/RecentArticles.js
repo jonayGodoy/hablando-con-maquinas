@@ -19,12 +19,13 @@ class RecentArticles extends React.Component {
         return (
             <div className="module-sidebar">
                 <h5 className="sidebar-module-title text-center">Articulos Recientes</h5>
+                <hr/>
                 {visiblePages.map((page) => (
-                    <li key={page.path}>
+                    <ul key={page.path}>
                         <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
                             {get(page, 'data.title', page.path)}
                         </Link>
-                    </li>
+                    </ul>
                 )).reverse().slice(0,NUM_MAX_ARTICLES)}
             </div>
         )
