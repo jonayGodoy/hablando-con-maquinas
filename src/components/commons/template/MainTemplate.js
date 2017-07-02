@@ -4,8 +4,8 @@ import { prefixLink } from 'gatsby-helpers';
 //import { rhythm, scale } from 'utils/typography';
 import { config } from 'config';
 
-import MenuNav from '../menu/menuNav/MenuNav';
-import MenuMobile from '../../commons/menu/MenuMobile/MenuMobile';
+import MenuNav from '../menuNav/MenuNav';
+import MenuMobile from '../menuMobile/MenuMobile';
 
 
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';

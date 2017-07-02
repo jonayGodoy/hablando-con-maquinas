@@ -2,10 +2,10 @@ import React, {PropTypes} from 'react';
 import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import { config } from 'config';
-import * as routesPath from "../../../../../routePath";
+import * as routesPath from "../../../../routePath";
 
 import './menuNav.css';
-import img_head from '../../../../assets/img/head.jpg';
+import img_head from '../../../assets/img/head.jpg';
 
 
 const MenuNav = () => {

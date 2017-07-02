@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { mount, shallow } from 'enzyme';
-import MenuMobile from './components/commons/menu/MenuMobile/MenuMobile';
+import MenuMobile from './components/commons/menuMobile/MenuMobile';
 
 describe("suite test", function(){
     it("test green", function () {
