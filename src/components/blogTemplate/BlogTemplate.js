@@ -1,6 +1,7 @@
 import React from 'react'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
+import './sidebar.css'
 import RecentArticlesWidget from "../widgets/RecentArticles/RecentArticles"
 
 
@@ -16,7 +17,7 @@ class BlogTemplate extends React.Component {
     render () {
         return (
         <div className="row">
-            <div className="col-sm-8">
+            <div className="col-sm-8" style={{paddingLeft: "5%"}}>
                 {this.getContain()}
             </div>
             <div className="col-sm-4">

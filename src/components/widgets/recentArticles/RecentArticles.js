@@ -1,12 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router';
-import sortBy from '../../../node_modules/lodash/sortBy';
-import get from '../../../node_modules/lodash/get';
+import sortBy from '../../../../node_modules/lodash/sortBy';
+import get from '../../../../node_modules/lodash/get';
 import { prefixLink } from 'gatsby-helpers';
-import Helmet from "react-helmet";
 import { config } from 'config';
-import include from '../../../node_modules/underscore.string/include';
-
+import include from '../../../../node_modules/underscore.string/include';
 
 class RecentArticles extends React.Component {
     render () {
@@ -19,14 +17,15 @@ class RecentArticles extends React.Component {
         ));
 
         return (
-            <div className="sidebar-module sidebar-module-inset">
+            <div className="module-sidebar">
                 <h5 className="sidebar-module-title text-center">Articulos Recientes</h5>
+                <hr/>
                 {visiblePages.map((page) => (
-                    <li key={page.path}>
+                    <ul key={page.path}>
                         <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
                             {get(page, 'data.title', page.path)}
                         </Link>
-                    </li>
+                    </ul>
                 )).reverse().slice(0,NUM_MAX_ARTICLES)}
             </div>
         )

@@ -1,0 +1,71 @@
+:root{
+    --font_head: Consolas;
+    --font_body: sans-serif;
+
+
+    /* not work*/
+    --min-width-px: 768px;
+    --box-main-color: #fff;
+}
+
+body {
+    font-family: var(--font_body);
+    color: #555;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    margin-top: 0;
+    font-family: var(--font_head);
+    font-weight: normal;
+    color: #333;
+}
+
+
+a{
+    color: #a9a9a9;
+}
+a:hover{
+    color: #404040;
+}
+
+a:hover,
+a:focus {
+    /*parch of a:focus*/
+    text-decoration: none;
+}
+
+
+p a:hover,
+p a:focus {
+    /*parch of a:focus*/
+    text-decoration: underline;
+}
+
+hr.head {
+    border-top: 1px solid #8c8b8b;
+}
+
+@media (min-width: 768px) {
+    body{
+        background-image: url("../src/assets/img/background.jpg") ;
+    }
+}
+
+
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+

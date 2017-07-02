@@ -6,10 +6,10 @@ import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
 import DisqusComments  from 'react-disqus-comments';
 
-import '../css/md.css';
-import '../css/zenburn.css';
+import './md.css';
+import './zenburn.css';
 
-import BlogTemplate from '../components/blogTemplate/BlogTemplate';
+import BlogTemplate from '../src/components/blogTemplate/BlogTemplate';
 
 
 class MarkdownWrapper extends BlogTemplate {

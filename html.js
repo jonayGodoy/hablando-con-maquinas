@@ -70,18 +70,19 @@ module.exports = React.createClass({
           <meta itemprop="name" content="Jonay Godoy" />
           <meta itemprop="jobTitle" content="Developer" />
           <meta itemprop="description" content={config.blogDescription}/>
-          <meta itemprop="knows" content="javascript, php" />
+          <meta itemprop="knows" content="javascript, clean code, xp" />
           <meta itemprop="email" content="jonay.godoy.reyes@gmail.com" />
           <meta itemprop="alternateName" content="jonay" />
           <meta itemprop="follows" content="https://twitter.com/GodoyJonay" />
 
           
-            {/*THUMB
-          <meta property="og:image" content="img/profile.jpg"/>
-          <link itemprop="image" href="img/profile.jpg"/>
-          <meta name="thumbnail" content="img/profile.jpg" />
-          <meta property="og:image:width" content="460" />
-          <meta property="og:image:height" content="460" />
+            {/*THUMB*/}
+            <meta property="og:image" content="./assets/head.jpg"/>
+            <meta property="og:image:width" content="460" />
+            <meta property="og:image:height" content="460" />
+            <link itemprop="image" href="./assets/head.jpg"/>
+            <meta name="thumbnail" content="./assets/head.jpg" />
+            {/*
           <link rel="canonical" href="https://ulisesantana.github.io/"/>
           <meta property="og:url" content="https://ulisesantana.github.io/"/>
           */}
