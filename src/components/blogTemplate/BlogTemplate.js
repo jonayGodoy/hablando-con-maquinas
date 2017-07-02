@@ -1,6 +1,7 @@
 import React from 'react'
 import { prefixLink } from 'gatsby-helpers'
 import { config } from 'config'
+import './sidebar.css'
 import RecentArticlesWidget from "../widgets/RecentArticles/RecentArticles"
 
 
