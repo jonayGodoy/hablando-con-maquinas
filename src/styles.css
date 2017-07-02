@@ -1,8 +1,12 @@
 :root{
     --font_head: Consolas;
     --font_body: serif;
+
+
+
     /* not work*/
     --min-width-px: 768px;
+    --box-main-color: #fff;
 }
 
 body {

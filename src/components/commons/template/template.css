@@ -1,15 +1,11 @@
 .blog-main {
     font-size: 18px;
     line-height: 1.5;
-    background: #fff;
+    background: white;
 }
 
 @media (min-width: 768px) {
     .blog-main {
-        font-size: 18px;
-        line-height: 1.5;
-
-        background: #fff;
         margin: 40px auto;
         width: 1040px;
         max-width: 90%;

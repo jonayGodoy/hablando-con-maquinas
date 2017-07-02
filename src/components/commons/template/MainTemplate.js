@@ -22,9 +22,7 @@ class MainTemplate extends React.Component {
     render () {
         return (
             <div className="container-fluid">
-                <div id="menu_mobile">
-                    <MenuMobile/>
-                </div>
+                <MenuMobile/>
                 <div className="container-fluid blog-main" >
                     <MenuNav />
                     <div id="pageMain" className="row">
