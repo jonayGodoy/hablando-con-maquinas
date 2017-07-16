@@ -19,8 +19,8 @@ const MenuNav = () => {
                         </Link>
                         <nav className="blog-nav col-md-offset-1 col-md-6">
                             <h3 className="text-center" style={{paddingBottom: "1em"}}>{config.blogTitle}</h3>
-                            {routesPath.menu.map((routePath) =>(
-                                    <Link className="blog-nav-item" to={prefixLink(routePath.path)}>{routePath.name}</Link>
+                            {routesPath.menu.map((routePath, index) =>(
+                                    <Link key={index} className="blog-nav-item" to={prefixLink(routePath.path)}>{routePath.name}</Link>
                             ))}
                         </nav>
                     </div>

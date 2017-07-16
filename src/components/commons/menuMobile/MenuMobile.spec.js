@@ -5,7 +5,7 @@ import { mount, shallow } from 'enzyme';
 import MenuMobile from './MenuMobile';
 
 function getWrapperMount(){
-   return mount(<MenuMobile />,{ attachTo: document.body });
+   return mount(<MenuMobile />);
 }
 
 function getButtonHead(wrapper){

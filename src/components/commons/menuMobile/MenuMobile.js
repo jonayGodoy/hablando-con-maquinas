@@ -54,8 +54,8 @@ class MenuMobile extends React.Component {
                                 <img className="img-responsive img_logo_mobile" src={img_head}/>
                             </Link>
                             <div onClick={this.toggle}>
-                                {routesPath.menu.map((routePath) =>(
-                                    <div>
+                                {routesPath.menu.map((routePath, index) =>(
+                                    <div key={index}>
                                         <hr/>
                                         <Link to={prefixLink(routePath.path)}>
                                             <h3 className="blog-nav-item-mobile">{routePath.name}</h3>
