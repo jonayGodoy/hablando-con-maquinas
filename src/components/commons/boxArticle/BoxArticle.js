@@ -3,7 +3,6 @@ import { Link } from 'react-router';
 import { prefixLink } from 'gatsby-helpers';
 import { prune, include as includes } from 'underscore.string';
 import find from 'lodash/find';
-//import { rhythm, scale } from 'utils/typography';
 
 class BoxArticles extends React.Component {
   render () {

@@ -1,7 +1,5 @@
 import React from 'react';
 import { prefixLink } from 'gatsby-helpers';
-
-//import { rhythm, scale } from 'utils/typography';
 import { config } from 'config';
 
 import MainTemplate from 'src/components/commons/template/MainTemplate';

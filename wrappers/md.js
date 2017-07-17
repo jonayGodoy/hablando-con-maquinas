@@ -1,8 +1,6 @@
 import React from 'react'
-import moment from 'moment'
 import Helmet from "react-helmet"
 import { prefixLink } from 'gatsby-helpers'
-//import { rhythm } from 'utils/typography'
 import { config } from 'config'
 import DisqusComments  from 'react-disqus-comments';
 

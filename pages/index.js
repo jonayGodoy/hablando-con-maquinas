@@ -2,7 +2,6 @@ import React from 'react'
 import sortBy from 'lodash/sortBy'
 import get from 'lodash/get'
 import { prefixLink } from 'gatsby-helpers'
-import { rhythm } from 'utils/typography'
 import Helmet from "react-helmet"
 import { config } from 'config'
 import include from 'underscore.string/include'
@@ -49,4 +48,4 @@ BlogIndex.propTypes = {
   route: React.PropTypes.object,
 };
 
-export default BlogIndex
+export default BlogIndex;
