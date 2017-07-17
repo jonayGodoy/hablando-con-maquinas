@@ -21,7 +21,7 @@ module.exports = React.createClass({
       css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
     }
 
-        let isDevDeploy = !!prefixLink("");
+      let isDevDeploy = !!prefixLink("");
       if(isDevDeploy){
          console.log("meta ignorada "+ isDevDeploy);
           return (
@@ -75,13 +75,13 @@ module.exports = React.createClass({
           <meta itemprop="alternateName" content="jonay" />
           <meta itemprop="follows" content="https://twitter.com/GodoyJonay" />
 
-          
-            {/*THUMB*/}
-            <meta property="og:image" content="./metaImage.jpg"/>
-            <meta property="og:image:width" content="460" />
-            <meta property="og:image:height" content="460" />
-            <link itemprop="image" href="./metaImage.jpg"/>
-            <meta name="thumbnail" content="./metaImage.jpg" />
+
+          {/*THUMB*/}
+          <meta property="og:image" content="./metaImage.jpg"/>
+          <meta property="og:image:width" content="460" />
+          <meta property="og:image:height" content="460" />
+          <link itemprop="image" href="./metaImage.jpg"/>
+          <meta name="thumbnail" content="./metaImage.jpg" />
             {/*
           <link rel="canonical" href="https://ulisesantana.github.io/"/>
           <meta property="og:url" content="https://ulisesantana.github.io/"/>
