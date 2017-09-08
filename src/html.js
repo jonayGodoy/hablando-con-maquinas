@@ -1,5 +1,5 @@
 import React from "react"
-import { config } from '../config-blog'
+import config from '../config-blog'
 
 let stylesStr;
 if (process.env.NODE_ENV === `production`) {
@@ -38,7 +38,6 @@ module.exports = class HTML extends React.Component {
               name="viewport"
               content="width=device-width, initial-scale=1.0"
           />
-            {head.title.toComponent()}
 
             {/*INFO*/}
           <meta name="Author" content="Jonay Godoy" />
@@ -80,8 +79,7 @@ module.exports = class HTML extends React.Component {
           <meta name="twitter:title" content={config.blogTitle} />
           <meta name="twitter:description" content={config.blogDescription}/>
 
-
-          {this.props.headComponents}
+            {this.props.headComponents}
           {css}
         </head>
         <body>
