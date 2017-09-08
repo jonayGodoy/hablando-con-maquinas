@@ -1,5 +1,5 @@
 import React from "react"
-import { config } from 'config'
+import { config } from '../config-blog'
 
 let stylesStr;
 if (process.env.NODE_ENV === `production`) {
