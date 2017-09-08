@@ -1,39 +1,39 @@
 import React from 'react';
-import { Link } from 'react-router';
-import sortBy from '../../../../node_modules/lodash/sortBy';
-import get from '../../../../node_modules/lodash/get';
-import { prefixLink } from 'gatsby-helpers';
-import { config } from 'config';
-import include from '../../../../node_modules/underscore.string/include';
+import get from "lodash/get";
+import Link from "gatsby-link"
 
 class RecentArticles extends React.Component {
-    render () {
-        const NUM_MAX_ARTICLES = 5;
-        // Sort pages.
-        const sortedPages = sortBy(this.props.route.pages, 'data.date');
-        // Posts are those with md extension that are not 404 pages OR have a date (meaning they're a react component post).
-        const visiblePages = sortedPages.filter(page => (
-            get(page, 'file.ext') === 'md' && !include(page.path, '/404') || get(page, 'data.date')
-        ));
 
+    constructor(props, context){
+        super(props, context);
+        const NUM_MAX = 5;
+
+        this.posts = this.props.posts.length > NUM_MAX ? this.props.posts.splice(0,5) : this.props.posts;
+    }
+
+
+    render () {
         return (
             <div className="module-sidebar">
                 <h5 className="sidebar-module-title text-center">Articulos Recientes</h5>
                 <hr/>
-                {visiblePages.map((page) => (
-                    <ul key={page.path}>
-                        <Link style={{boxShadow: 'none'}} to={prefixLink(page.path)}>
-                            {get(page, 'data.title', page.path)}
-                        </Link>
-                    </ul>
-                )).reverse().slice(0,NUM_MAX_ARTICLES)}
+                <ul>
+                    {this.posts.map((post) => {
+                        if (post.node.path !== "/404/") {
+                          return(
+                              <li key={post.node.frontmatter.title}>
+                                <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
+                                    {post.node.frontmatter.title}
+                                </Link>
+                              </li>
+                          )}
+                    })
+                    }
+                </ul>
             </div>
         )
     }
 }
 
-RecentArticles.propTypes = {
-    route: React.PropTypes.object
-};
 
 export default RecentArticles;

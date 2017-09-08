@@ -1,1 +1,0 @@
-prioridad baja 24-06-2017 completar en los test caos de usos del drawer como bloquear el scroll; jonay

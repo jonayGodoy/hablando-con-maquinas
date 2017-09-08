@@ -1,12 +1,8 @@
 import React from 'react';
-import { prefixLink } from 'gatsby-helpers';
-
-//import { rhythm, scale } from 'utils/typography';
-import { config } from 'config';
+import PropTypes from "prop-types";
 
 import MenuNav from '../menuNav/MenuNav';
 import MenuMobile from '../menuMobile/MenuMobile';
-
 
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../../styles.css';
@@ -14,10 +10,16 @@ import './template.css';
 
 
 class MainTemplate extends React.Component {
+    static propTypes = {
+        children: PropTypes.any,
+        location: PropTypes.object,
+        route: PropTypes.object
+    };
 
     constructor(props, context) {
         super(props, context);
     }
+
 
     render () {
         return (
@@ -27,20 +29,12 @@ class MainTemplate extends React.Component {
                     <MenuNav />
                     <div id="pageMain" className="row">
                         {/* Main Content */}
-                        {this.props.children}
+                        {this.props.children()}
                     </div>
                 </div>
-                { /* Footer -->
-                 partial('_partial/footer')  */}
             </div>
         )
     }
 }
-
-MainTemplate.propTypes = {
-    children: React.PropTypes.any,
-    location: React.PropTypes.object,
-    route: React.PropTypes.object
-};
 
 export default MainTemplate;

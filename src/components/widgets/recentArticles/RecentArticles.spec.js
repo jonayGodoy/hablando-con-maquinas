@@ -5,54 +5,55 @@ import { mount, shallow } from 'enzyme';
 import RecentArticle from './RecentArticles';
 
 
-function getStubPage(number){
-    let page = {
-        data:{
-            body: "<h1>post any info</h1>",
-            date: "2016-12-29T22:40:32.169Z",
-            image_article: "anyImage.jpg",
-            path: "/anyPath"+number+"/",
-            title: "any title"+number
-        },
-        file:{},
-        path: "/anyPath"+number+"/",
-        requirePath: "/anyPathFile"+number+"/.index.md"
+function getStubPost(number){
+    let post = {
+        node:{
+            frontmatter:{
+                title: "any title"+number
+            },
+            path: "/anyPath"+number+"/"
+        }
     };
-    return page;
+    return post;
 }
 
-function getStubPages(numPages){
-    let pages = [];
-    for(let i = 0; i < numPages;i++){pages.push(getStubPage(i))}
-    return {pages: pages};
+function getStubPosts(numPosts){
+    let posts = [];
+    for(let i = 0; i < numPosts;i++){posts.push(getStubPost(i))}
+    return posts;
+}
+
+function findLink(numPosts){
+    let wrapper = shallow(<RecentArticle posts={getStubPosts(numPosts)} />);
+    return wrapper.find("li");
 }
 
 
 describe("<RecentArticle />",function(){
     it("three post show three links", function () {
-        let wrapper = shallow(<RecentArticle route={getStubPages(3)} />);
-        let linkPages = wrapper.find("ul");
+        let linkPages = findLink(3);
 
         expect(linkPages.length).to.equal(3);
     });
+
     it("max limit five pages", function () {
-        let wrapper = shallow(<RecentArticle route={getStubPages(8)} />);
-        let linkPages = wrapper.find("ul");
+        let linkPages = findLink(8);
 
         expect(linkPages.length).to.equal(5);
     });
-    it("Items are sorted from most recent to oldest", function () {
-        let pages = getStubPages(8);
-        let wrapper = shallow(<RecentArticle route={pages} />);
-        let linkPages = wrapper.find("ul");
 
-        pages = pages.pages.reverse().slice(0,5);
+    xit("Items are sorted from most recent to oldest", function () {
+        let pages = getStubPosts(8);
+        let wrapper = shallow(<RecentArticle posts={pages} />);
+        let linkPages = wrapper.find("li");
+
+        pages = pages.reverse().slice(0,5);
 
 
         expect(linkPages.length).to.equal(5);
         let i = 0;
         linkPages.forEach(function (node) {
-            expect(node.childAt(0).children().text()).to.equal(pages[i].data.title);
+            expect(node.childAt(0).children().text()).to.equal(pages[i].node.frontmatter.title);
             i++;
         });
     });

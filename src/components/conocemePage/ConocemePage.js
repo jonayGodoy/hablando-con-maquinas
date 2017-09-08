@@ -1,13 +1,15 @@
-import React from 'react'
-import { prefixLink } from 'gatsby-helpers'
-import { config } from 'config'
-import cv from "./cvDTO"
+import React from 'react';
+import config from "../../../config-blog";
+import cv from "./cvDTO";
 import imgCV from '../../assets/img/fot_carnet.jpg';
+
 import './conoceme.css';
 
 class ConocemePage extends React.Component {
 
     render () {
+        const config1 = this.props.data;
+        console.log(config1);
         return (
             <div className="cv container-fluid">
                 <div className="row center-block">
@@ -28,9 +30,9 @@ class ConocemePage extends React.Component {
                 <div className="row">
                     <h3 className="col-md-4">Skills</h3>
                     <table className="col-md-8 tableSkills">
-                        {cv.skills.map((skill) =>(<td>{skill.name}</td>))
+                        {cv.skills.map((skill,index) =>(<td key={index}>{skill.name}</td>))
                             .map((skillTD, index ,array) => array.splice(index,index+3))
-                            .map((skillsGrouped) => <tr>{skillsGrouped}</tr>)
+                            .map((skillsGrouped,index) => <tr key={index}>{skillsGrouped}</tr>)
                         }
                     </table>
                 </div>

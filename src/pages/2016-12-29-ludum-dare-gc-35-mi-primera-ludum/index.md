@@ -64,16 +64,16 @@ Enlace a una versión del juego. No la que desarrolle en el evento pero casi.Le 
 [Facebook de la Ludum](https://www.facebook.com/LudumDareGranCanaria)
 
 
-![LudumGc 35](./CgKOH8vW4AAIVHw.jpglarge.jpg)
-![LudumGc 35](./CgKOiYJW8AAWwZp.jpglarge.jpg)
-![LudumGc 35](./CgLA8tVW4AADFuo.jpg)
-![LudumGc 35](./CgLAx0jWcAAswmj.jpg)
-![LudumGc 35](./CgLhKG4WQAE8Xp5.jpglarge.jpg)
-![LudumGc 35](./CgPxrktWQAEoZsi.jpglarge.jpg)
-![LudumGc 35](./CgQ6B-7XIAAb6Zs.jpglarge.jpg)
-![LudumGc 35](./CgQsM3LW8AEY4Ph.jpglarge.jpg)
-![LudumGc 35](./CgQv0pWWIAA6duB.jpglarge.jpg)
-![LudumGc 35](./CgQv5M1WIAAGYbr.jpglarge.jpg)
+![LudumGc 35](CgKOH8vW4AAIVHw.jpglarge.jpg)
+![LudumGc 35](CgKOiYJW8AAWwZp.jpglarge.jpg)
+![LudumGc 35](CgLA8tVW4AADFuo.jpg)
+![LudumGc 35](CgLAx0jWcAAswmj.jpg)
+![LudumGc 35](CgLhKG4WQAE8Xp5.jpglarge.jpg)
+![LudumGc 35](CgPxrktWQAEoZsi.jpglarge.jpg)
+![LudumGc 35](CgQ6B-7XIAAb6Zs.jpglarge.jpg)
+![LudumGc 35](CgQsM3LW8AEY4Ph.jpglarge.jpg)
+![LudumGc 35](CgQv0pWWIAA6duB.jpglarge.jpg)
+![LudumGc 35](CgQv5M1WIAAGYbr.jpglarge.jpg)
 
 
 

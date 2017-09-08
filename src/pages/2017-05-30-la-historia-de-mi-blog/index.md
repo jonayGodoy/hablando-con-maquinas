@@ -24,7 +24,7 @@ llegar hasta aquí.
 En las clases uno de mis profesores me mostró el primer cms con
 el que trabaje.
 
-![Joomla](./joomla-version.jpg)
+![Joomla](joomla-version.jpg)
 
 Si ya sé cómo vais a descubrir me gustan los blancos y
 negros. Joomla me abrió los ojos al problema de los cms hacer
@@ -42,7 +42,7 @@ y además la exitencia de un posible plugin de control de versiones y su fama
 me llevaron a darle una oportunidad.
 
 
-![Wordpress](./wordpress-version.jpg)
+![Wordpress](wordpress-version.jpg)
 
 Si, es como el mio pero más bonito como se nota el poder de las plantillas.
 La verdad con WordPress tuve una curva de aprendizaje más corta que con Joomla.
@@ -79,7 +79,7 @@ del programador novato de frontend.
 En esta parte le doy más importancia a mi entrada al mundo de los generadores
 estáticos que al hecho de usar Gatsby js.
 
-![Gastby](./gastby-version.jpg)
+![Gastby](gastby-version.jpg)
 
 
 #### - ¿Por qué no Jekyll?
