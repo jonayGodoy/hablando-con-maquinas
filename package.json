@@ -59,6 +59,7 @@
   },
   "scripts": {
     "cleanGitCache": "rm -rf node_modules/gh-pages/.cache",
+    "deploy:fast": "gh-pages -d public",
     "deploy": "npm run test && gatsby build && gh-pages -d public",
     "dev": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
