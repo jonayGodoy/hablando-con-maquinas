@@ -61,7 +61,7 @@ Enlace a una versión del juego. No la que desarrolle en el evento pero casi.Le 
 
 
 [Resume de los juegos por Gamika](http://gamika.es/articulos/10546/)
-[Facebook de la Ludum](https://www.facebook.com/LudumDareGranCanaria)
+[Facebook de la Acadevi(actualizado)](https://www.facebook.com/AcadeviGameDev/)
 
 
 ![LudumGc 35](CgKOH8vW4AAIVHw.jpglarge.jpg)
