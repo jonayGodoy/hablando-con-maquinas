@@ -7,7 +7,7 @@ image_article: "image-article.png"
 
 #[Screeps](https://screeps.com/)
 
-Screeps se describe como un juego para programadores. Programa a tu colonia de creeps para que se expanda y conquiste nuevas zonas. Un MMO de estrategia en mundo abierto en que se programa usando javascript y un poco de node.
+Se describe como un juego para programadores. Programa a tu colonia de creeps para que se expanda y conquiste nuevas zonas. Un MMO de estrategia en mundo abierto en que se programa usando javascript y un poco de node.
 
 
 Los primeros pasos se sintieron lentos.Tras hacer los tutoriales lo conecté con github y a través de este con mi IDE en lo cual tarde con 2 o 3 horas como poco. Sin embargo, después me enganche al juego. Lo primero que hice fue empezar refactorizar el código de los tutoriales lo cual fue muy divertido quizás porque es la primera que trabajo programando una IA. Fue una de esas cosas que se vuelven divertidas de programar.
