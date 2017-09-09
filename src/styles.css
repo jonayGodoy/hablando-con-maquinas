@@ -27,10 +27,10 @@ h6, .h6 {
 
 
 a{
-    color: #a9a9a9;
+    color: #404040;
 }
 a:hover{
-    color: #404040;
+    color: #000000;
 }
 
 a:hover,
@@ -39,6 +39,9 @@ a:focus {
     text-decoration: none;
 }
 
+p a{
+ color: #aeaeae;
+}
 
 p a:hover,
 p a:focus {
