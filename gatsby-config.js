@@ -1,5 +1,4 @@
 module.exports = {
-  pathPrefix: "/hablando_con_maquinas_dev",
   siteMetadata: {
     title: "Hablando con Máquinas",
     author: "Jonay Godoy",
@@ -39,7 +38,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-102689265-1`,
       },
     },
     `gatsby-plugin-offline`,
