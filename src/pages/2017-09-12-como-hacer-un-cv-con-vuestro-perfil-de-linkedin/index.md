@@ -29,7 +29,7 @@ json o podéis usar este <a href="https://jmperezperez.com/linkedin-to-json-resu
 Pero hay un pequeño problema, tal como está hoy, este conversor hay cierto datos que no nos extrae. Lo que hago es buscar el .csv con los datos que me faltan 
 convertirlos con un <a href="http://www.csvjson.com/csv2json" target="_blank">conversor online</a> y unirlo a la parte final de json que ya me tenía. ¿Por que no he programado un  
 que se adapte a mis necesidades? Simplemente, yo actualizo mi cv entre 3 meses a 1 año y todo este el proceso un vez sabes hacerlo tardas como 20 min en actualizar
-tu .json. Quizás un día lo programe por amor al arte en el futuro pero a día de hoy no creo me compense automatizar el proceso.
+tu .json. Quizás un día lo programe por amor al arte pero a día de hoy no creo me compense automatizar el proceso.
     
 ```
 "basics": {
