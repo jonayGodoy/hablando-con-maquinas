@@ -4,6 +4,7 @@ module.exports = {
     author: "Jonay Godoy",
   },
   plugins: [
+      `gatsby-plugin-catch-links`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
