@@ -8,7 +8,7 @@ class RecentArticles extends React.Component {
         super(props, context);
         const NUM_MAX = 5;
 
-        this.posts = this.props.posts.length > NUM_MAX ? this.props.posts.splice(0,5) : this.props.posts;
+        this.posts = this.props.posts.length > NUM_MAX ? this.props.posts.slice(0,5) : this.props.posts;
     }
 
 
