@@ -68,7 +68,7 @@ definir en un css como se ve una página web a la hora de imprimir.
     
     
     
-Para terminar os pongo un enlace a mi [cv en html](../conoceme/) y a mi <a href="https://www.linkedin.com/in/jonay-eliezer-godoy-reyes-34a099111" target="_blank">Linkedin</a>
+Para terminar os pongo un enlace a <a href="../conoceme" target="_blank">mi cv en html</a> y a mi <a href="https://www.linkedin.com/in/jonay-eliezer-godoy-reyes-34a099111" target="_blank">Linkedin</a>
 por queréis ver un ejemplo.
 
 <a href="https://jmperezperez.com/linkedin-to-json-resume/" target="_blank">referencia</a>
