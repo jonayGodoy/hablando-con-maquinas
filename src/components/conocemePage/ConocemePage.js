@@ -8,8 +8,6 @@ import './conoceme.css';
 class ConocemePage extends React.Component {
 
     render () {
-        const config1 = this.props.data;
-        console.log(config1);
         return (
             <div className="cv container-fluid">
                 <div className="row center-block">
