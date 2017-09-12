@@ -62,7 +62,7 @@ tu .json. Quizás un día lo programe por amor al arte en el futuro pero a día 
 ### - Tercer paso, **ya tengo mi .json es hora de darle formato.**
 Yo de momento el .json lo meto dentro de un archivo .js y lo importo a un html porque me es más cómodo por supuesto
 ustedes tenéis libertad para usar otro método.
-Ahora solo queda darle formato en html a vuestro gusto. Recomiendo que también busquéis como convertirlo a .pdf, yo por ahora lo hago de la manera más rápida 
+Ahora solo queda darle formato al html a vuestro gusto. Recomiendo que también busquéis como convertirlo a .pdf, yo por ahora lo hago de la manera más rápida 
 imprimiendo con el navegador, también existen página y plugins que os permite seleccionar una parte de html para imprimirlo, o incluso existe la posibilidad de 
 definir en un css como se ve una página web a la hora de imprimir.
     
