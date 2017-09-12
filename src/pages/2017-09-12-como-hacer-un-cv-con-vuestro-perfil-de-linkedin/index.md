@@ -11,7 +11,7 @@ profesional tanto en mi perfil de Linkedin como en mi cv.Quizás simplemente sea
 Ahora enserio esta es la típica cosa que unas personas le resultará super util y a otras personas será inútil, yo la verdad simplemente disfruto actualizando los 
 datos y viendo como el curriculum se actualiza solo. 
 
-Si soy tan maniáticos como yo podéis seguir los siguientes pasos:
+Si sois tan maniáticos como yo podéis seguir los siguientes pasos:
 
 ### - Primer Paso, **extraer los datos de Linkedin.**
 Realmente es fácil de hacer pero se me hizo un poco dura porque no sabia como hacerlo exactamente.
