@@ -125,7 +125,7 @@ pasar de los test y imprimir los resultados por consola como esteís más comodo
 Básicamente tenéis un ítem y dependiendo de como se llame (o que tipo de ítem sea)
 ejecutara un código o otro. Tenéis la [explicacion de que hace cada ítem en github](https://github.com/jonayGodoy/Kata-Gilded-Rose-Switch#gilded-rose-switch-1)
 La idea principal es refactorizar este switch con polimorfismo. Tenéis libertad para
-crear la clases que creáis necesarias. Una vez logrado esto tendréis que añadir una nueva
+crear las clases que creáis necesarias. Una vez logrado esto tendréis que añadir una nueva
 funcionalidad alterando nada o prácticamente nada la clase GildedRoseSwitch.
 
 ```Java
