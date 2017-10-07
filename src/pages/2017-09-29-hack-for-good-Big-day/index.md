@@ -55,7 +55,7 @@ cuestionables habilidades para exponer y venderme.
 En general, hace un tiempo, vi una presentación que me encantó y su secreto
 fue ensayarla durante al menos 4 horas.Según me dijo: "Todo el equipo a trabajado 
 y ahora tengo que asegurarme de que ese trabajo se aprovecha".
-Estoy de acuerdo y desgraciadamente normalmente no se le dá a las presentaciones
+Estoy de acuerdo y normalmente no se le da a las presentaciones
 la prioridad que merece.
  
  
@@ -104,11 +104,11 @@ también hablaron del
 de Wayra o los proyectos tecnológicos en la escuela de tenis de rafa Nadal.
 
 
-Otra charla que me llamo atención fue una sobre mapas mentales.La historia de esta
+Otra charla que me llamo atención fue una sobre **mapas de talento**.La historia de esta
 charla comienza unos días del Big Day.Me llego un mensaje a ultima hora.
 En parte se puede llegar entender que tuvieran poco margen pero para hacer el "test"
-tenía solamente 2 horas para resolverlo desde que llego el mensaje estuve a punto
-de decir que no lo hacia y se de personas que no lo hicieron y otra que no lo recibió.
+tenía solamente 2 horas para resolverlo desde que me llego el mensaje estuve a punto
+de decir que no lo hacia, ahora me alegro de haberlo echo.
 Pongo "test" entre comillas porque creo que realmente se trata de un mapa de talento digital. 
 
 ![mapa-talento](./mapa-talento.jpg)
@@ -120,7 +120,7 @@ dicen media verdades.Este en cambio, me pareció desde mi ignorancia en esta cla
 hecho y además en mi caso acertó con cierto nivel de detalle.
 
 Dejo 
-<a href="https://drive.google.com/open?id=0B2JGlpvHuADfVUZqMDcxaDJTeDg" target="_blank">los resultado de mi test</a>
+<a href="https://drive.google.com/open?id=0B2JGlpvHuADfdXZBdmlRNUotM1k" target="_blank">los resultado de mi test</a>
  aunque me da un poco de vergüenza que veáis mis resultados sobretodo
 para que podáis valorar el mapa mental.También dejo 
 <a href="https://dtmaptest.com/" target="_blank">el enlace a la página</a>
@@ -153,7 +153,7 @@ Que como bien decían en la presentación son habilidades que nunca se terminan 
 y le echaré un vistazo parece interesante. Aunque en la séptima creo que ya tengo un ligera idea.
 
 Hubieron más charlas y no nos olvidemos de las presentaciones pero aquí nombro las que más llamaron
-mi interés aunque siendo no había nada que fuera particularmente aburrido
+mi interés aunque siendo no había nada que fuera particularmente aburrido.
 
 
 ##Mi Presentación
@@ -162,13 +162,14 @@ Justo después del descanso me tocaba  presentar a mi.No estaba demasiado nervio
 la pausa me ayudo fui al baño y después vi algún proyecto de otros equipos.
 
 
-Se acabo el descanso, me llamaron subí al escenario y termine.**Sorprendente, verdad.**
+Se acabo el descanso, me llamaron subí al escenario. me vendí y termine.
+Realmente una charla es simplemente eso.
 
 La personas con las que hable antes y después
 del evento me dieron muy buen feedback. Creo que a día de hoy es la mejor presentación
-que hecho en mi vida y aunque eso puede que no sea mucho para mi fue importante
+que hecho en mi vida y aunque eso puede que no sea mucho para mi es punto de referencia.
 
-<iframe width="100%" height="100%" src="https://drive.google.com/file/d/0B2JGlpvHuADfVUZqMDcxaDJTeDg/preview"></iframe>
+<iframe src="https://drive.google.com/file/d/0B2JGlpvHuADfVUZqMDcxaDJTeDg/preview" width="640" height="480"></iframe>
 
 He decidido subir mi presentación en video más que para que veías vosotros para recordarla
 yo dentro de unos años.
@@ -183,18 +184,18 @@ vendría mal. De todas maneras como dije el feedback que me dieron fue muy posit
 estoy satisfecho con el resultado.
 
 
-
-
 ##Proyectos ganadores
 
 ![Entrega-de-premios](entrega.jpg)
 
-- 1º premio. **Same Bullying** para prevenir el acoso en redes sociales
+1º premio. **Same Bullying** para prevenir el acoso en redes sociales
 <a href="https://twitter.com/SAMEBullying" target="_blank">+info</a>
-- 2º premio. **Luz Verde** Su propuesta técnica es capaz de “traducir” el estado de los semáforos para ayudar
+
+2º premio. **Luz Verde** Su propuesta técnica es capaz de “traducir” el estado de los semáforos para ayudar
  a las personas invidentes
  <a href="https://www.youtube.com/watch?v=sAzv6crvTx8&feature=youtu.be" target="_blank">+info</a>
-- 3º premio. **Easy Moves** adapta la silla de ruedas eléctrica convencional para que pueda ser controlada a través de una aplicación por reconocimiento de voz,
+
+3º premio. **Easy Moves** adapta la silla de ruedas eléctrica convencional para que pueda ser controlada a través de una aplicación por reconocimiento de voz,
  tracking de la cabeza y estímulos cerebrales.
 
 Ninguno de nuestra cede resulto, ganador.Había proyectos muy buenos según creo 
@@ -202,15 +203,15 @@ en varios casos solo tuvieron 1 pto o 2 de diferencia,
 llegando a ocurrir que el 2º y el 3º tercer puesto empataron.Por lo que no hay nada de que 
 lamentarse.
 
-Los proyecto la cede de las palmas fueron PicComunica
+Los proyectos la cede de las palmas fueron PicComunica
 <a href="https://twitter.com/PicComunica" target="_blank">+info</a> 
-que después del big day han obtenido un segundo premio den Venture4Grancanaria ,
+que después del big day han obtenido un segundo premio en Venture4Grancanaria ,
 el mio Amidi
 <a href="http://www.aprendeconamidi.com/" target="_blank">+info</a>,
 y Keekuo 
 <a href="https://twitter.com/Keekuo_" target="_blank">+info</a>
 
-## Visita a [WayraES](https://twitter.com/WayraES)
+## Visita a  <a href="https://twitter.com/WayraES" target="_blank">WayraES</a>
 
 Después del evento almorzamos en la sala del consejo de administración de telefónica
 que aunque no fue muy interesante si que fue muy divertido 
@@ -229,7 +230,7 @@ pasado por open future.
 
 ![wayra](./wayra.jpg)
 
-Algunas cosas que llamaron la atención sobre Wayra:
+Algunas cosas que más me llamaron la atención sobre Wayra:
 
 - El lugar físicamente es como un coworking con estilo propio esta bastante bien.
 - Solo 1 o 2 % de las personas que se presentaba para el open future llega a Wayra.
@@ -250,6 +251,7 @@ Me alegro de haber tenido esta segunda oportunidad para acercarme a ellos y a
 <a href="https://twitter.com/sergiotrasmallo" target="_blank">Sergio Sánchez</a>
 el encargado de nuestra cede solo por eso valió la pena el viaje.
  
+ ![participante las palmas](./las-palmas.jpg)
 
 Por otro lado me llevo una sensación un poco amarga.
 Sin ser un sentimiento malo de todo me sentí abrumado.
@@ -266,10 +268,4 @@ Por ultimo, gracias a la
  , a telefónica y todas la personas que trabajaron para
 que yo pudiera vivir este día.
 
-![participante las palmas](./las-palmas.jpg)
-
 ![Gracias](./gracias.jpg)
-
-
-
- 
