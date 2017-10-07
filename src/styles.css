@@ -25,6 +25,11 @@ h6, .h6 {
     color: #333;
 }
 
+/*path gatsby link underline*/
+/*remove boostrap */
+.gatsby-resp-image-link{
+    box-shadow: 0 0 0 0;
+}
 
 a{
     color: #404040;
@@ -39,14 +44,10 @@ a:focus {
     text-decoration: none;
 }
 
-p a{
- color: #aeaeae;
-}
-
 p a:hover,
 p a:focus {
     /*parch of a:focus*/
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 hr.head {
