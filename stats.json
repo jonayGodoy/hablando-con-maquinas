@@ -1,8 +1,8 @@
 {
   "assetsByChunkName": {
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-a90597d4be0fff2b8628.js",
-      "component---src-pages-index-js-a90597d4be0fff2b8628.js.map"
+      "component---src-pages-index-js-77d07b51afb09207be09.js",
+      "component---src-pages-index-js-77d07b51afb09207be09.js.map"
     ],
     "component---src-pages-conoceme-index-js": [
       "component---src-pages-conoceme-index-js-8ef09d9e1277c49ded33.js",
@@ -13,28 +13,28 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---kata-gilded-rose-switch": [
-      "path---kata-gilded-rose-switch-51169850a50aa90fdb30.js",
-      "path---kata-gilded-rose-switch-51169850a50aa90fdb30.js.map"
+      "path---kata-gilded-rose-switch-ea5e34400496aefd7a0f.js",
+      "path---kata-gilded-rose-switch-ea5e34400496aefd7a0f.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-d03ab00f9bac04e7523f.js",
-      "component---src-templates-blog-post-js-d03ab00f9bac04e7523f.js.map"
+      "component---src-templates-blog-post-js-167b79349b22dfd2d7a8.js",
+      "component---src-templates-blog-post-js-167b79349b22dfd2d7a8.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-f5b90d78959c6c50d2b7.js",
       "component---src-layouts-index-js-f5b90d78959c6c50d2b7.js.map"
     ],
     "path---index": [
-      "path---index-9496ab44513075d79625.js",
-      "path---index-9496ab44513075d79625.js.map"
+      "path---index-46e5955026e95405e734.js",
+      "path---index-46e5955026e95405e734.js.map"
     ],
     "path---como-testear-metodos-estaticos": [
-      "path---como-testear-metodos-estaticos-bf2c3d7b3339bfcec9bb.js",
-      "path---como-testear-metodos-estaticos-bf2c3d7b3339bfcec9bb.js.map"
+      "path---como-testear-metodos-estaticos-d857a1570602e903515e.js",
+      "path---como-testear-metodos-estaticos-d857a1570602e903515e.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-395a01dbcea2c83d7cc8.js",
@@ -54,26 +54,30 @@
       "path---conoceme-a0e39f21c11f6a62c5ab.js",
       "path---conoceme-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---hack-for-good-big-day": [
+      "path---hack-for-good-big-day-b3aed1c8de2630344f36.js",
+      "path---hack-for-good-big-day-b3aed1c8de2630344f36.js.map"
+    ],
     "path---la-historia-de-mi-blog": [
-      "path---la-historia-de-mi-blog-bc0a194c114b4fa2e254.js",
-      "path---la-historia-de-mi-blog-bc0a194c114b4fa2e254.js.map"
+      "path---la-historia-de-mi-blog-65697e417f46d8dfd556.js",
+      "path---la-historia-de-mi-blog-65697e417f46d8dfd556.js.map"
     ],
     "path---ludum-dare-gc-35-mi-primera-ludum": [
-      "path---ludum-dare-gc-35-mi-primera-ludum-f52e1a78e452871d4aff.js",
-      "path---ludum-dare-gc-35-mi-primera-ludum-f52e1a78e452871d4aff.js.map"
+      "path---ludum-dare-gc-35-mi-primera-ludum-43be7c570720954da5e5.js",
+      "path---ludum-dare-gc-35-mi-primera-ludum-43be7c570720954da5e5.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---convierte-tu-perfil-de-linkedin-en-tu-cv": [
-      "path---convierte-tu-perfil-de-linkedin-en-tu-cv-45c8d6c2e37fba1322f1.js",
-      "path---convierte-tu-perfil-de-linkedin-en-tu-cv-45c8d6c2e37fba1322f1.js.map"
+      "path---convierte-tu-perfil-de-linkedin-en-tu-cv-052b156f7900c2c75339.js",
+      "path---convierte-tu-perfil-de-linkedin-en-tu-cv-052b156f7900c2c75339.js.map"
     ],
     "app": [
-      "app-1676cb078708b0f52f5c.js",
+      "app-8fa024ed027348f8d7ab.js",
       "build-js-styles.css",
-      "app-1676cb078708b0f52f5c.js.map",
+      "app-8fa024ed027348f8d7ab.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
@@ -81,8 +85,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---empezamos-con-los-juegos-educativos": [
-      "path---empezamos-con-los-juegos-educativos-99808b0444c3a6199b83.js",
-      "path---empezamos-con-los-juegos-educativos-99808b0444c3a6199b83.js.map"
+      "path---empezamos-con-los-juegos-educativos-50466678aa359f8c01ff.js",
+      "path---empezamos-con-los-juegos-educativos-50466678aa359f8c01ff.js.map"
     ]
   }
 }
