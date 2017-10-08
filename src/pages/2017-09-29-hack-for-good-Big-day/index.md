@@ -113,7 +113,7 @@ hecho y además en mi caso acertó con cierto nivel de detalle.
 
 Dejo 
 <a href="https://drive.google.com/open?id=0B2JGlpvHuADfdXZBdmlRNUotM1k" target="_blank">los resultado de mi test</a>
- aunque me da un poco de vergüenza que veáis mis resultados
+ aunque me da un poco de vergüenza publicar mis resultados
 espero que sirva para que podáis valorar el mapa mental.También dejo 
 <a href="https://dtmaptest.com/" target="_blank">el enlace a la página</a>
  donde hice el test actualmente creo que no se puede acceder a los "test" pero quien sabe. 
@@ -235,7 +235,7 @@ Algunas cosas que más me llamaron la atención sobre Wayra:
  
  ## Impresiones Personales
  
-Cuando participe en el hack for good, a pesar de estar rodeado de personas sobresalientes
+Cuando participe en el hack for good en las palmas, a pesar de estar rodeado de personas sobresalientes
 no fui capaz de conocer a nadie fuera de mi grupo, debido al caos que hay 
 en cualquier hackathon.Para ser sincero casi no me acordaba de sus caras.
 Me alegro de haber tenido esta segunda oportunidad para acercarme a ellos y a
@@ -245,7 +245,7 @@ el encargado de nuestra cede solo por eso valió la pena el viaje.
  ![participante las palmas](./las-palmas.jpg)
 
 Por otro lado me llevo una sensación un poco amarga.
-Sin ser un sentimiento malo de todo me sentí abrumado.
+Sin ser un sentimiento malo del todo, me sentí abrumado.
 Estar rodeado de tanto profesionales que serán mejores o peores que yo en distintas
 cosas pero que en general saben trabajar tanto de otros grupos, como los que nos presento
 telefónica me hace sentir como pez en medio del océano.Entre tantos profesionales competentes
