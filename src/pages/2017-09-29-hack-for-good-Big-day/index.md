@@ -78,7 +78,7 @@ en "no tengáis miedo disfrutar el momento".
 
 ![fabianGPastor](fabian.jpg)
 
-Me ayudo mi hizo recordar que muchas veces pensar en lo que no debes hacer no ayuda.
+Me ayudo, me hizo recordar que muchas veces pensar en lo que no debes hacer no ayuda.
 Puede que este exagerando, pero es considerable como la diferencia del
  pensar en "disfrutar" en vez de pensar "no estar nervioso" me influye.
 Creo que la diferencia reside en que con una nos limitamos y con 
