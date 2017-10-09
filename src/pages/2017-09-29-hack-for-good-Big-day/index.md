@@ -18,7 +18,7 @@ Aunque no sea lo más importante la verdad, es que tuvimos los gastos del viaje,
 
 En el aeropuerto, me encontré con otros participante de nuestra sede,
  aprovechamos y nos pusimos al día de nuestros respectivos proyectos.
-Asi hasta que llegamos a madrid y nos encontramos con Sergio el encargado de nuestra
+Asi hasta que llegamos a Madrid y nos encontramos con Sergio el encargado de nuestra
 sede.
 
 Dejamos las cosas en el hotel, fuimos a cenar y nos pasamos parte de la noche
@@ -28,7 +28,7 @@ poniéndonos al día y enterándonos del evento de mañana.
 
 ## Preparándome la charla
 
-Después de dar una vuelta por las calles de madrid con los otros participantes de nuestra sede
+Después de dar una vuelta por las calles de Madrid con los otros participantes de nuestra sede
 me puse al terminar el pitch, llevaba más de la mitad escrita pero quería esperar 
 a hablar con mi compañero para terminarla porque el había tenido un contacto  con escuelas
 donde llevo nuestro proyecto.
@@ -189,7 +189,7 @@ y Keekuo
 
 Después del evento almorzamos en la sala del consejo de administración de telefónica
 que aunque no fue muy interesante, si que fue muy divertido 
-el lugar era impresionante en muchos sentidos con vistas de todo madrid.
+el lugar era impresionante en muchos sentidos con vistas de todo Madrid.
  Sentarte alli, molaba mucho te daban ganas de soltarte un risa malvada buajajajaja.
 No solo me afectaba a mi se notaba como
 al entrar cambiaba el estado de animo de lo equipos como dije esto no fue
