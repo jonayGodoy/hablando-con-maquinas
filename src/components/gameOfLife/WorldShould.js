@@ -51,7 +51,6 @@ describe("World Should",() => {
     it("when Cell has 2 or 3 neighbour, survive", function () {
         world.createCell(Coordinate(0,0));
         world.createCell(Coordinate(0,1));
-        world.createCell(Coordinate(0,2));
         world.createCell(Coordinate(1,1));
         world.createCell(Coordinate(1,0));
 
@@ -59,8 +58,19 @@ describe("World Should",() => {
 
         assert.equal(world.isLiveCellInCoordinate(Coordinate(0,0)), true);
         assert.equal(world.isLiveCellInCoordinate(Coordinate(0,1)), true);
-        assert.equal(world.isLiveCellInCoordinate(Coordinate(0,2)), true);
         assert.equal(world.isLiveCellInCoordinate(Coordinate(1,1)), true);
         assert.equal(world.isLiveCellInCoordinate(Coordinate(1,0)), true);
+    });
+
+    it("when Cell more 3 neighbour, die", function () {
+        world.createCell(Coordinate(0,0));
+        world.createCell(Coordinate(0,1));
+        world.createCell(Coordinate(0,-1));
+        world.createCell(Coordinate(1,1));
+        world.createCell(Coordinate(-1,1));
+
+        world.update();
+
+        assert.equal(world.isLiveCellInCoordinate(Coordinate(0,0)), false);
     });
 });

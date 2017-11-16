@@ -3,6 +3,7 @@ let Cell = (world, coordinate) => {
         update: () =>{
             let numberCellsNeighbours = world.getNumberCellsNeighbours(coordinate);
             if(numberCellsNeighbours < 2){self.die()}
+            if(numberCellsNeighbours > 3){self.die()}
         },
         die: () =>{world.resetCoordinate(coordinate)}
     };
