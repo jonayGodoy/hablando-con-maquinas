@@ -1,10 +1,6 @@
-let Cell = (world, coordinate) => {
-    return {
-        update : (numberNeighbours) =>{
-            if(numberNeighbours < 2){
+let Cell = () => {
+    let self = {};
+    return self;
 
-            }
-        }
-    };
 };
 export default Cell;
