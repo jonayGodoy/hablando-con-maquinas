@@ -38,7 +38,7 @@ describe("World Should",() => {
         assert.equal(numberCellsNeighbours, 8);
     });
 
-    it("when Cell has less 2 neighbour die", function () {
+    it("when Cell has less 2 neighbour, die", function () {
         world.createCell(Coordinate(0,0));
         world.createCell(Coordinate(0,-1));
 
@@ -48,7 +48,7 @@ describe("World Should",() => {
         assert.equal(world.isLiveCellInCoordinate(Coordinate(0,-1)), false);
     });
 
-    it("when Cell has 2 or 3 survive", function () {
+    it("when Cell has 2 or 3 neighbour, survive", function () {
         world.createCell(Coordinate(0,0));
         world.createCell(Coordinate(0,1));
         world.createCell(Coordinate(0,2));
