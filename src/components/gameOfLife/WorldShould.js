@@ -42,4 +42,18 @@ describe("World Should",() => {
         assert.equal(world.isLiveCellInCoordinate(Coordinate(0,0)), false);
         assert.equal(world.isLiveCellInCoordinate(Coordinate(0,-1)), false);
     });
+
+    it("when Cell has 2 or 3 survive", function () {
+        let world =  World();
+        world.createCell(Coordinate(0,0));
+        world.createCell(Coordinate(0,1));
+        world.createCell(Coordinate(1,1));
+        world.createCell(Coordinate(1,0));
+        world.update();
+
+        assert.equal(world.isLiveCellInCoordinate(Coordinate(0,0)), true);
+        assert.equal(world.isLiveCellInCoordinate(Coordinate(0,1)), true);
+        assert.equal(world.isLiveCellInCoordinate(Coordinate(1,1)), true);
+        assert.equal(world.isLiveCellInCoordinate(Coordinate(1,0)), true);
+    });
 });
