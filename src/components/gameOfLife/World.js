@@ -23,13 +23,13 @@ let World = () => {
                 })
             },
             createCell: (coordinate) => {mapCoordinateCell.set(JSON.stringify(coordinate), Cell(self,coordinate)) },
-            isLiveCellInCoordinate : (coordinate) => {
+            hasLiveCellInCoordinate : (coordinate) => {
                return isLiveCell(mapCoordinateCell.get(JSON.stringify(coordinate)))
             },
             getNumberCellsNeighbours: (coordinate) =>{
                 let numberCellsNeighbours = 0;
                 getList8NearbyCoordinates(coordinate).forEach((coordinateNeighbour) => {
-                    if(self.isLiveCellInCoordinate(coordinateNeighbour)){numberCellsNeighbours++}
+                    if(self.hasLiveCellInCoordinate(coordinateNeighbour)){numberCellsNeighbours++}
                 });
                 return numberCellsNeighbours;
             },
