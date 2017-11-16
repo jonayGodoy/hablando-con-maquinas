@@ -32,4 +32,14 @@ describe("World Should",() => {
         let numberCellsNeighbours = world.getNumberCellsNeighbours(Coordinate(0,0));
         assert.equal(numberCellsNeighbours, 8);
     });
+
+    it("when Cell has less 2 neighbour die", function () {
+        let world =  World();
+        world.createCell(Coordinate(0,0));
+        world.createCell(Coordinate(0,-1));
+        world.update();
+
+        assert.equal(world.isLiveCellInCoordinate(Coordinate(0,0)), false);
+        assert.equal(world.isLiveCellInCoordinate(Coordinate(0,-1)), false);
+    });
 });
