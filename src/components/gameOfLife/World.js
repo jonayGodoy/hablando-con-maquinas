@@ -1,4 +1,5 @@
 import Cell from './Cell';
+import {getList8NearbyCoordinates} from './Coordinate';
 
 let World = () => {
 
@@ -8,10 +9,18 @@ let World = () => {
         return typeof cell === "object";
     }
 
+    function executeRules(coordinate){
+        let numberCellsNeighbours = self.getNumberCellsNeighbours(coordinate);
+        if(numberCellsNeighbours < 2){self.killsCell(coordinate)}
+        if(numberCellsNeighbours > 3){self.killsCell(coordinate)}
+    }
+
     let self = {
             update: () => {
-                mapCoordinateCell.forEach((cell) => {
-                    cell.update()})
+                mapCoordinateCell.forEach((cell, coordinateString) => {
+                    let coordinate = JSON.parse(coordinateString);
+                    executeRules(coordinate);
+                })
             },
             createCell: (coordinate) => {mapCoordinateCell.set(JSON.stringify(coordinate), Cell(self,coordinate)) },
             isLiveCellInCoordinate : (coordinate) => {
@@ -19,12 +28,12 @@ let World = () => {
             },
             getNumberCellsNeighbours: (coordinate) =>{
                 let numberCellsNeighbours = 0;
-                coordinate.getList8NearbyCoordinates().forEach((coordinateNeighbour) => {
+                getList8NearbyCoordinates(coordinate).forEach((coordinateNeighbour) => {
                     if(self.isLiveCellInCoordinate(coordinateNeighbour)){numberCellsNeighbours++}
                 });
                 return numberCellsNeighbours;
             },
-            resetCoordinate: (coordinate) =>{
+            killsCell: (coordinate) =>{
                 mapCoordinateCell.delete(JSON.stringify(coordinate));
             }
     };

@@ -1,22 +1,26 @@
 let Coordinate = (x,y) => {
-    let coordinateYUp = y +1;
-    let coordinateYDown = y -1;
-    let coordinateXRight = x +1;
-    let coordinateXLeft = x -1;
-
     return {
         x: x,
         y: y,
-        getList8NearbyCoordinates: () => [
-            Coordinate(x,coordinateYUp),
-            Coordinate(coordinateXRight,coordinateYUp),
-            Coordinate(coordinateXLeft,coordinateYUp),
-            Coordinate(x,coordinateYDown),
-            Coordinate(coordinateXRight,coordinateYDown),
-            Coordinate(coordinateXLeft,coordinateYDown),
-            Coordinate(coordinateXRight,y),
-            Coordinate(coordinateXLeft,y),
-        ]
     };
 };
+
+export let getList8NearbyCoordinates = (coordinate) => {
+    let coordinateYUp = coordinate.y +1;
+    let coordinateYDown = coordinate.y -1;
+    let coordinateXRight = coordinate.x +1;
+    let coordinateXLeft = coordinate.x -1;
+
+    return [
+        Coordinate(coordinate.x,coordinateYUp),
+        Coordinate(coordinateXRight,coordinateYUp),
+        Coordinate(coordinateXLeft,coordinateYUp),
+        Coordinate(coordinate.x,coordinateYDown),
+        Coordinate(coordinateXRight,coordinateYDown),
+        Coordinate(coordinateXLeft,coordinateYDown),
+        Coordinate(coordinateXRight,coordinate.y),
+        Coordinate(coordinateXLeft,coordinate.y),
+    ]
+};
+
 export default Coordinate;
