@@ -1,5 +1,4 @@
 import Cell from './Cell';
-import {getList8NearbyCoordinates} from './Coordinate';
 
 let World = () => {
 
