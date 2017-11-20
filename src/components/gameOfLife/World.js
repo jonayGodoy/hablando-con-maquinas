@@ -17,14 +17,13 @@ let World = () => {
 
     let self = {
             update: () => {
-                mapCoordinateCell.forEach((cell, coordinateString) => {
-                    let coordinate = JSON.parse(coordinateString);
+                mapCoordinateCell.forEach((cell, coordinate) => {
                     executeRules(coordinate);
                 })
             },
-            createCell: (coordinate) => {mapCoordinateCell.set(JSON.stringify(coordinate), Cell(self,coordinate)) },
+            createCell: (coordinate) => {mapCoordinateCell.set(coordinate, Cell(self,coordinate)) },
             hasLiveCellInCoordinate : (coordinate) => {
-               return isLiveCell(mapCoordinateCell.get(JSON.stringify(coordinate)))
+                return isLiveCell(getEqualsForHashMap(mapCoordinateCell, coordinate))
             },
             getNumberCellsNeighbours: (coordinate) =>{
                 let numberCellsNeighbours = 0;
@@ -34,9 +33,20 @@ let World = () => {
                 return numberCellsNeighbours;
             },
             killsCell: (coordinate) =>{
-                mapCoordinateCell.delete(JSON.stringify(coordinate));
+                mapCoordinateCell.delete(coordinate);
             }
     };
     return self;
 };
 export default World;
+
+
+function getEqualsForHashMap(hashMap, obj){
+    let cell;
+    hashMap.forEach((value, key) => {
+        if(key.equalsOwn(obj)){
+            cell = value
+        }
+    });
+    return cell ? cell : "";
+}

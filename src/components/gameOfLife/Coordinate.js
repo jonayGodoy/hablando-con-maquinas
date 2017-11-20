@@ -1,8 +1,10 @@
 let Coordinate = (x,y) => {
-    return {
+    let self = {
         x: x,
         y: y,
+        equalsOwn: (obj) => (self.x === obj.x && self.y === obj.y)
     };
+    return self;
 };
 
 export let getList8NearbyCoordinates = (coordinate) => {
