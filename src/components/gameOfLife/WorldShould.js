@@ -42,7 +42,7 @@ describe("World Should",() => {
         world.createCell(Coordinate(0,0));
         world.createCell(Coordinate(0,-1));
 
-        world.update();
+        world = world.update();
 
         assert.equal(world.hasLiveCellInCoordinate(Coordinate(0,0)), false);
         assert.equal(world.hasLiveCellInCoordinate(Coordinate(0,-1)), false);
@@ -54,7 +54,7 @@ describe("World Should",() => {
         world.createCell(Coordinate(1,1));
         world.createCell(Coordinate(1,0));
 
-        world.update();
+        world = world.update();
 
         assert.equal(world.hasLiveCellInCoordinate(Coordinate(0,0)), true);
         assert.equal(world.hasLiveCellInCoordinate(Coordinate(0,1)), true);
@@ -69,8 +69,21 @@ describe("World Should",() => {
         world.createCell(Coordinate(1,1));
         world.createCell(Coordinate(-1,1));
 
-        world.update();
+        world = world.update();
 
         assert.equal(world.hasLiveCellInCoordinate(Coordinate(0,0)), false);
+    });
+
+    it("when a coordinate empty has 3 cell nearby born a cell in this coordinate", function () {
+        world = World();
+        let coordinateSUT = Coordinate(0,0);
+
+        world.createCell(Coordinate(1,-1));
+        world.createCell(Coordinate(1,0));
+        world.createCell(Coordinate(1,1));
+
+        world = world.update();
+
+        assert.equal(world.hasLiveCellInCoordinate(coordinateSUT), true);
     });
 });

@@ -1,4 +1,5 @@
 import Cell from './Cell';
+import Coordinate from "./Coordinate";
 
 let World = () => {
 
@@ -8,17 +9,29 @@ let World = () => {
         return !!cell.alive;
     }
 
-    function executeRules(coordinate){
-        let numberCellsNeighbours = self.getNumberCellsNeighbours(coordinate);
-        if(numberCellsNeighbours < 2){self.killsCell(coordinate)}
-        if(numberCellsNeighbours > 3){self.killsCell(coordinate)}
+    function executeRules(coordinate, oldWorld, newWorld){
+        let numberCellsNeighbours = oldWorld.getNumberCellsNeighbours(coordinate);
+
+        if(numberCellsNeighbours === 2 || numberCellsNeighbours === 3 ){
+            newWorld.createCell(coordinate)
+        }
+
+        coordinate.getList8NearbyCoordinates().forEach((coordinateNearby) =>{
+            if(!oldWorld.hasLiveCellInCoordinate(coordinateNearby)
+                && oldWorld.getNumberCellsNeighbours(coordinateNearby) === 3){
+                newWorld.createCell(coordinateNearby);
+            }
+        })
     }
 
     let self = {
             update: () => {
+                let newWorld = World();
                 mapCoordinateCell.forEach((cell, coordinate) => {
-                    executeRules(coordinate);
-                })
+                    executeRules(coordinate, self, newWorld);
+                });
+               return newWorld;
+
             },
             createCell: (coordinate) => {mapCoordinateCell.set(coordinate, Cell(self,coordinate)) },
             hasLiveCellInCoordinate : (coordinate) => {
