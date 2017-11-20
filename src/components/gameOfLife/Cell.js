@@ -1,4 +1,4 @@
 let Cell = () => {
-    return {};
+    return {alive:true};
 };
 export default Cell;

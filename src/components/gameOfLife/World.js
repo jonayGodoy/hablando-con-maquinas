@@ -6,7 +6,7 @@ let World = () => {
     let mapCoordinateCell = new Map();
 
     function isLiveCell(cell){
-        return typeof cell === "object";
+        return !!cell.alive;
     }
 
     function executeRules(coordinate){
@@ -48,5 +48,5 @@ function getEqualsForHashMap(hashMap, obj){
             cell = value
         }
     });
-    return cell ? cell : "";
+    return cell ? cell : {};
 }
