@@ -27,7 +27,7 @@ let World = () => {
             },
             getNumberCellsNeighbours: (coordinate) =>{
                 let numberCellsNeighbours = 0;
-                getList8NearbyCoordinates(coordinate).forEach((coordinateNeighbour) => {
+                coordinate.getList8NearbyCoordinates().forEach((coordinateNeighbour) => {
                     if(self.hasLiveCellInCoordinate(coordinateNeighbour)){numberCellsNeighbours++}
                 });
                 return numberCellsNeighbours;
