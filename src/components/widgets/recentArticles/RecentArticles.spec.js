@@ -43,6 +43,7 @@ describe("<RecentArticle />",function(){
     });
 
     xit("Items are sorted from most recent to oldest", function () {
+        //test broken
         let pages = getStubPosts(8);
         let wrapper = shallow(<RecentArticle posts={pages} />);
         let linkPages = wrapper.find("li");
