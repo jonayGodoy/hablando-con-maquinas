@@ -1,15 +1,15 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
 import get from 'lodash/get'
 import { rhythm, scale } from '../utils/typography'
 import config from "../../config-blog"
 
 import DisqusComments  from 'react-disqus-comments';
-
 import  RecentArticles from "../components/widgets/recentArticles/RecentArticles";
 
 import "./md.css";
+
+const imagesAllArticles = require.context("../pages/", true,  /\.(png|jpg|gif)$/);
 
 class BlogPostTemplate extends React.Component {
 
@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
     constructor(props, context){
         super(props, context);
         this.post = this.props.data.markdownRemark;
-        this.cover = require("../pages/"+this.post.frontmatter.image_article.relativePath);
+        this.cover = imagesAllArticles("./"+this.post.frontmatter.image_article.relativePath);
     }
 
 

@@ -50,16 +50,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
 
 
 
-//path clean warnings
-exports.modifyWebpackConfig = ({ config, stage }) => {
-    config.loader('md', {
-      test: /\.md$/,
-        loader: ""
-    });
 
-
-    return config;
-};
 
 
 

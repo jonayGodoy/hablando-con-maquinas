@@ -1,24 +1,20 @@
 import React from 'react';
 import Link from "gatsby-link";
 
-/*import { prefixLink } from 'gatsby-helpers';*/
 import { prune, include as includes } from 'underscore.string';
-import find from 'lodash/find';
-//import cover from "../../pages/2017-07-01-como-testear-metodos-estaticos/image-article.jpg";
+
+const imagesAllArticles = require.context("../../pages/", true,  /\.(png|jpg|gif)$/);
 
 class BoxArticles extends React.Component {
 
     constructor(props, context){
       super(props, context);
-     // this.cover = importAll(require.context("../../pages/"+this.props.post.node.frontmatter.image_article.relativePath, false,  /\.(png|jpg|gif)$/));
-        this.cover = require("../../pages/"+this.props.post.node.frontmatter.image_article.relativePath);
+      this.cover = imagesAllArticles("./"+this.props.post.node.frontmatter.image_article.relativePath);
     }
-
 
 
   render () {
     const {post} = this.props;
-
 
       return (
         <div>
