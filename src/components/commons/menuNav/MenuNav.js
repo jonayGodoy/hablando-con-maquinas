@@ -1,5 +1,4 @@
 import React from 'react';
-//import { Link } from 'react-router';
 import Link  from "gatsby-link";
 import config from "../../../../config-blog"
 import * as routesPath from "../../../routePath";

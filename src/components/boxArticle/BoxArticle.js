@@ -35,10 +35,5 @@ class BoxArticles extends React.Component {
       )
   }
 }
-/*
-BoxArticles.propTypes = {
-  post: React.PropTypes.object.isRequired
-};
-*/
 
 export default BoxArticles

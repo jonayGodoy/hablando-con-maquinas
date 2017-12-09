@@ -80,9 +80,5 @@ class ConocemePage extends React.Component {
     }
 }
 
-ConocemePage.propTypes = {
-    route: React.PropTypes.object,
-};
-
 export default ConocemePage
 
