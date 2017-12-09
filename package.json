@@ -4,7 +4,7 @@
   "version": "0.5.0",
   "author": "Jonay Godoy <jonay.godoy.reyes@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": ""
   },
   "dependencies": {
     "bootstrap": "3.3.7",
@@ -48,16 +48,11 @@
     "react-dom": "^15.6.2",
     "react-test-renderer": "^15.6.2"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
   "keywords": [
     "gatsby"
   ],
   "license": "MIT",
   "main": "n/a",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
-  },
   "scripts": {
     "deploy:fast": "gh-pages -d public",
     "deploy": "npm run test && gatsby build && gh-pages -d public",
