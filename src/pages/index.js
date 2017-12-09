@@ -7,7 +7,7 @@ import { rhythm } from "../utils/typography"
 
 import  RecentArticles from "../components/widgets/recentArticles/RecentArticles";
 
-import '../components/blogTemplate/sidebar.css'
+import '../components/widgets/recentArticles/sidebar.css'
 
 
 class BlogIndex extends  React.Component {

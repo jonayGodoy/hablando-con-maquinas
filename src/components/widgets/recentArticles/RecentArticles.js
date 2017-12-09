@@ -1,6 +1,7 @@
 import React from 'react';
-import get from "lodash/get";
 import Link from "gatsby-link"
+import './sidebar.css'
+
 
 class RecentArticles extends React.Component {
 
