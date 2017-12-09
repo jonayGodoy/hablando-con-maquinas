@@ -59,7 +59,6 @@
     "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
   },
   "scripts": {
-    "cleanGitCache": "rm -rf node_modules/gh-pages/.cache",
     "deploy:fast": "gh-pages -d public",
     "deploy": "npm run test && gatsby build && gh-pages -d public",
     "dev": "gatsby develop",
@@ -67,7 +66,6 @@
     "test": "npm run mocha",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
     "build": "npm run test && gatsby build",
-    "deployOriginal": "gatsby build --prefix-paths && gh-pages -d public",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
     "mocha": "mocha \"./{,!(node_modules)/**/}*.spec.js\" --recursive --compilers js:babel-core/register --require ignore-styles"
   }
