@@ -16,11 +16,11 @@ class MainTemplate extends React.Component {
 
     render () {
         return (
-            <div className="container-fluid">
+            <div>
                 <MenuMobile/>
-                <div className="container-fluid blog-main" >
+                <div className="blog-main" >
                     <MenuNav />
-                    <div id="pageMain" className="row">
+                    <div id="pageMain" style={{display:"inline-block"}}>
                         {/* Main Content */}
                         {this.props.children()}
                     </div>
