@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from "prop-types";
 
 import MenuNav from '../menuNav/MenuNav';
 import MenuMobile from '../menuMobile/MenuMobile';
@@ -10,12 +9,6 @@ import './template.css';
 
 
 class MainTemplate extends React.Component {
-    static propTypes = {
-        children: PropTypes.any,
-        location: PropTypes.object,
-        route: PropTypes.object
-    };
-
     constructor(props, context) {
         super(props, context);
     }

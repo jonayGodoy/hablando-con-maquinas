@@ -34,10 +34,6 @@ class BlogIndex extends  React.Component {
 
 }
 
-BlogIndex.propTypes = {
-  route: React.PropTypes.object,
-};
-
 export default BlogIndex
 
 export const pageQuery = graphql`
