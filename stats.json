@@ -1,8 +1,12 @@
 {
   "assetsByChunkName": {
+    "path---vista-pasiva": [
+      "path---vista-pasiva-364cfe4d1ffc9f0dcbf0.js",
+      "path---vista-pasiva-364cfe4d1ffc9f0dcbf0.js.map"
+    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-23ea2190bf95974e082f.js",
-      "component---src-pages-index-js-23ea2190bf95974e082f.js.map"
+      "component---src-pages-index-js-bf227581e8b8c3e3750a.js",
+      "component---src-pages-index-js-bf227581e8b8c3e3750a.js.map"
     ],
     "component---src-pages-conoceme-index-js": [
       "component---src-pages-conoceme-index-js-95f11e18e997510b040a.js",
@@ -13,32 +17,32 @@
       "path----557518bd178906f8d58a.js.map"
     ],
     "path---no-fast-forward": [
-      "path---no-fast-forward-2b607fac7d5f242357b8.js",
-      "path---no-fast-forward-2b607fac7d5f242357b8.js.map"
+      "path---no-fast-forward-719ff16c0d0c3db52743.js",
+      "path---no-fast-forward-719ff16c0d0c3db52743.js.map"
     ],
     "path---kata-gilded-rose-switch": [
-      "path---kata-gilded-rose-switch-2b056b04a00ed9720e30.js",
-      "path---kata-gilded-rose-switch-2b056b04a00ed9720e30.js.map"
+      "path---kata-gilded-rose-switch-4db7f585b389bd06129d.js",
+      "path---kata-gilded-rose-switch-4db7f585b389bd06129d.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-blog-post-js": [
-      "component---src-templates-blog-post-js-86edb083df61f0c5ec31.js",
-      "component---src-templates-blog-post-js-86edb083df61f0c5ec31.js.map"
+      "component---src-templates-blog-post-js-e1fcc9d8b24fa6d2c90d.js",
+      "component---src-templates-blog-post-js-e1fcc9d8b24fa6d2c90d.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-bf7e04f26473dd1b3caa.js",
-      "component---src-layouts-index-js-bf7e04f26473dd1b3caa.js.map"
+      "component---src-layouts-index-js-7f6ddf1436c93166992a.js",
+      "component---src-layouts-index-js-7f6ddf1436c93166992a.js.map"
     ],
     "path---index": [
-      "path---index-217727088b7316bb532a.js",
-      "path---index-217727088b7316bb532a.js.map"
+      "path---index-77c5e202b4286ec11b6d.js",
+      "path---index-77c5e202b4286ec11b6d.js.map"
     ],
     "path---como-testear-metodos-estaticos": [
-      "path---como-testear-metodos-estaticos-b6b214c7fb36bc7db47d.js",
-      "path---como-testear-metodos-estaticos-b6b214c7fb36bc7db47d.js.map"
+      "path---como-testear-metodos-estaticos-2c8cea271ae04ce2527e.js",
+      "path---como-testear-metodos-estaticos-2c8cea271ae04ce2527e.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-395a01dbcea2c83d7cc8.js",
@@ -59,29 +63,29 @@
       "path---conoceme-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---hack-for-good-big-day": [
-      "path---hack-for-good-big-day-eea6728884162aa62714.js",
-      "path---hack-for-good-big-day-eea6728884162aa62714.js.map"
+      "path---hack-for-good-big-day-c5514bb7045e91fa9a7e.js",
+      "path---hack-for-good-big-day-c5514bb7045e91fa9a7e.js.map"
     ],
     "path---la-historia-de-mi-blog": [
-      "path---la-historia-de-mi-blog-b245eee1ac3a76f1b7ef.js",
-      "path---la-historia-de-mi-blog-b245eee1ac3a76f1b7ef.js.map"
+      "path---la-historia-de-mi-blog-e6185d6e14ce58232ac7.js",
+      "path---la-historia-de-mi-blog-e6185d6e14ce58232ac7.js.map"
     ],
     "path---ludum-dare-gc-35-mi-primera-ludum": [
-      "path---ludum-dare-gc-35-mi-primera-ludum-77c4eb772c79baf85a2e.js",
-      "path---ludum-dare-gc-35-mi-primera-ludum-77c4eb772c79baf85a2e.js.map"
+      "path---ludum-dare-gc-35-mi-primera-ludum-fabbb50191a645cd8910.js",
+      "path---ludum-dare-gc-35-mi-primera-ludum-fabbb50191a645cd8910.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---convierte-tu-perfil-de-linkedin-en-tu-cv": [
-      "path---convierte-tu-perfil-de-linkedin-en-tu-cv-8e76cd59eaef53a701f0.js",
-      "path---convierte-tu-perfil-de-linkedin-en-tu-cv-8e76cd59eaef53a701f0.js.map"
+      "path---convierte-tu-perfil-de-linkedin-en-tu-cv-47893750f1c981719331.js",
+      "path---convierte-tu-perfil-de-linkedin-en-tu-cv-47893750f1c981719331.js.map"
     ],
     "app": [
-      "app-4afbc2d4340196e5d852.js",
+      "app-9fbd0eff722e874f917c.js",
       "build-js-styles.css",
-      "app-4afbc2d4340196e5d852.js.map",
+      "app-9fbd0eff722e874f917c.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
@@ -89,8 +93,8 @@
       "path---404-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---empezamos-con-los-juegos-educativos": [
-      "path---empezamos-con-los-juegos-educativos-5a54c31be54780785eba.js",
-      "path---empezamos-con-los-juegos-educativos-5a54c31be54780785eba.js.map"
+      "path---empezamos-con-los-juegos-educativos-556effab2e26abcd64f8.js",
+      "path---empezamos-con-los-juegos-educativos-556effab2e26abcd64f8.js.map"
     ]
   }
 }
