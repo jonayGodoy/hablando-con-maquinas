@@ -7,7 +7,7 @@ image_article: "mvp.png"
 
 Hace muy poco me enseñaron la arquitectura modelo-vista-presenter con vista pasiva en javascript 
 y no pude resistirme a hacer una prueba de conceptos. 
-El punto fuerte de esta arquitectura es que permite un desacoplamiento bastante bestia de la
+El punto fuerte de esta arquitectura es que permite un desacoplamiento bastante bestia
 de la tecnología que se utiliza para interactuar con el DOM. Facilitando los test y teniendo
 la libertad de usar la tecnología que se adapte al contexto.
 
@@ -57,8 +57,6 @@ funcionar.
 
 
 Primero de todo mostraré el presenter donde se encuentra la lógica.
-
-imagen del presenter 
 
 ```javascript
 
@@ -127,10 +125,11 @@ La vista no la testeamos. La idea es crear una vista tan tonta que no tenga caso
 Siempre que se cumpla la norma y la vista sea tonta casi rozando el punto en el que testear
 la vista seria casi lo mismo que testear directamente la libreria que usa.
 
-En cuanto al método "subscribeToToggleMessageRequested" este será el encargado de llevar el
-evento de presenter del que se esta suscribiendo al evento en question.
+En cuanto al método "subscribeToToggleMessageRequested" es un método que es llamado en el
+presenter donde este le pasa una función que ejecutara la vista cuando el usuario
+ejecute algún evento. En nuestro caso el click sobre el botón.
 
-El siguiente paso seria sobre la estructura que trabaja el presenter y sin romper los test
+El siguiente paso seria sobre la estructura de la vista con la que trabaja el presenter y sin romper los test
 implementar la vista ya funcional. Normalmente, esto se hace directamente sobre la función, pero
 dejaré esta clase de referencia para la gente que quiera ver el repositorio. Por
 lo que copio el archivo, lo renombro e implemento la vista con React.
@@ -237,8 +236,7 @@ module.exports = BoxViewVue;
  
 
 Ventajas e Inconvenientes
------------------------------------------------------------------------------- 
- 
+--------------------------------------------------------------------------------------------------------  
 Es cierto, que ahora la lógica es un simple toggle pero este sistema funcionará igual 
 si se tratara de un componente mucho más complejo. 
 
@@ -253,14 +251,14 @@ atacando al Dom directamente. Con lo que a veces hay tocar varios archivo para l
 es responsabilidad de un componente.
  
 Esta arquitectura tiene algunos sacrificios como no poder utilizar toda la potencia de una
-tecnología porque todas las utilizamos que usamos las orientamos a nuestra arquitectura
-y no realmente como están pensadas para funcionar.Por ejemplo en caso de la implementación
+tecnología porque todas estas tecnologías las orientamos a nuestra arquitectura
+y no realmente a como están pensadas para funcionar.Por ejemplo, en caso de la implementación
 de React juego con el método **ReactDom.unmountComponentAtNode** para desmontar y 
 ocultar el nodo del mensaje algo para lo que no esta pensado React.
 
 Por otro lado implementar una vista sin ninguna lógica puede
 ser más difícil hacerlo en la practica de la que uno pudiera imaginar en 
-un primer momento. Por ejemplo en la implementación con vue no supe hace una vista
+un primer momento. Por ejemplo, en la implementación con vue no supe hace una vista
 totalmente tonta para este contexto. Si os fijáis dentro del objeto de Vue existe
 un estado show que me vi a obligado a crea para interactuar con la vista.Pero ya
 tengo en el presenter un estado. En consecuencia añado una complejidad innecesaria por la manera
@@ -275,9 +273,9 @@ teniendo una gran libertad para trabajar con varias herramientas.
 Simplifica los test como tiene un gran nivel de abstracción ya no son necesarios hacer
 test frágiles de integración para comprobar el DOM.
 
-Sinceramente el otro dia hicimos una prueba para estudiar si nos compensaba empezar a mudarnos
+Sinceramente, el otro dia hicimos una prueba para estudiar si nos compensaba empezar a mudarnos
 de React a Vue. Probamos con un componente que era básicamente una agenda de citas y 
-en pocos más de una hora habíamos mudado el componente de React a Vue sin apenas errores
+en poco más de una hora habíamos mudado el componente de React a Vue sin apenas errores
 y sin conocer realmente como trabaja Vue. Lo cual demuestra lo realmente cómodo que
 es cambiar de tecnología.
 
