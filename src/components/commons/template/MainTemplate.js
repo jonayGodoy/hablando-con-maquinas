@@ -20,7 +20,7 @@ class MainTemplate extends React.Component {
                 <MenuMobile/>
                 <div className="blog-main" >
                     <MenuNav />
-                    <div id="pageMain" style={{display:"inline-block"}}>
+                    <div id="pageMain">
                         {/* Main Content */}
                         {this.props.children()}
                     </div>
