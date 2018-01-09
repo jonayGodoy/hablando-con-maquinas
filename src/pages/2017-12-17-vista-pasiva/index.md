@@ -79,7 +79,7 @@ module.exports = TogglePresenter;
 ```
 
 Nuestro presenter recibe una vista. Esta vista puede estar trabajando sobre Vue, React, Jquery
-que nuestra presenter trabajara igual.
+que nuestro presenter trabajara igual.
 
 Luego la vista se suscribe a nuestra funcionalidad.Ya volveremos a tocar este tema cuando lleguemos
 a la vista.Pero si os fijáis el presenter esta manipulando la vista a través 
@@ -189,9 +189,9 @@ Si nos fijamos en las implementaciones vemos como la función que recibe la vist
 el presenter(subscribeToToggleMessageRequestedHandler) es directamente lo que ejecuta en el Click.
 
 
-Todo funciona perfectamente, pero a medida que pasa avanza las semanas por alguna razón 
+Todo funciona perfectamente, pero a medida que avanza las semanas por alguna razón 
 ahora nos interesa trabajar sobre Vue en lugar de React. Que hacemos simplemente cambiamos
-la vista y en lugar de trabajar con React a partir de ahora trabajara con Vue. Manteniendo toda
+la vista y en lugar de trabajar con React a partir de ahora trabajará con Vue. Manteniendo toda
 la lógica de la aplicación intacta.
 
 
