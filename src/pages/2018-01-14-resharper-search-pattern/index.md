@@ -26,6 +26,7 @@ imaginar por un momento que esa string por lo que sea para nuestro equipo
 de trabajo representa un mal olor. Si ese mensaje no esta mal pero no
 termina de expresar todo lo que debería.
 
+
 Por eso, nos interesa que si un miembro del equipo se encuentra con un
 caso similar al mio, sea el mismo IDE el que le avise que se encuentra ante
 un mal olor. Aquí es donde aparecen los **Search Pattern**.
@@ -33,11 +34,46 @@ un mal olor. Aquí es donde aparecen los **Search Pattern**.
 
 **Hay dos maneras de hacer un search pattern** 
 
-- De cero.
-- A partir de un fragmento de código.
+- De cero.(Ancla)
+- A partir de un fragmento de código.(Ancla)
+
+-------------------------------------
+
+**De cero.**
+
+Vamos al menu de ReSharper y dentro de este vamos a Options.
+    
+![2](./searchPattern_2.jpg)
+
+Dentro nos aparecerá el siguiente menu y pulsamos sobre add pattern
+
+![3](./searchPattern_3.jpg)
+
+Siguiente paso, después de que aparezca la siguiente ventana pulsamos en Find para
+movernos a la ventana donde estaremos trabajando. Tranquilos ya volveremos al tema del
+replace más adelante.
+
+![4](./searchPattern_4.jpg)
 
 
-**De cero**
+Ya hemos llegado al ventana de Find. Yo os la muestro aquí ya rellena.
+Pero esta parte es bastante sencilla en el gran cuadro ponemos los que queremos
+que busque, en **pattern severity** ajustamos el tipo de warnings que mostraremos
+cuando se produzca este mal olor. Para mi este error es imperdonable y voy a poner
+error y la description es eso, la descripción que va ha aparecer junto a nuestro warnings.
+
+![5](./searchPattern_5.JPG)
+
+
+Le damos a Add, nos retornará a la anterior ventana y luego pulsamos en save.
+Y magia ya nuestro propio editor es el que nos avisa de este nuevo mal olor.
+
+![6](searchPattern_6.jpg)
+![7](searchPattern_7.jpg)
+
+--------------------------------------
+
+**A partir de un fragmento de código.**
 
 
 
