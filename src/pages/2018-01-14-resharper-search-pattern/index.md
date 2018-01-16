@@ -17,6 +17,42 @@ como un pequeño extra también explico como exportar estas y otras configuracio
 Search Pattern
 -------------------------
 
+Vamos a empezar con un ejemplo de Search Pattern bastante sencillo.
+
+![1](./searchPattern_1.jpg)
+
+En la imagen que acabamos de ver, tengo una string seleccionada. Vamos a 
+imaginar por un momento que esa string por lo que sea para nuestro equipo
+de trabajo representa un mal olor. Si ese mensaje no esta mal pero no
+termina de expresar todo lo que debería.
+
+Por eso, nos interesa que si un miembro del equipo se encuentra con un
+caso similar al mio, sea el mismo IDE el que le avise que se encuentra ante
+un mal olor. Aquí es donde aparecen los **Search Pattern**.
+
+
+**Hay dos maneras de hacer un search pattern** 
+
+- De cero.
+- A partir de un fragmento de código.
+
+
+**De cero**
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Un marcador de posición tiene el siguiente formato:
  $ placeholder_name $ - where placeholder_name es un identificador arbitrario.
