@@ -86,14 +86,47 @@ Le damos a guardar.
 ![9](searchPattern_9.jpg)
 
 Tras eso nos parece un pequeño que nos avisa de que nuestro nuevo patrón 
-se a guardado y lo podemos encontrar dentro de opciones.
+se a guardado y lo podemos encontrar dentro de opciones.Le hacemos caso y nos vamos a
+buscar el nuevo search pattern en las opciones.
 
 ![10](searchPattern_10.jpg)
 
 
 Listo, ahora podemos ajustar el pattern severity para que nos aparezca el warnings y a diferencia
 de cuando lo hacemos de cero ahora nos va coger el propio código seleccionado como descripción por
-defecto cosa que por supuesto podemos cambiar pulsando edit.
+defecto, cosa que por supuesto podemos cambiar pulsando edit.
+
+
+**Creando nuestro propio refactor automático**
+
+
+Ahora que ya hemos creado nuestro search pattern vamos a ir un paso más alla.Partiendo de este
+search pattern podemos preparar refactor automáticos.Volvemos a Reshaper -> options.. 
+y dentro entramos al menu de custom pattern donde volveremos a editar nuestro patron está
+vez sobre la pestaña replace.
+
+![11](searchPattern_11.jpg)
+
+Esta vez encontraremos un segundo recuadro donde pondremos el código que va a reemplazar al
+primero. En este caso sustituiremos "jonay no programa nada mal" por 
+"jonay es el mejor programador del mundo". También tenemos un nuevo campo description 
+esta descripción es la que aparecerá en las opciones para refactorizar.
+Una vez lo tengamos todo configurado guardamos.
+
+
+Ahora si volvemos a nuestro código, podemos ver como además de mostrarnos un warnings nos muestra
+unas opciones para refactorizar de manera automatica.
+
+![12](searchPattern_12.jpg)
+
+![13](searchPattern_13.jpg)
+
+Hasta aquí, la parte más sencilla aunque sé que todo el mundo esta deseando que comparta este 
+patron esencial para todo programador voy poner un ejemplo un poco más complejo en un contexto
+más real.
+
+
+
 
 
 
