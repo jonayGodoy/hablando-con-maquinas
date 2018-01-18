@@ -121,11 +121,46 @@ unas opciones para refactorizar de manera automatica.
 
 ![13](searchPattern_13.jpg)
 
+**Un caso real**
+
 Hasta aquí, la parte más sencilla aunque sé que todo el mundo esta deseando que comparta este 
-patron esencial para todo programador voy poner un ejemplo un poco más complejo en un contexto
-más real.
+patron esencial para todo programador voy poner un ejemplo en un contexto más real.
+
+Supongamos que en nuestro equipo de trabajo, tenemos que trabajar procesando palabras.
+Entonces, en este contexto separar palabras y hacer algo con esas palabras en una rutina
+casi diaria para nosotros.
+
+Hoy nos encontramos haciendo un método que separe las palabras de una frase las ponga en 
+mayúsculas y las vuelva a unir (perdón, se que existe un Join no se porque no lo recordé 
+hasta terminar el ejercicio).
+
+![14](searchPattern_14.jpg)
+
+Pues digo basta estoy harto de escribir Split, Select, y Aggregate una y otra vez por todo
+mi código y decido crear un método para que yo y mi equipo puedan utilizar.
+
+![15](searchPattern_15.jpg)
 
 
+Hasta aquí todo perfecto. Pero un dia otro miembro de equipo se encuentra en situación de 
+usarlo. Sin embargo, desgraciadamente no se acuerda, es normal, con el tiempo se han
+ido acumulando métodos en el equipo y empieza a ser un esfuerzo adicional acordarse de todos.
+No importante este método enumera las palabras (existen otras maneras más declarativas de
+escribirlo pero para no añadir una complejidad innecesaria a los siguientes pasos lo 
+construí asi.)
+
+![16](searchPattern_16.jpg)
+
+Para resolver este problema vamos a construir un search pattern que nos sugiera que existe
+una implementación alternativa y nos proporciones un refactor automático.
+Para ellos voy a seleccionar el fragmento de código del que queremos detectar con un
+warnings y pulsamos el botón secundario del ratón para después pulsar sobre "Search with pattern...".
+Nos aparecerá un modal, antes de seguir avanzado vamos a fijarnos en algunas cosas que han cambiado
+respecto al ejemplo anterior.
+ 
+![17](searchPattern_17.jpg)
+ 
+ 
 
 
 
