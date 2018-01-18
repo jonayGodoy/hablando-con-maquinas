@@ -75,6 +75,28 @@ Y magia ya nuestro propio editor es el que nos avisa de este nuevo mal olor.
 
 **A partir de un fragmento de código.**
 
+Esta forma es más rápida. Seleccionamos el código a partir del cual queremos crear un nuevo patrón
+le damos al botón secundario y pulsamos sobre "Search with Pattern...".
+
+![8](searchPattern_8.jpg)
+
+A continuación nos aparecerá un nuevo modal parecido a otros que hemos visto con anterioridad.
+Le damos a guardar.
+
+![9](searchPattern_9.jpg)
+
+Tras eso nos parece un pequeño que nos avisa de que nuestro nuevo patrón 
+se a guardado y lo podemos encontrar dentro de opciones.
+
+![10](searchPattern_10.jpg)
+
+
+Listo, ahora podemos ajustar el pattern severity para que nos aparezca el warnings y a diferencia
+de cuando lo hacemos de cero ahora nos va coger el propio código seleccionado como descripción por
+defecto cosa que por supuesto podemos cambiar pulsando edit.
+
+
+
 
 
 
