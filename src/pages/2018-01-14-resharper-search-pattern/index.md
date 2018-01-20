@@ -153,54 +153,45 @@ construí asi.)
 
 Para resolver este problema vamos a construir un search pattern que nos sugiera que existe
 una implementación alternativa y nos proporciones un refactor automático.
-Para ellos voy a seleccionar el fragmento de código del que queremos detectar con un
+Para ellos voy a seleccionar el fragmento de código del que queremos detectar como un
 warnings y pulsamos el botón secundario del ratón para después pulsar sobre "Search with pattern...".
 Nos aparecerá un modal, antes de seguir avanzado vamos a fijarnos en algunas cosas que han cambiado
 respecto al ejemplo anterior.
  
 ![17](searchPattern_17.jpg)
  
- 
+En el panel de la derecha podemos observar que parecen una serie de nuevos parámetros estos 
+son placeholders. Los placeholder declara poniendo cualquier palabra entre el símbolo del 
+dolar $placeholder_name$ . Estos placeholder se utilizan para reestructurar el código, es decir podemos
+por ejemplo identificar **$texto$** como una variable y hacer referencia a esta variable
+a la hora de hacer el replace.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Un marcador de posición tiene el siguiente formato:
- $ placeholder_name $ - where placeholder_name es un identificador arbitrario.
- 
 Cada marcador de posición se debe definir una vez y se puede usar varias veces en el patrón. 
-Al definir un marcador de posición, debe definir sus restricciones tipo y opcional. Hay cinco tipos de marcadores de posición:
+Al definir un marcador de posición, debe definir sus restricciones tipo y opcional
 
-Argumento Placeholder: uno o más argumentos en una invocación a un método.
+
+Hay cinco tipos de marcadores de posición:
+
+ - **Argument Placeholder** - Uno o más argumentos en la invocación a un método.
  Si es necesario, puede especificar el número mínimo o máximo de argumentos que deberían coincidir.
 
-Expression Placeholder - una secuencia de operadores y operandos.
+ - Expression Placeholder - una secuencia de operadores y operandos.
  Opcionalmente puede especificar un tipo que devuelve esta expresión.
 
-Identificador Placeholder - cualquier identificador de símbolo. 
-También puede especificar una expresión regular que se utilizará para hacer coincidir nombres de símbolos.
+ - **Identifier Placeholder** - Cualquier identificador de símbolo.He tenido pocas
+ dificultades con la refactorizaciones search pattern. Uno de ellos fue que muchas
+ veces los patrones que creaba reshaper no era capaz de encontrarlo. Este problema
+ normalmente lo solucionaba sustituyendo el placeholder que me daba problemas por
+ un identifier placeholder.
+ También puede especificar una expresión regular que se utilizará para hacer coincidir nombres de símbolos.
 
-Marcador de posición de extracto: 
-una sentencia de línea única que termina con un punto y coma o un bloque de instrucciones. Si es necesario, puede especificar el número mínimo o máximo de declaraciones que deberían coincidir.
+ - **Statement Placeholder** -
+ una sentencia de única línea  que termina con un punto y coma o un bloque de instrucciones. 
+ Si es necesario, puede especificar el número mínimo o máximo de declaraciones que deberían coincidir.
 
 
-Escriba Placeholder:
- un tipo de valor o un tipo de referencia. De forma predeterminada, 
+ - **Type Placeholder** -
+ Un tipo de valor o un tipo de referencia. De forma predeterminada, 
  un marcador de posición de este tipo coincidirá con cualquier tipo, 
  pero puede especificar un tipo específico explícitamente.
 
@@ -208,3 +199,8 @@ Tenga en cuenta que es muy importante elegir los tipos correctos de marcadores
 de posición para partes específicas de su patrón. 
 Si su patrón no coincide con el bloque de código al que corresponde,
  el problema suele ser con tipos de marcadores de posición elegidos incorrectamente.
+ 
+ Después de este paréntesis regresamos al a nuestra ventana.Ahora en lugar de guardar el patron
+ vamos a darle primero a find.
+ 
+ ![17](searchPattern_17.jpg)
