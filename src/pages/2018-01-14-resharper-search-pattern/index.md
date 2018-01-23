@@ -2,7 +2,7 @@
 title: ReSharper, Search Pattern
 date: "2018-01-14T02:40:32.169Z"
 path: "/resharper-search-pattern/"
-image_article: "cover.png"
+image_article: "searchPattern_26.jpg"
 ---
 
 Hace poco que he empezado a tocar c# y con el Visual Studio.
@@ -10,8 +10,7 @@ Por supuesto, esto incluye el plugin ReSharper de jetbrains para Visual Studio.
 
 El plugin tiene un montón de funcionalidades muy potentes, la que más destaca a 
 mi parecer son sus refactors automáticos. Sin embargo, hoy hablaré otra funcionalidad
-menos espectacular pero muy útil Search Pattern o patrones de búsquedas y
-como un pequeño extra también explico como exportar estas y otras configuraciones de ReSharper.
+menos espectacular pero muy útil Search Pattern o patrones de búsquedas de ReSharper.
 
 
 Search Pattern
@@ -34,12 +33,13 @@ un mal olor. Aquí es donde aparecen los **Search Pattern**.
 
 **Hay dos maneras de hacer un search pattern** 
 
-- De cero.(Ancla)
-- A partir de un fragmento de código.(Ancla)
+- De cero.
+- A partir de un fragmento de código.
 
--------------------------------------
 
-**De cero.**
+
+De cero
+-------------------
 
 Vamos al menú de ReSharper y dentro de este vamos a Options.
     
@@ -71,9 +71,10 @@ Y magia ya nuestro propio editor es el que nos avisa de este nuevo mal olor.
 ![6](searchPattern_6.jpg)
 ![7](searchPattern_7.jpg)
 
---------------------------------------
 
-**A partir de un fragmento de código.**
+
+A partir de un fragmento de código.
+--------------------------------------
 
 Esta forma es más rápida. Seleccionamos el código a partir del cual queremos crear un nuevo patrón
 le damos al botón secundario y pulsamos sobre "Search with Pattern...".
@@ -97,7 +98,8 @@ de cuando lo hacemos de cero ahora nos va a coger el propio código seleccionado
 defecto, cosa que por supuesto podemos cambiar pulsando edit.
 
 
-**Creando nuestro propio refactor automático**
+Creando nuestro propio refactor automático
+--
 
 
 Ahora que ya hemos creado nuestro search pattern vamos a ir un paso más allá. Partiendo de este
@@ -121,7 +123,8 @@ unas opciones para refactorizar de manera automatica.
 
 ![13](searchPattern_13.jpg)
 
-**Un caso real**
+Un caso real
+-----
 
 Hasta aquí, la parte más sencilla aunque sé que todo el mundo está deseando que comparta este 
 patrón esencial para todo programador voy poner un ejemplo en un contexto más real.
@@ -175,7 +178,7 @@ Hay cinco tipos de marcadores de posición:
  - **Argument Placeholder** - Uno o más argumentos en la invocación a un método.
  Si es necesario, puede especificar el número mínimo o máximo de argumentos que deberían coincidir.
 
- - Expression Placeholder - una secuencia de operadores y operandos.
+ - **Expression Placeholder** - una secuencia de operadores y operandos.
  Opcionalmente puede especificar un tipo que devuelve está expresión.
 
  - **Identifier Placeholder** - Cualquier identificador de símbolo.He tenido pocas
@@ -270,9 +273,3 @@ solo es una pequeña parte de todo los que ofrece ReSharper cuyo punto fuerte es
 que ya incluye. Sin duda en plugin con mucha potencia pero a pesar de ello no resulta nada
 complejo empezar a trabajar con él. En la actualidad es plugin que debería tener todo usuario de
 Visual Studio.
-
- 
-
-
-
-
