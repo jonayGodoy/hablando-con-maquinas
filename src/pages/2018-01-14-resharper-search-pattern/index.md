@@ -213,7 +213,7 @@ patrón ¿Cuantas coincidencias conseguiremos?
 
 ![18](searchPattern_18.jpg)
 
-0 coincidencias. Parece ue desgraciadamente los search pattern que construye ReSharper a partir
+0 coincidencias. Parece que desgraciadamente los search pattern que construye ReSharper a partir
 no son tan buenos como esperábamos.Cuando sigo la siguiente estrategia.
 Pulsamos el botón editar para cambiar el patrón de nuestra búsqueda.
 
