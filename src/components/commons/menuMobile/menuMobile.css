@@ -62,7 +62,10 @@
     box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 
-
+/*todo a break repair without important (#337ab7)*/
+a {
+    color: #404040 !important;
+}
 /*
  * Override Bootstrap's default container.
  */
