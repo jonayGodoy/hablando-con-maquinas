@@ -6,6 +6,9 @@ import MenuMobile from '../menuMobile/MenuMobile';
 import '../../../styles.css';
 import './template.css';
 
+//todo: remove dependecy boostrap
+import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 class MainTemplate extends React.Component {
     constructor(props, context) {

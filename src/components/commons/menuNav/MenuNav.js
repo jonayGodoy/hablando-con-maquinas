@@ -3,9 +3,6 @@ import Link  from "gatsby-link";
 import config from "../../../../config-blog"
 import * as routesPath from "../../../routePath";
 
-//todo: remove dependecy boostrap
-import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
 import './menuNav.css';
 import img_head from '../../../assets/img/head.jpg';
 
