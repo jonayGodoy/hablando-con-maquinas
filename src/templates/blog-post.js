@@ -7,6 +7,9 @@ import config from "../../config-blog"
 import DisqusComments  from 'react-disqus-comments';
 import  RecentArticles from "../components/widgets/recentArticles/RecentArticles";
 
+//todo: remove dependecy boostrap
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 import "./md.css";
 
 const imagesAllArticles = require.context("../pages/", true,  /\.(png|jpg|gif)$/);

@@ -3,7 +3,6 @@ import React from 'react';
 import MenuNav from '../menuNav/MenuNav';
 import MenuMobile from '../menuMobile/MenuMobile';
 
-import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import '../../../styles.css';
 import './template.css';
 
