@@ -69,6 +69,7 @@ Le damos a Add, nos retornará a la anterior ventana y luego pulsamos en save.
 Y magia ya nuestro propio editor es el que nos avisa de este nuevo mal olor.
 
 ![6](searchPattern_6.jpg)
+
 ![7](searchPattern_7.jpg)
 
 
@@ -225,6 +226,7 @@ Como solo queda exactamente las letras que compone nuestro código encontrará n
 coincidencia.
 
 ![20](searchPattern_20.jpg)
+
 ![21](searchPattern_21.jpg)
 
 A continuación, uno a uno vamos añadiendo volviendo a añadir cada uno de los argumentos
@@ -273,3 +275,5 @@ solo es una pequeña parte de todo los que ofrece ReSharper cuyo punto fuerte es
 que ya incluye. Sin duda en plugin con mucha potencia pero a pesar de ello no resulta nada
 complejo empezar a trabajar con él. En la actualidad es plugin que debería tener todo usuario de
 Visual Studio.
+
+[Referencia - documentacion - search pattern](https://www.jetbrains.com/help/resharper/Navigation_and_Search__Structural_Search_and_Replace.html)
