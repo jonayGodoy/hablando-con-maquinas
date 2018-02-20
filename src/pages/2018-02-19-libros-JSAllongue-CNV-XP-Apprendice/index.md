@@ -63,7 +63,7 @@ más he ojeado no sea tecnico.
 Habla de como entender las nesecidades de otras a partir de sus sentimientos y buscando
 conseguir compatibilizar las nesecidades de personas que en un principio tiene posturas enfrentadas
 Todo esto los explica siendo muy conceptual, indicando una serie de pasos para conseguirlo y refuerza todo esto
-con ejemplos de casos reales del autor. El libro tiene un cierto toque "místi 
+con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico" 
 
 
 - Extreme Programming. Explained
@@ -73,5 +73,5 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místi
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDQ2MDQwMF19
+eyJoaXN0b3J5IjpbMTE5OTg1ODIyXX0=
 -->
