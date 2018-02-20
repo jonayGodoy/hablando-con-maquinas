@@ -45,7 +45,7 @@ Me dejo de ir por las ramas empiezo con los ultimos 4 libros que leido a fecha d
 - [Leer online](https://leanpub.com/javascriptallongesix/read)
 - [Descargar pdf](http://samples.leanpub.com/javascriptallongesix-sample.pdf)
 - [Comprar](https://leanpub.com/javascriptallongesix)
-
+ Mi breve descripcion:
 A este libro le debo en gran parte mi pasion por javascript. Fue un libro que marco una transición para mi.Es el primer libro que he leido en javascript. Es un libro complejo y denso. Trabaje duro para acabarlo y creo que ha dia de hoy deberia
 darle un segunda lectura porque  hay muchos conceptos y patrones complejos que no terminé de asimilar.
 Lo leia con un ordenador y compañero al lado convertiendo muchos de los ejemplos del 
@@ -55,7 +55,7 @@ libro a test mientras nos peleabamos por comprenderlos.Si vas a comezar con java
 - Titulo: [Comunicacion No Violenta un Lenguaje de Vida](https://www.amazon.es/Comunicaci%C3%B3n-no-violenta-lenguaje-vida/dp/987218349X)
 -  Autor: Marshall B. Rosenberg
 - [Comprar](https://www.amazon.es/Comunicaci%C3%B3n-no-violenta-lenguaje-vida/dp/987218349X)
-
+Mi breve descripcion:
 Este el libro es el que más he ojeado despues de leerlo, me parece divertido que el libro que
 más he ojeado no sea tecnico.
 Habla de como entender las nesecidades de otras a partir de sus sentimientos y buscando
@@ -68,13 +68,13 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico
 ![Extreme Programming Explained: Embrace Change, 2nd Edition]("rellenar")
 - Titulo: [Extreme Programming Explained: Embrace Change, 2nd Edition](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
 -  Autor: [Kent Beck](https://twitter.com/kentbeck?lang=es)
-- [Comprar](https://www.amazon.es/Comunicaci%C3%B3n-no-violenta-lenguaje-vida/dp/987218349X)
+- [Comprar](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
 - Extreme Programming. Explained Second Edition.
+Mi breve descripcion:
+El libro no es tecnico. Explica los valores, principios y practicas de extreme programming. A mi que ya estaba iniciado en el extreme programming me ayudo ordenar varios conceptos que conocia. Yo conocia los valores, los principios y las practicas de extreme programming pero no como eran la conexiones entre ellos.
+
 
 - Apprendice Pattern
-
+Mi breve descripcion:
 
  
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjY3NTExOTNdfQ==
--->
