@@ -61,7 +61,7 @@ a pesar de la gran curva de aprendizaje que tiene.
 Este el libro que más he ojeado despues de leerlo, me parece divertido que el libro que
 más he ojeado no sea tecnico.
 Habla de como entender las nesecidades de otras a partir de sus sentimientos y buscando
-conseguir compatibilizar las nesecidades de personas  
+conseguir compatibilizar las nesecidades de personas que  
 
 
 - Extreme Programming. Explained
@@ -71,5 +71,5 @@ conseguir compatibilizar las nesecidades de personas
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTU5NjMxOV19
+eyJoaXN0b3J5IjpbMTg1Njc5OTI5Nl19
 -->
