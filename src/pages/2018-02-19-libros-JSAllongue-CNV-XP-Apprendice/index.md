@@ -38,7 +38,7 @@ Todos son en ingles pero a pesar de mi nivel de ingles los traductores
 
 Me dejo de ir por las ramas empiezo con los ultimos 4 libros que leido a fecha de hoy.
 
-
+![JavaScript Allongé, the "Six" Edition]()
 
 - Titulo: [JavaScript Allongé, the "Six" Edition](https://leanpub.com/javascriptallongesix)
 -  Autor: [Reg “raganwald” Braithwaite](https://twitter.com/raganwald)
@@ -71,5 +71,5 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODQ4ODkzOF19
+eyJoaXN0b3J5IjpbMzA4MjU5MTA0XX0=
 -->
