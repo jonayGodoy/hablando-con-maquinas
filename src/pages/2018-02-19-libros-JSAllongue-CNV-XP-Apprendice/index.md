@@ -61,7 +61,7 @@ a pesar de la gran curva de aprendizaje que tiene.
 Este el libro que más he ojeado despues de leerlo, me parece divertido que el libro que
 más he ojeado no sea tecnico.
 Habla de como entender las nesecidades de otras a partir de sus sentimientos y buscando
-conseg
+conseguier
 llegar a un punto común donde dos personas que partian de opiniones distintas
 
 
@@ -72,5 +72,5 @@ llegar a un punto común donde dos personas que partian de opiniones distintas
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MDUyMDY5OF19
+eyJoaXN0b3J5IjpbNjg3MDA2MzA5XX0=
 -->
