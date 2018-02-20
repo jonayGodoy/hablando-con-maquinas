@@ -40,7 +40,7 @@ Me dejo de ir por las ramas empiezo con los ultimos 4 libros que leido a fecha d
 
 - Titulo JavaScript Allongé, the "Six" Edition
 -  Autor: [Reg “raganwald” Braithwaite](https://twitter.com/raganwald)
-- [Leer online:](https://leanpub.com/javascriptallongesix/read)
+- [Leer online](https://leanpub.com/javascriptallongesix/read)
 - [Descargar pdf:](http://samples.leanpub.com/javascriptallongesix-sample.pdf)
 - 
 A este libro le debo en gran parte mi pasion por javascript. Fue un libro que marco una transición para mi.Es el primer libro que he leido en javascript. Es un libro complejo y denso. Trabaje duro para acabarlo y creo que ha dia de hoy deberia
@@ -69,5 +69,5 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU0OTY2NDJdfQ==
+eyJoaXN0b3J5IjpbLTIwNzU0MDk3NTZdfQ==
 -->
