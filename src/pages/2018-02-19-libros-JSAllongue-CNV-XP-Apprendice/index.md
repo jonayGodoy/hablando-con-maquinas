@@ -39,7 +39,7 @@ Todos son en ingles pero a pesar de mi nivel de ingles los traductores
 Me dejo de ir por las ramas empiezo con los ultimos 4 libros que leido a fecha de hoy.
 
 - Javascript ALLOGE.
-A este libro le debo mi amor por javascript. Fue un libro que marco una transición para mi.
+A este libro le debo en gran parte mi  por javascript. Fue un libro que marco una transición para mi.
 Es el primer libro que he leido fe javascript.
 Es un libro complejo y denso. Trabaje duro para acabarlo y creo que ha dia de hoy deberia
 darle un segunda lectura porque  hay muchos conceptos y patrones 
@@ -74,5 +74,5 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzA5NjI1NDddfQ==
+eyJoaXN0b3J5IjpbLTEyNDkxOTQ1NjFdfQ==
 -->
