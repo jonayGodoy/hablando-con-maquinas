@@ -60,7 +60,7 @@ a pesar de la gran curva de aprendizaje que tiene.
 - Comunicacion No Vilolenta un Lenguaje de Vida.
 Este el libro que más he ojeado despues de leerlo, me parece divertido que el libro que
 más he ojeado no sea tecnico.
-Habla de como entender las nesecidades 
+Habla de como entender las nesecidades de otr
 
 
 - Extreme Programming. Explained
@@ -70,5 +70,5 @@ Habla de como entender las nesecidades
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjE5NTY2ODFdfQ==
+eyJoaXN0b3J5IjpbLTIyNDU0MzQ4M119
 -->
