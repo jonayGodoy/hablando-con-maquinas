@@ -67,12 +67,12 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico
 
 
 
-- Extreme Programming. Explained
+- Extreme Programming. Explained Second Edition.
 
 - Apprendice Pattern
 
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk2MTU1MjE3XX0=
+eyJoaXN0b3J5IjpbLTE5NzA5NjI1NDddfQ==
 -->
