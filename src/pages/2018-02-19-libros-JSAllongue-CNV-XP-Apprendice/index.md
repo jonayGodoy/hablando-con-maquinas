@@ -60,7 +60,7 @@ a pesar de la gran curva de aprendizaje que tiene.
 - Comunicacion No Vilolenta un Lenguaje de Vida.
 Este el libro que más he ojeado despues de leerlo, me parece divertido que el libro que
 más he ojeado no sea tecnico.
-Habla de como entender las nesecidades de otras a partir de sus sentimientos y busc
+Habla de como entender las nesecidades de otras a partir de sus sentimientos y buscando
 llegar a un punto común donde dos personas que partian de opiniones distintas
 
 
@@ -71,5 +71,5 @@ llegar a un punto común donde dos personas que partian de opiniones distintas
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc0OTIzNjUxXX0=
+eyJoaXN0b3J5IjpbLTk1NzQ2MDQ2OV19
 -->
