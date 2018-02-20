@@ -44,17 +44,18 @@ Me dejo de ir por las ramas empiezo con los ultimos 4 libros que leido a fecha d
 -  Autor: [Reg “raganwald” Braithwaite](https://twitter.com/raganwald)
 - [Leer online](https://leanpub.com/javascriptallongesix/read)
 - [Descargar pdf](http://samples.leanpub.com/javascriptallongesix-sample.pdf)
-- 
+- [Comprar](https://leanpub.com/javascriptallongesix)
+
 A este libro le debo en gran parte mi pasion por javascript. Fue un libro que marco una transición para mi.Es el primer libro que he leido en javascript. Es un libro complejo y denso. Trabaje duro para acabarlo y creo que ha dia de hoy deberia
 darle un segunda lectura porque  hay muchos conceptos y patrones complejos que no terminé de asimilar.
 Lo leia con un ordenador y compañero al lado convertiendo muchos de los ejemplos del 
-libro a test mientras nos peleabamos por comprenderlos.Si vas a comezar con javascript quizas los libros de you dont know javascript, podria ser más suaves me he leido el primero y parece que la curva de aprendizaje es menos dura que con Javascript ALLOGE y tiene muy buena pinta espero terminarlos un dia de estos. Es un libro muy completo que se actualiza con el paso de tiempo. Es lo libro que creoque puede aportar mucho a una persona independientemente de su nivel de javascript a pesar de la gran curva de aprendizaje que tiene. Se puede tanto comprar como leer de manera gratuita.
+libro a test mientras nos peleabamos por comprenderlos.Si vas a comezar con javascript quizas los libros de you dont know javascript, podria ser más suaves me he leido el primero y parece que la curva de aprendizaje es menos dura que con Javascript ALLOGE y tiene muy buena pinta espero terminarlos un dia de estos. Es un libro muy completo que se actualiza con el paso de tiempo. Es lo libro que creo que puede aportar mucho a una persona independientemente de su nivel de javascript a pesar de la gran curva de aprendizaje que tiene. Se puede tanto comprar como leer de manera gratuita.
 
+![Comunicacion No Violenta un Lenguaje de Vida]("rellenar")
+- Titulo: [Comunicacion No Violenta un Lenguaje de Vida](https://www.amazon.es/Comunicaci%C3%B3n-no-violenta-lenguaje-vida/dp/987218349X)
+-  Autor: Marshall B. Rosenberg
+- [Comprar](https://www.amazon.es/Comunicaci%C3%B3n-no-violenta-lenguaje-vida/dp/987218349X)
 
-
-
-
-- Comunicacion No Vilolenta un Lenguaje de Vida.
 Este el libro es el que más he ojeado despues de leerlo, me parece divertido que el libro que
 más he ojeado no sea tecnico.
 Habla de como entender las nesecidades de otras a partir de sus sentimientos y buscando
@@ -64,6 +65,10 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico
 
 
 
+![Extreme Programming Explained: Embrace Change, 2nd Edition]("rellenar")
+- Titulo: [Extreme Programming Explained: Embrace Change, 2nd Edition](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
+-  Autor: [Kent Beck](https://twitter.com/kentbeck?lang=es)
+- [Comprar](https://www.amazon.es/Comunicaci%C3%B3n-no-violenta-lenguaje-vida/dp/987218349X)
 - Extreme Programming. Explained Second Edition.
 
 - Apprendice Pattern
