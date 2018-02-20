@@ -62,7 +62,7 @@ Este el libro que más he ojeado despues de leerlo, me parece divertido que el l
 más he ojeado no sea tecnico.
 Habla de como entender las nesecidades de otras a partir de sus sentimientos y buscando
 conseguir compatibilizar las nesecidades de personas que en un principio tiene posturas enfrentadas
-Todo esto los explica siendo muy conceptual, indicando una serie de pasos para conseguirlo y td 
+Todo esto los explica siendo muy conceptual, indicando una serie de pasos para conseguirlo y t 
 
 
 - Extreme Programming. Explained
@@ -72,5 +72,5 @@ Todo esto los explica siendo muy conceptual, indicando una serie de pasos para c
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNjcxMDQxMV19
+eyJoaXN0b3J5IjpbMTczNzM0NDM1OV19
 -->
