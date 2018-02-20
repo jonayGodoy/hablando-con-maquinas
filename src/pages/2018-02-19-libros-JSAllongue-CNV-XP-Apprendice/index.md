@@ -40,12 +40,13 @@ Me dejo de ir por las ramas empiezo con los ultimos 4 libros que leido a fecha d
 
 - Titulo JavaScript Allongé, the "Six" Edition
 - Autor: Reg “raganwald” Braithwaite
-- [Leer online](https://leanpub.com/javascriptallongesix/read)
-
+- [Leer online:](https://leanpub.com/javascriptallongesix/read)
+- [Descargar pdf:](https://leanpub.com/javascriptallongesix/read)
+- 
 A este libro le debo en gran parte mi pasion por javascript. Fue un libro que marco una transición para mi.Es el primer libro que he leido en javascript. Es un libro complejo y denso. Trabaje duro para acabarlo y creo que ha dia de hoy deberia
 darle un segunda lectura porque  hay muchos conceptos y patrones complejos que no terminé de asimilar.
 Lo leia con un ordenador y compañero al lado convertiendo muchos de los ejemplos del 
-libro a test mientras nos peleabamos por comprenderlos.Si vas a comezar con javascript quizas los libros de you dont know javascript, podria ser más suaves me he leido el primero y parece que la curva de aprendizaje es menos dura que con Javascript ALLOGE y tiene muy buena pinta espero terminarlos un dia de estos. Es un libro muy completo que se actualiza con el paso de tiempo. Es lo libro que creoque puede aportar mucho a una persona independientemente de su nivel de javascript a pesar de la gran curva de aprendizaje que tiene.
+libro a test mientras nos peleabamos por comprenderlos.Si vas a comezar con javascript quizas los libros de you dont know javascript, podria ser más suaves me he leido el primero y parece que la curva de aprendizaje es menos dura que con Javascript ALLOGE y tiene muy buena pinta espero terminarlos un dia de estos. Es un libro muy completo que se actualiza con el paso de tiempo. Es lo libro que creoque puede aportar mucho a una persona independientemente de su nivel de javascript a pesar de la gran curva de aprendizaje que tiene. 
 
 
 
@@ -68,5 +69,5 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjkzNzcxNF19
+eyJoaXN0b3J5IjpbMTMwODMzNzg4NV19
 -->
