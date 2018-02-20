@@ -58,8 +58,9 @@ a pesar de la gran curva de aprendizaje que tiene.
 
 
 - Comunicacion No Vilolenta un Lenguaje de Vida.
-Este el libro que más he ojeado despues de leerlo me parece divertido que el libro que
+Este el libro que más he ojeado despues de leerlo, me parece divertido que el libro que
 más he ojeado no sea tecnico.
+Habla de como entender las nese
 
 
 - Extreme Programming. Explained
@@ -69,5 +70,5 @@ más he ojeado no sea tecnico.
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzAxODc3NzddfQ==
+eyJoaXN0b3J5IjpbMTQ1MTE0OTc2Nl19
 -->
