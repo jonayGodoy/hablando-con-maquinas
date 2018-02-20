@@ -60,7 +60,7 @@ a pesar de la gran curva de aprendizaje que tiene.
 - Comunicacion No Vilolenta un Lenguaje de Vida.
 Este el libro que más he ojeado despues de leerlo, me parece divertido que el libro que
 más he ojeado no sea tecnico.
-Habla de como entender las nesecidades de otras a partir de sus sentimientos y
+Habla de como entender las nesecidades de otras a partir de sus sentimientos y 
 
 
 - Extreme Programming. Explained
@@ -70,5 +70,5 @@ Habla de como entender las nesecidades de otras a partir de sus sentimientos y
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxNjkxNDAzNV19
+eyJoaXN0b3J5IjpbLTYzNTMzMjE0MV19
 -->
