@@ -46,8 +46,9 @@ darle un segunda lectura porque  hay muchos conceptos y patrones
 complejos que no terminé de asimilar.
 Lo leia con un ordenador y compañero al lado convertiendo muchos de los ejemplos del 
 libro a test mientras nos peleabamos por comprenderlos.
-Si vas a comezar con javascript quizas los libros de you dont know javascript, podria  me he leido
-el primero y parece que la curva de aprendizaje es menos dura que con Javascript ALLOGE.
+Si vas a comezar con javascript quizas los libros de you dont know javascript, podria ser más suaves
+ me he leido el primero y parece que la curva de aprendizaje es menos dura que con Javascript ALLOGE y
+ tiene muy buena pinta espero terminarlos un dia de estos.
 Es un libro muy completo que se actualiza con el paso de tiempo. Es lo libro que creo
 que puede aportar mucho a una persona independientemente de su nivel de javascript
 a pesar de la gran curva de aprendizaje que tiene.
@@ -68,5 +69,5 @@ más he ojeado no sea tecnico.
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5ODA1NjM1MV19
+eyJoaXN0b3J5IjpbLTE2MzAxODc3NzddfQ==
 -->
