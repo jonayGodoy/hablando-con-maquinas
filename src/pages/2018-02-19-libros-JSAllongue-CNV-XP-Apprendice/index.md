@@ -38,7 +38,8 @@ Todos son en ingles pero a pesar de mi nivel de ingles los traductores
 
 Me dejo de ir por las ramas empiezo con los ultimos 4 libros que leido a fecha de hoy.
 
-- Javascript ALLOGE.
+- JavaScript Allongé, the "Six" Edition
+- 
 A este libro le debo en gran parte mi pasion por javascript. Fue un libro que marco una transición para mi.Es el primer libro que he leido en javascript. Es un libro complejo y denso. Trabaje duro para acabarlo y creo que ha dia de hoy deberia
 darle un segunda lectura porque  hay muchos conceptos y patrones complejos que no terminé de asimilar.
 Lo leia con un ordenador y compañero al lado convertiendo muchos de los ejemplos del 
@@ -65,5 +66,5 @@ con ejemplos de casos reales del autor. El libro tiene un cierto toque "místico
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NTM1MDYwMV19
+eyJoaXN0b3J5IjpbNTA2NDYzNjUzXX0=
 -->
