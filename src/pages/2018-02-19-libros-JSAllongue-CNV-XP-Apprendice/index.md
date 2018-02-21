@@ -36,7 +36,8 @@ Salvo un libro todos son en inglés pero a pesar de mi nivel de inglés los trad
 
 Me dejo de ir por las ramas empiezo con los últimos 4 libros que leído a fecha de hoy.
 
-![JavaScript Allongé, the "Six" Edition](allonge.jpg)
+![JavaScript Allongé, the "Six" Edition](allonge1.jpg)
+
 
 - Titulo: [JavaScript Allongé, the "Six" Edition](https://leanpub.com/javascriptallongesix)
 -  Autor: [Reg “raganwald” Braithwaite](https://twitter.com/raganwald)
@@ -55,7 +56,10 @@ Me dejo de ir por las ramas empiezo con los últimos 4 libros que leído a fecha
     podría ser más suaves me he leído el primero y parece que la curva de aprendizaje es menos dura que con Javascript Allongé 
     y tiene muy buena pinta espero terminarlos un dia de estos. 
 
+
+
 ![Comunicacion No Violenta un Lenguaje de Vida](comunicacion-no-violenta.jpg)
+
 - Titulo: [Comunicacion No Violenta un Lenguaje de Vida](https://www.amazon.es/Comunicaci%C3%B3n-no-violenta-lenguaje-vida/dp/987218349X)
 - Autor: Marshall B. Rosenberg
 - Idioma : Español
@@ -81,6 +85,7 @@ Me dejo de ir por las ramas empiezo con los últimos 4 libros que leído a fecha
 
 
 ![Extreme Programming Explained: Embrace Change, 2nd Edition](extreme-programming-explained-second-edition.jpg)
+
 - Titulo: [Extreme Programming Explained: Embrace Change, 2nd Edition](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
 -  Autor: [Kent Beck](https://twitter.com/kentbeck?lang=es)
 - [Comprar](https://www.amazon.com/Extreme-Programming-Explained-Embrace-Change/dp/0321278658)
@@ -93,6 +98,7 @@ Me dejo de ir por las ramas empiezo con los últimos 4 libros que leído a fecha
 
 
 ![Apprenticeship Patterns](apprenticeship-pattern.jpg)
+
 - Titulo: [Apprenticeship Patterns: Guidance for the Aspiring Software Craftsman](https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman/dp/0596518382)
 - Autores: [@davehoover](https://twitter.com/davehoover) y [Adewale Oshineye](https://twitter.com/ade_oshineye)
 - [Comprar](https://www.amazon.com/Apprenticeship-Patterns-Guidance-Aspiring-Craftsman/dp/0596518382)
