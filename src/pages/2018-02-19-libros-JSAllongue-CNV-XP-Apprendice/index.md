@@ -1,5 +1,5 @@
 ---
-title: libros-JSAllonge-CNV-XP-Apprenticeship
+title: "Libros: JSAllonge, CNV, XP, Apprenticeship"
 date: "2018-02-19T02:40:32.169Z"
 path: "/libros-js-allonge-cnv-xp-apprenticeship/"
 image_article: "cover.jpg"
