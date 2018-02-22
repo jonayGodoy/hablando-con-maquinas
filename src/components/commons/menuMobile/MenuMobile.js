@@ -46,8 +46,9 @@ class MenuMobile extends React.Component {
                     <div className="drawer-panel panel-new"
                          style={this.state.isHidden ? { left: "-500px"} :{left: "0" }}>
                         <div>
-                            <Link to={'/'} onClick={this.toggle}>
-                                <img className="img-responsive img_logo_mobile" src={img_head}/>
+                            /* todo: extraer boxShadow a un stylo general para el link */
+                            <Link to={'/'} style={{ boxShadow: 'none' }} onClick={this.toggle}>
+                                <img className="img_logo_mobile" src={img_head}/>
                             </Link>
                             <div onClick={this.toggle}>
                                 {routesPath.menu.map((routePath, index) =>(

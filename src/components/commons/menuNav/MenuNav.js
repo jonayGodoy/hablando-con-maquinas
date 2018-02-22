@@ -15,7 +15,7 @@ const MenuNav = () => {
                 <div className="row">
                     <div>
                         <Link to={routesPath.inicio.path}>
-                            <img className="col-xs-5 col-md-5 img-logo img-responsive " src={img_head}/>
+                            <img className="col-xs-5 col-md-5 img-logo" src={img_head}/>
                         </Link>
                         <nav className="blog-nav col-md-offset-1 col-md-6">
                             <Link to={routesPath.inicio.path}>
