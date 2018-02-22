@@ -29,7 +29,7 @@ class BlogPostTemplate extends React.Component {
                 <div className="col-sm-8" style={{paddingLeft: "5%"}}>
                     <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
                     <div>
-                        <img className="img-thumbnail" src={this.cover} />
+                        <img className="img-thumbnail-new" src={this.cover} />
                         <h1>{this.post.frontmatter.title}</h1>
 
                         <div dangerouslySetInnerHTML={{ __html: this.post.html }} />
