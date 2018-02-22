@@ -19,7 +19,7 @@ class BoxArticles extends React.Component {
       return (
         <div>
             <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
-                <img  className="img-thumbnail image-article-BoxArticle" src={this.cover} />
+                <img  className="img-thumbnail-new image-article-BoxArticle" src={this.cover} />
             </Link>
             <h3>
                 <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
