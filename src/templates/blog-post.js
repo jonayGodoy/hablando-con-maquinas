@@ -25,7 +25,7 @@ class BlogPostTemplate extends React.Component {
         const posts =  this.props.data.allMarkdownRemark.edges;
 
         return (
-            <div className>
+            <div>
                 <div className="main-column">
                     <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
                     <div>
