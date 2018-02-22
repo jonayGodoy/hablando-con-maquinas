@@ -25,8 +25,8 @@ class BlogPostTemplate extends React.Component {
         const posts =  this.props.data.allMarkdownRemark.edges;
 
         return (
-            <div className="row">
-                <div className="col-sm-8" style={{paddingLeft: "5%"}}>
+            <div className>
+                <div className="main-column">
                     <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
                     <div>
                         <img className="img-thumbnail-new" src={this.cover} />
@@ -41,7 +41,8 @@ class BlogPostTemplate extends React.Component {
                         />
                     </div>
                 </div>
-                <div className="col-sm-4"><RecentArticles posts={posts}/></div>
+                    <div className="sidebar-column"><RecentArticles posts={posts}/>
+                </div>
             </div>
         )
     }
