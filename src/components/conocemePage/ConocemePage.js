@@ -11,7 +11,7 @@ class ConocemePage extends React.Component {
         return (
             <div className="cv container-fluid">
                 <div className="row center-block">
-                    <img className="img-thumbnail col-md-2 center-block"
+                    <img className="img-thumbnail-new col-md-2 center-block"
                         src={imgCV}
                     />
                     <div className="col-md-9 summaryMain">
