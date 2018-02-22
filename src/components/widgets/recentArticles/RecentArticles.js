@@ -16,7 +16,7 @@ class RecentArticles extends React.Component {
     render () {
         return (
             <div className="module-sidebar">
-                <h5 className="sidebar-module-title text-center">Articulos Recientes</h5>
+                <h5 className="sidebar-module-title">Articulos Recientes</h5>
                 <hr/>
                 <ul>
                     {this.posts.map((post) => {
