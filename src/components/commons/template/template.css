@@ -9,7 +9,9 @@
         margin: 40px auto;
         width: 1040px;
         max-width: 90%;
-        padding: 0 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 10px;
         -webkit-box-shadow: 0 0 10px rgba(0,0,0,.2);
         -moz-box-shadow: 0 0 10px rgba(0,0,0,.2);
         box-shadow: 0 0 10px rgba(0,0,0,.2);

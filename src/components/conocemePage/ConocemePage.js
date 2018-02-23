@@ -9,35 +9,39 @@ class ConocemePage extends React.Component {
 
     render () {
         return (
-            <div className="cv container-fluid">
-                <div className="row center-block">
-                    <img className="img-thumbnail-new col-md-2 center-block"
-                        src={imgCV}
-                    />
-                    <div className="col-md-9 summaryMain">
+            <div className="cv">
+                <div>
+                    <img className="img-thumbnail-new cv-image" src={imgCV}/>
+                    <div className="basic-data">
                         <h1>{cv.basics.name}</h1>
                         <h6><a href={"mailto:"+config.email}>{config.email}</a></h6>
                         <h3>{cv.basics.label}</h3>
                     </div>
                 </div>
                 <hr/>
-                <div className="row text-center">
+                <div className="summary">
                     <h3 >{cv.basics.summary}</h3>
                 </div>
                 <hr/>
-                <div className="row">
-                    <h3 className="col-md-4">Skills</h3>
-                    <table className="col-md-8 tableSkills">
-                        {cv.skills.map((skill,index) =>(<td key={index}>{skill.name}</td>))
-                            .map((skillTD, index ,array) => array.splice(index,index+3))
-                            .map((skillsGrouped,index) => <tr key={index}>{skillsGrouped}</tr>)
-                        }
-                    </table>
-                </div>
                 <hr/>
-                <div className="row">
-                    <h3 className="col-md-4">Experiencia</h3>
-                    <div className="col-md-8">
+                {/*todo: repair skills
+                <div className="block-linkedin">
+                    <h3 className="block-linkedin-left">Skills</h3>
+                    <div className="block-linkedin-right">
+                        {cv.skills.map((skill) => (
+                            <div>{skill.name}</div>
+                        ))}
+                        {cv.skills.map((skill,index) =>(<div className="div-inline" key={index}>{skill.name}</div>))
+                            .map((skillTD, index ,array) => array.splice(index,index+3))
+                            .map((skillsGrouped,index) => <h3 key={index}>{skillsGrouped}</h3>)
+                        }
+                    </div>
+                  </div>
+                   <hr/>
+                  */}
+                <div className="block-linkedin">
+                    <h3 className="block-linkedin-left">Experiencia</h3>
+                    <div className="block-linkedin-right">
                         {cv.work.map((work) => (
                           <div >
                             <h3 >{work.company}</h3>
@@ -49,9 +53,9 @@ class ConocemePage extends React.Component {
                     </div>
                 </div>
                 <hr/>
-                <div className="row">
-                    <h3 className="col-md-4 text">Educación</h3>
-                    <div className="col-md-8">
+                <div className="block-linkedin">
+                    <h3 className="block-linkedin-left">Educación</h3>
+                    <div className="block-linkedin-right">
                         {cv.education.map((study) => (
                             <div >
                                 <h3>{study.institution}</h3>
@@ -62,9 +66,9 @@ class ConocemePage extends React.Component {
                     </div>
                 </div>
                 <hr/>
-                <div className="row">
-                    <h3 className="col-md-4">Reconocimientos y premios</h3>
-                    <div className="col-md-8">
+                <div className="block-linkedin">
+                    <h3 className="block-linkedin-left">Reconocimientos y premios</h3>
+                    <div className="block-linkedin-right">
                         {cv.honors_awards.map((honor_award) => (
                             <div >
                                 <h3>{honor_award.Title}</h3>
