@@ -1,9 +1,35 @@
 .img-logo {
+    float: left;
+    max-width: 350px;
+    width: 30%;
+}
+
+.header{
+    display: inline-block;
+    padding-left: 5%;
     padding-top: 5%;
+    width: 100%;
+    border-bottom-size: 1px;
+    border-bottom-style: inset;
+    border-bottom-color: #3F3F3F;
+}
+
+
+.hidden-header{}
+
+.title-header{
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.title-header:hover,
+.title-header:focus{
+    text-decoration: none;
 }
 
 .blog-nav{
-    padding-top: 5%;
+    float: right;
+    margin-right: 5%;
 }
 
 .blog-nav-item {
@@ -17,14 +43,18 @@
      box-shadow: 0 0;
 }
 
-
 .blog-nav-item:hover,
 .blog-nav-item:focus {
     color: #4d4d4d;
+    text-decoration: none;
 }
 
 
-
+@media (max-width: 770px) {
+    .hidden-header{
+        display: none;
+    }
+}
 
 
 
