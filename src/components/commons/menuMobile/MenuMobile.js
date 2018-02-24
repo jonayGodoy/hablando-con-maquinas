@@ -6,9 +6,9 @@ import * as routesPath from "../../../routePath";
 
 import './menuMobile.css';
 import img_head from '../../../assets/img/head.jpg';
+import svg_menu_hamburger from '../../../assets/img/menu-hamburger.svg';
 
 
-const responsiveMainStyleBootstrap = "hidden-sm hidden-md hidden-lg hidden-sm hidden-md hidden-lg";
 class MenuMobile extends React.Component {
 
     constructor(props, context){
@@ -24,23 +24,19 @@ class MenuMobile extends React.Component {
     };
 
     componentDidUpdate(){
-        document.documentElement.style.overflowY = !this.state.isHidden ? "hidden" : "";
+        document.documentElement.style.overflowY = !this.state.isHidden ? "hidden-new" : "";
     }
 
     render(){
         return (
-            <div className={responsiveMainStyleBootstrap}>
-                <div className="head-mobile row">
-                        <div className="col-xs-1">
-                            <button className="btn"  onClick={this.toggle}>
-                                <span className="text-center glyphicon glyphicon-menu-hamburger" />
-                            </button>
-                        </div>
-                        <Link to={'/'}>
-                            <h2 className="col-xs-offset-1 col-xs-9 text-center">{config.blogTitle}</h2>
+            <div className="hidden-header-mobile">
+
+                <div className="head-mobile">
+                        <img className="btn-hamburger" src={svg_menu_hamburger} onClick={this.toggle} />
+                        <Link to={'/'} className="title-header-mobile">
+                            <h2 >{config.blogTitle}</h2>
                         </Link>
                 </div>
-                <hr/>
                 <div id="drawer" className={ this.state.isHidden ? "" : "background-menu-mobile"}
                      onClick={this.toggle}>
                     <div className="drawer-panel panel-new"
