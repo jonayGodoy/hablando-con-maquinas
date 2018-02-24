@@ -12,11 +12,9 @@ const MenuNav = () => {
     return (
         <div className="header hidden-header">
             <div>
-                <div className="img-logo" >
-                    <Link to={routesPath.inicio.path}>
-                        <img src={img_head}/>
-                    </Link>
-                </div>
+                <Link to={routesPath.inicio.path} className="img-logo">
+                    <img src={img_head}/>
+                </Link>
                 <div className="blog-nav">
                     <Link to={routesPath.inicio.path} className="title-header">
                         <h3>{config.blogTitle}</h3>

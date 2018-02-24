@@ -2,7 +2,14 @@
     float: left;
     max-width: 350px;
     width: 30%;
+    box-shadow: none;
 }
+
+.img-logo:hover,
+.img-logo:focus{
+    box-shadow: none;
+}
+
 
 .header{
     display: inline-block;
