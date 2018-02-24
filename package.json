@@ -7,7 +7,6 @@
     "url": ""
   },
   "dependencies": {
-    "bootstrap": "3.3.7",
     "gatsby": "1.9.24",
     "gatsby-link": "1.6.16",
     "gatsby-plugin-catch-links": "^1.0.15",
