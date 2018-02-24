@@ -8,6 +8,7 @@ import DisqusComments  from 'react-disqus-comments';
 import  RecentArticles from "../components/widgets/recentArticles/RecentArticles";
 
 import "./md.css";
+import "./blog-post.css"
 
 const imagesAllArticles = require.context("../pages/", true,  /\.(png|jpg|gif)$/);
 
@@ -24,9 +25,10 @@ class BlogPostTemplate extends React.Component {
     render () {
         const posts =  this.props.data.allMarkdownRemark.edges;
 
+
         return (
-            <div>
-                <div className="main-column">
+            <div className="container-new">
+                <div className="article">
                     <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
                     <div>
                         <img className="img-thumbnail-new" src={this.cover} />
@@ -41,7 +43,10 @@ class BlogPostTemplate extends React.Component {
                         />
                     </div>
                 </div>
-                    <div className="sidebar-column"><RecentArticles posts={posts}/>
+                <div className="sidebar-column">
+                    <div>
+                        <RecentArticles posts={posts}/>
+                    </div>
                 </div>
             </div>
         )

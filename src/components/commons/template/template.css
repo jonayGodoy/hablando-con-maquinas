@@ -4,6 +4,12 @@
     background: white;
 }
 
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+    background: white;
+}
+
 @media (min-width: 768px) {
     .blog-main {
         margin: 40px auto;

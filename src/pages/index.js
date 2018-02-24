@@ -7,6 +7,7 @@ import { rhythm } from "../utils/typography"
 
 import  RecentArticles from "../components/widgets/recentArticles/RecentArticles";
 
+import '../templates/blog-post.css';
 import '../components/widgets/recentArticles/sidebar.css'
 
 
@@ -15,8 +16,8 @@ class BlogIndex extends  React.Component {
         const posts =  get(this, "props.data.allMarkdownRemark.edges");
 
         return (
-            <div className="row">
-                <div className="col-sm-8" style={{paddingLeft: "5%"}}>
+            <div className="container-new">
+                <div className="article">
                     <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
                     <ul>
                         {posts.map((post,index) => {
@@ -27,7 +28,11 @@ class BlogIndex extends  React.Component {
                         }
                     </ul>
                 </div>
-                <div className="col-sm-4"><RecentArticles posts={posts}/></div>
+                <div className="sidebar-column">
+                    <div>
+                        <RecentArticles posts={posts}/>
+                    </div>
+                </div>
             </div>
         )
     }
