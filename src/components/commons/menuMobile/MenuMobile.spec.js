@@ -6,15 +6,15 @@ import MenuMobile from './MenuMobile';
 
 import "./menuMobile.css";
 
-function getWrapperMount(){
+function wrapperMount(){
    return shallow(<MenuMobile />);
 }
 
-function getButtonHead(wrapper){
+function findButtonHead(wrapper){
     return wrapper.find('.btn-hamburger').first();
 }
 
-function sidePanelcomponent(wrapper){
+function findSidePanel(wrapper){
     return wrapper.find("#drawer");
 }
 
@@ -22,7 +22,7 @@ describe("<MenuMobile/>", function(){
 
     let wrapper;
     beforeEach(function () {
-        wrapper = getWrapperMount();
+        wrapper = wrapperMount();
     });
 
     it("Mobile menu panel start hidden", function () {
@@ -30,15 +30,15 @@ describe("<MenuMobile/>", function(){
         expect(wrapper.state().isHidden).to.equal(true);
     });
     it("Mobile menu panel is show when click button ", function () {
-        let button = getButtonHead(wrapper);
+        let button = findButtonHead(wrapper);
 
         button.simulate('click');
 
         expect(wrapper.state().isHidden).to.equal(false);
     });
     it("Mobile menu panel is hidden when twice click ", function () {
-        let sidePanel = sidePanelcomponent(wrapper);
-        let button = getButtonHead(wrapper);
+        let sidePanel = findSidePanel(wrapper);
+        let button = findButtonHead(wrapper);
 
         button.simulate('click');
         sidePanel.simulate('click');
@@ -46,7 +46,7 @@ describe("<MenuMobile/>", function(){
         expect(wrapper.state().isHidden).to.equal(true);
     });
     it("Mobile menu panel, the background work ", function () {
-        let sidePanel = sidePanelcomponent(wrapper);
+        let sidePanel = findSidePanel(wrapper);
         let background = sidePanel.parent();
 
         background.simulate('click');
