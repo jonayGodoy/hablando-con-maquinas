@@ -33,6 +33,7 @@ class BlogIndex extends  React.Component {
                         <RecentArticles posts={posts}/>
                     </div>
                 </div>
+                <div className="parchForSizeContainer"/>
             </div>
         )
     }

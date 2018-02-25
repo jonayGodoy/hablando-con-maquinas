@@ -48,6 +48,7 @@ class BlogPostTemplate extends React.Component {
                         <RecentArticles posts={posts}/>
                     </div>
                 </div>
+                <div className="parchForSizeContainer"/>
             </div>
         )
     }

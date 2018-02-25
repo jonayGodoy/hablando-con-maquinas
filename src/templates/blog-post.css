@@ -1,16 +1,22 @@
 .container-new{
-    display: flex;
-    flex-direction: row;
+    display: block;
 }
 
 .article{
-    flex: 2;
-
+    float: left;
+    width: 60%;
 }
 
 .sidebar-column{
+    float: right;
+    width: 30%;
+    display: flex;
     flex: 1;
     flex-direction: column;
+}
+
+.parchForSizeContainer{
+    clear: both;
 }
 
 .module-sidebar {
@@ -28,6 +34,7 @@
 
     .article {
         display: block;
+        width: 100%;
 
     }
 
