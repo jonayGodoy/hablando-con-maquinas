@@ -11,13 +11,12 @@ function getWrapperMount(){
 }
 
 function getButtonHead(wrapper){
-    return wrapper.find('button').first();
+    return wrapper.find('.btn-hamburger').first();
 }
 
 function sidePanelcomponent(wrapper){
     return wrapper.find("#drawer");
 }
-
 
 describe("<MenuMobile/>", function(){
     it("Mobile menu panel start hidden", function () {
