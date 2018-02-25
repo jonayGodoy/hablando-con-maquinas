@@ -12,20 +12,31 @@ import '../components/widgets/recentArticles/sidebar.css'
 
 
 class BlogIndex extends  React.Component {
+    constructor(props, context){
+        super(props, context);
+        
+        this.templateWidget = this.templateWidget.bind(this);
+    }
+    
     render () {
         const posts =  get(this, "props.data.allMarkdownRemark.edges");
 
+        let bodyHome = posts.map((post,index) => {
+            if (post.node.path !== "/404/") {
+                return <BoxArticle key={index} post={post}/>
+            }
+        });
+
+        return this.templateWidget(bodyHome, posts);
+    }
+    
+    templateWidget(body,posts){
         return (
             <div className="container-new">
                 <div className="article">
                     <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
                     <ul>
-                        {posts.map((post,index) => {
-                            if (post.node.path !== "/404/") {
-                                return <BoxArticle key={index} post={post}/>
-                            }
-                        })
-                        }
+                        {body}
                     </ul>
                 </div>
                 <div className="sidebar-column">
