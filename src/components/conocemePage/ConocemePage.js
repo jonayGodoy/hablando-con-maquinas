@@ -20,7 +20,7 @@ class ConocemePage extends React.Component {
                 </div>
                 <hr/>
                 <div className="summary">
-                    <h3 >{cv.basics.summary}</h3>
+                    <h3>{cv.basics.summary}</h3>
                 </div>
                 <hr/>
                 <hr/>
@@ -42,8 +42,8 @@ class ConocemePage extends React.Component {
                 <div className="block-linkedin">
                     <h3 className="block-linkedin-left">Experiencia</h3>
                     <div className="block-linkedin-right">
-                        {cv.work.map((work) => (
-                          <div >
+                        {cv.work.map((work, index) => (
+                          <div key={index}>
                             <h3 >{work.company}</h3>
                             <h4>{work.position}</h4>
                             <h5 className="right">{work.startDate+"|"+work.endDate}</h5>
@@ -56,8 +56,8 @@ class ConocemePage extends React.Component {
                 <div className="block-linkedin">
                     <h3 className="block-linkedin-left">Educación</h3>
                     <div className="block-linkedin-right">
-                        {cv.education.map((study) => (
-                            <div >
+                        {cv.education.map((study, index) => (
+                            <div key={index}>
                                 <h3>{study.institution}</h3>
                                 <h4>{study.studyType}</h4>
                                 <h5>{study.startDate+"|"+study.endDate}</h5>
@@ -69,8 +69,8 @@ class ConocemePage extends React.Component {
                 <div className="block-linkedin">
                     <h3 className="block-linkedin-left">Reconocimientos y premios</h3>
                     <div className="block-linkedin-right">
-                        {cv.honors_awards.map((honor_award) => (
-                            <div >
+                        {cv.honors_awards.map((honor_award,index) => (
+                            <div key={index}>
                                 <h3>{honor_award.Title}</h3>
                                 <h4>{honor_award.Issuer}</h4>
                                 <h5>{honor_award.Issue_Date}</h5>
