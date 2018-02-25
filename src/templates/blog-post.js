@@ -7,7 +7,6 @@ import DisqusComments  from 'react-disqus-comments';
 import TemplateWithSidebar from '../components/commons/template-with-sidebar/TemplateWithSidebarNotComponent'
 
 import "./md.css";
-import "./blog-post.css"
 
 const imagesAllArticles = require.context("../pages/", true,  /\.(png|jpg|gif)$/);
 

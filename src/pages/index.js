@@ -5,10 +5,6 @@ import { rhythm } from "../utils/typography"
 
 import TemplateWithSidebar from '../components/commons/template-with-sidebar/TemplateWithSidebarNotComponent'
 
-import '../templates/blog-post.css';
-import '../components/widgets/recentArticles/sidebar.css'
-
-
 class BlogIndex extends  React.Component {
     render () {
         const posts =  get(this, "props.data.allMarkdownRemark.edges");
