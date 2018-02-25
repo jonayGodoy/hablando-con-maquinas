@@ -27,6 +27,7 @@ describe("<MenuMobile/>", function(){
 
     it("Mobile menu panel start hidden", function () {
         let wrapper = shallow(<MenuMobile />);
+
         expect(wrapper.state().isHidden).to.equal(true);
     });
     it("Mobile menu panel is show when click button ", function () {
