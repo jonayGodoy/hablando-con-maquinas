@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from "gatsby-link";
 
-import { prune, include as includes } from 'underscore.string';
+import './boxArticle.css';
 
 const imagesAllArticles = require.context("../../pages/", true,  /\.(png|jpg|gif)$/);
 
@@ -15,6 +15,38 @@ class BoxArticles extends React.Component {
 
   render () {
     const {post} = this.props;
+
+    return(
+        <div className="blog-card">
+            <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
+                <img  className="photo-card" src={this.cover} />
+            </Link>
+            <ul className="details">
+                <li className="author"><a href="#">John Doe</a></li>
+                <li className="date">Aug. 24, 2015</li>
+                <li className="tags">
+                    <ul>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Code</a></li>
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div className="description">
+                <h3>
+                    <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
+                        {post.node.frontmatter.title}
+                    </Link>
+                </h3>
+                <h4>Opening a door to the future(subtitle)</h4>
+                <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+                <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
+                    Leer más
+                </Link>
+            </div>
+        </div>
+    );
 
       return (
         <div>
