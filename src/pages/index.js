@@ -1,7 +1,6 @@
 import React from "react"
 import get from "lodash/get"
 import BoxArticle from '../components/boxArticle/BoxArticle';
-import { rhythm } from "../utils/typography"
 
 import TemplateWithSidebar from '../components/commons/template-with-sidebar/TemplateWithSidebarNotComponent'
 
