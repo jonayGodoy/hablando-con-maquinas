@@ -23,6 +23,7 @@ class BoxArticles extends React.Component {
                     <img  className="photo-card" src={this.cover} />
                 </Link>
                 <ul className="details">
+                    {/* todo: añadir nombre del autor al post*/}
                     <li className="author"><a href="#">John Doe</a></li>
                     <li className="date">Aug. 24, 2015</li>
                     <li className="tags">
