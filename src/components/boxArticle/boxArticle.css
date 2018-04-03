@@ -10,6 +10,7 @@
     line-height: 1.45em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
 }
 .blog-card:hover .details {
     left: 0;

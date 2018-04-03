@@ -18,21 +18,23 @@ class BoxArticles extends React.Component {
 
     return(
         <div className="blog-card">
-            <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
-                <img  className="photo-card" src={this.cover} />
-            </Link>
-            <ul className="details">
-                <li className="author"><a href="#">John Doe</a></li>
-                <li className="date">Aug. 24, 2015</li>
-                <li className="tags">
-                    <ul>
-                        <li><a href="#">Learn</a></li>
-                        <li><a href="#">Code</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <div className="photo-details">
+                <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
+                    <img  className="photo-card" src={this.cover} />
+                </Link>
+                <ul className="details">
+                    <li className="author"><a href="#">John Doe</a></li>
+                    <li className="date">Aug. 24, 2015</li>
+                    <li className="tags">
+                        <ul>
+                            <li><a href="#">Learn</a></li>
+                            <li><a href="#">Code</a></li>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
             <div className="description">
                 <h3>
                     <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
@@ -41,6 +43,7 @@ class BoxArticles extends React.Component {
                 </h3>
                 <h4>Opening a door to the future(subtitle)</h4>
                 <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
+                {/*todo: enlaces no trabajan */}
                 <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
                     Leer más
                 </Link>
