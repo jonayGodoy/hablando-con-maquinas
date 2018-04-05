@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "gatsby-link";
+import * as routesPath from "../../routePath";
 
 import './boxArticle.css';
 
@@ -24,8 +25,12 @@ class BoxArticles extends React.Component {
                     <div className="photo-card" style={ { backgroundImage: `url(${this.cover})`} } />
                 </Link>
                 <ul className="details">
-                    {/* todo: añadir nombre del autor al post*/}
-                    <li className="author"><a href="#">John Doe</a></li>
+                    <li className="author">
+                        {/* todo: testear el comportamiento del autor terminar que hacer que funciones ahora solo esta planteado*/}
+                        <Link style={{ boxShadow: "none" }} to={!post.node.author_path ? routesPath.conoceme.path : ""}>
+                            {post.node.author || "Jonay Godoy" }
+                        </Link>
+                    </li>
                     <li className="date">Aug. 24, 2015</li>
                     <li className="tags">
                         <ul>
