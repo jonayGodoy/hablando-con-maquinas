@@ -20,7 +20,8 @@ class BoxArticles extends React.Component {
         <div className="blog-card">
             <div className="photo-details">
                 <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
-                    <img  className="photo-card" src={this.cover} />
+                    {/*<img  className="photo-card" src={this.cover} />*/}
+                    <div className="photo-card" style={ { backgroundImage: `url(${this.cover})`} } />
                 </Link>
                 <ul className="details">
                     {/* todo: añadir nombre del autor al post*/}

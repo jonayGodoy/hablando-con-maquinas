@@ -18,19 +18,13 @@
     left: 0;
 }
 
-/*.blog-card:alt{}
-.blog-card:focus{
-
-    .details {
-			left: 0;
-		}
-
-}
-*/
-
 .photo-card{
-    height: 200px;
-    position: relative;
+    height: 400px;
+    display:block;
+    margin:auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .details{
