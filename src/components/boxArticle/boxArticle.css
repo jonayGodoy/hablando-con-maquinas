@@ -19,7 +19,7 @@
 }
 
 .photo-card{
-    height: 400px;
+    height: 300px;
     display:block;
     margin:auto;
 
@@ -87,6 +87,11 @@
     font-size: 1em;
     font-weight: 400;
     margin: 1.2% 0;
+}
+
+.read-more{
+    float: right;
+    margin: 3px;
 }
 
 .summary{}

@@ -31,7 +31,8 @@ class BoxArticles extends React.Component {
                             {post.node.author || "Jonay Godoy" }
                         </Link>
                     </li>
-                    <li className="date">Aug. 24, 2015</li>
+                    <li className="date">{/*Aug. 24, 2015 Darle formato a la fecha*/post.node.frontmatter.date}</li>
+                    {/*todo: implementar tags*/}
                     <li className="tags">
                         <ul>
                             <li><a href="#">Learn</a></li>
@@ -48,11 +49,13 @@ class BoxArticles extends React.Component {
                         {post.node.frontmatter.title}
                     </Link>
                 </h3>
-                <h4>Opening a door to the future(subtitle)</h4>
                 <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
                 {/*todo: enlaces no trabajan */}
-                <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
-                    Leer más
+                <Link
+                    className="read-more"
+                    style={{ boxShadow: "none" }}
+                    to={post.node.frontmatter.path}>
+                        Seguir leyendo
                 </Link>
             </div>
         </div>

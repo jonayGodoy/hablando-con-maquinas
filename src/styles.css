@@ -76,13 +76,7 @@ hr.head {
 }
 
 
-/*
- * Override Bootstrap's default container.
- */
-
-@media (min-width: 1200px) {
-    .container {
-        width: 970px;
-    }
+/*Parche por culpa de gaysby*/
+p {
+    margin-bottom: 0;
 }
-
