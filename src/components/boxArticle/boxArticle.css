@@ -14,7 +14,7 @@
     box-shadow: 3px 7px 12px -3px rgba(0, 0, 0, 0.3);
 
 }
-.blog-card:hover .details {
+.photo-details:hover .details {
     left: 0;
 }
 
