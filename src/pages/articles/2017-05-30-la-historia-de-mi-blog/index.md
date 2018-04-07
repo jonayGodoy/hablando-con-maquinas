@@ -3,6 +3,7 @@ title: La Historia De Mi Blog
 date: "2017-05-30T02:40:32.169Z"
 path: "/la-historia-de-mi-blog/"
 image_article: "image-article.jpg"
+tags: ["experiencia-personal"]
 ---
 
 Me parecía adecuado escribir como uno de los primeros artículos

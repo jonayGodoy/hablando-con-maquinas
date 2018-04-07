@@ -3,6 +3,7 @@ title: Kata Gilded Rose Switch
 date: "2017-05-30T02:40:32.169Z"
 path: "/kata-gilded-rose-switch/"
 image_article: "kata.jpg"
+tags: ["katas"]
 ---
 
 Últimamente me encontrado con muchos programadores que no ven el switch como un mal olor.
