@@ -29,14 +29,14 @@ También recordad que el modelo puede llamar a la vista y mostrar sus datos ya a
 pero la vista nunca puede llamar al modelo.
 
 
-![model_view_controller](./mvc.png)
+![model_view_controller](mvc.png)
    
 
 El **modelo-vista-presentador** mantiene el mismo concepto de separar las responsabilidades pero
 es el presenter (alias controlador en mvc) quien se ocupa tanto de actualizar la información que muestra de la vista
  como de hacer las peticiones al modelo.Es decir, todo pasa por el presenter.
 
-![model_view_presenter](./mvp.png)
+![model_view_presenter](mvp.png)
 
 Llegamos al **mvp con vista pasiva**. Aquí se mantienen los conceptos del mvp.
 Salvo que nuestra vista va a ser **tonta**, la vista no va a contener ninguna clase de lógica.
@@ -53,7 +53,7 @@ La prueba de conceptos es sencilla voy tener un botón que va a ocultar o mostra
 Uno de estos botones funciona con React, el otro con Vue y ambos utilizan la misma lógica para
 funcionar.
 
-![prueba-concepto](./prueba-concepto.png)
+![prueba-concepto](prueba-concepto.png)
 
 
 Primero de todo mostraré el presenter donde se encuentra la lógica.

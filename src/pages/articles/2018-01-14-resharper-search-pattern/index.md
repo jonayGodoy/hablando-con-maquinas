@@ -18,7 +18,7 @@ Search Pattern
 
 Vamos a empezar con un ejemplo de Search Pattern bastante sencillo.
 
-![1](./searchPattern_1.jpg)
+![1](searchPattern_1.jpg)
 
 En la imagen que acabamos de ver, tengo una string seleccionada. Vamos a 
 imaginar por un momento que esa string por lo que sea para nuestro equipo
@@ -43,17 +43,17 @@ De cero
 
 Vamos al menú de ReSharper y dentro de este vamos a Options.
     
-![2](./searchPattern_2.jpg)
+![2](searchPattern_2.jpg)
 
 Dentro nos aparecerá el siguiente menú y pulsamos sobre add pattern
 
-![3](./searchPattern_3.jpg)
+![3](searchPattern_3.jpg)
 
 Siguiente paso, después de que aparezca la siguiente ventana pulsamos en Find para
 movernos a la ventana donde estaremos trabajando. Tranquilos ya volveremos al tema del
 replace más adelante.
 
-![4](./searchPattern_4.jpg)
+![4](searchPattern_4.jpg)
 
 
 Ya hemos llegado a la ventana de Find. Yo os la muestro aquí ya rellena.
@@ -62,7 +62,7 @@ que busque, en **pattern severity** ajustamos el tipo de warnings que mostraremo
 cuando se produzca este mal olor. Para mí este error es imperdonable y voy a poner
 error y la description es eso, la descripción que va a aparecer junto a nuestro warnings.
 
-![5](./searchPattern_5.JPG)
+![5](searchPattern_5.JPG)
 
 
 Le damos a Add, nos retornará a la anterior ventana y luego pulsamos en save.

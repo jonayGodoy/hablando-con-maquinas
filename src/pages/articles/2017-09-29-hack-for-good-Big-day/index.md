@@ -24,7 +24,7 @@ sede.
 Dejamos las cosas en el hotel, fuimos a cenar y nos pasamos parte de la noche
 poniéndonos al día y enterándonos del evento de mañana.
 
-![llegada](./night.jpg)
+![llegada](night.jpg)
 
 ## Preparándome la charla
 
@@ -103,7 +103,7 @@ de negarme a hacer el "test". Sin embargo ahora me alegro de haber participado.
 Pongo "test" entre comillas porque creo que realmente se trata de un mapa de talento digital y
 no solo tiene el formato clásico de un test. 
 
-![mapa-talento](./mapa-talento.jpg)
+![mapa-talento](mapa-talento.jpg)
 
 Pero todo sea dicho el "test" me encantó. Generalmente, los test son para mi papel mojado,
  porque si bien sabes que los test pueden ser útiles sí
@@ -195,14 +195,14 @@ No solo me afectaba a mí se notaba como
 al entrar cambiaba el estado de ánimo de lo equipos como dije esto no fue
 para nada importante pero si fue bastante divertido. La foto no le hace justicia a la sala.
 
-![lasala](./lasala.jpg)
+![lasala](lasala.jpg)
 
 Por último fuimos a Wayra, escuchamos dos proyectos. Los
 proyectos eran interesantes, pero me centraré en Wayra. Wayra junto a open future 
  es una de las principales incubadoras de telefónica. Para estar en Wayra se debe haber
 pasado por open future.
 
-![wayra](./wayra.jpg)
+![wayra](wayra.jpg)
 
 Algunas cosas que más me llamaron la atención sobre Wayra:
 
@@ -225,7 +225,7 @@ Me alegro de haber tenido esta segunda oportunidad para acercarme a ellos y a
 <a href="https://twitter.com/sergiotrasmallo" target="_blank">Sergio Sánchez</a>
 el encargado de nuestra sede, solo por eso valió la pena el viaje.
  
- ![participante las palmas](./las-palmas.jpg)
+ ![participante las palmas](las-palmas.jpg)
 
 Por otro lado, me llevo una sensación un poco amarga.
 Sin ser un sentimiento malo del todo, me sentí abrumado.
@@ -242,4 +242,4 @@ Por último, gracias a la
  , a telefónica y todas las personas que trabajaron para
 que yo pudiera vivir este día.
 
-![Gracias](./gracias.jpg)
+![Gracias](gracias.jpg)
