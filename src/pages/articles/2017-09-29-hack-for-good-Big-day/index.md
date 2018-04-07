@@ -3,6 +3,7 @@ title: Hack For Good Big Day
 date: "2017-09-29T02:40:32.169Z"
 path: "/hack-for-good-big-day/"
 image_article: "coverMain.jpg"
+tags: ["eventos"]
 ---
 
 Este es el primer año que se hace el HackForGood BigDay por lo que creo que

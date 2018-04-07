@@ -3,6 +3,7 @@ title: Vista Pasiva
 date: "2017-12-17T02:40:32.169Z"
 path: "/vista-pasiva/"
 image_article: "mvp.png"
+tags: ["arquitectura"]
 ---
 
 Hace muy poco me enseñaron la arquitectura modelo-vista-presenter con vista pasiva en javascript 
