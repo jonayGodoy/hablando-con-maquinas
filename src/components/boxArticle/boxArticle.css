@@ -94,6 +94,11 @@
     margin: 3px;
 }
 
+.read-more:hover{
+    font-size: 110%;
+    margin: 3px;
+}
+
 .summary{}
 
 
