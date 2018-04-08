@@ -3,7 +3,7 @@ title: Como testear métodos estáticos
 date: "2017-07-01T02:40:32.169Z"
 path: "/como-testear-metodos-estaticos/"
 image_article: "image-article.jpg"
-tags: ["test"]
+tags: "test"
 ---
 
 

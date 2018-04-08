@@ -3,7 +3,7 @@ title: No Fast Forward
 date: "2017-12-03T02:40:32.169Z"
 path: "/no-fast-forward/"
 image_article: "coverMain.jpg"
-tags: ["git"]
+tags: "git"
 ---
 
 Hoy voy a hablar del comando de git "--no-ff" sobretodo porque cuando vi este comando

@@ -3,7 +3,7 @@ title: "Libros: JSAllonge, CNV, XP, Apprenticeship"
 date: "2018-02-19T02:40:32.169Z"
 path: "/libros-js-allonge-cnv-xp-apprenticeship/"
 image_article: "cover.jpg"
-tags: ["libros","experiencia-personal"]
+tags: "libros,experiencia-personal"
 ---
 
 Primero de todo perdonar por el nombre del articulo no tuve 

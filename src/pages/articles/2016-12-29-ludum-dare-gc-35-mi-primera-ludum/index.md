@@ -3,7 +3,7 @@ title: Ludum Dare GC 35, Mi primera Ludum
 date: "2016-12-29T22:40:32.169Z"
 path: "/ludum-dare-gc-35-mi-primera-ludum/"
 image_article: "Cd1hwvbXEAAXPog.jpglarge.jpg"
-tags: ["eventos","experiencia-personal"]
+tags: "eventos,experiencia-personal"
 ---
 
 
