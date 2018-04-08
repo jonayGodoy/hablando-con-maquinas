@@ -1,7 +1,8 @@
 function FormatterTags() {
 
-    function format(){
-        return ["eventos"]
+    function format(rawTags){
+        let tags = rawTags.split(',');
+        return tags;
     }
 
     return {
