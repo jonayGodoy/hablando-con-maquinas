@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from "gatsby-link";
 import * as routesPath from "../../routePath";
+import formattedTag from "../../utils/formater-tag/formatterTags";
 
 import './boxArticle.css';
 
@@ -27,7 +28,7 @@ class BoxArticles extends React.Component {
                 <ul className="details">
                     <li className="author">
                         {/* todo: testear el comportamiento del autor terminar que hacer que funciones ahora solo esta planteado*/}
-                        <Link style={{ boxShadow: "none" }} to={!post.node.author_path ? routesPath.conoceme.path : ""}>
+                        <Link style={{ boxShadow: "none" }} to={!post.node.frontmatter.author_path ? routesPath.conoceme.path : ""}>
                             {post.node.author || "Jonay Godoy" }
                         </Link>
                     </li>
@@ -35,10 +36,14 @@ class BoxArticles extends React.Component {
                     {/*todo: implementar tags*/}
                     <li className="tags">
                         <ul>
-                            <li><a href="#">Learn</a></li>
-                            <li><a href="#">Code</a></li>
-                            <li><a href="#">HTML</a></li>
-                            <li><a href="#">CSS</a></li>
+                            {formattedTag.format(post.node.frontmatter.tags)
+                                .map(tag => (
+                                    <li>
+                                        <Link style={{ boxShadow: "none" }} >
+                                            {tag}
+                                        </Link>
+                                    </li>
+                                ))}
                         </ul>
                     </li>
                 </ul>

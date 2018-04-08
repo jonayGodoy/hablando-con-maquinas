@@ -22,8 +22,14 @@ function FormatterTags() {
 }
 
 export const TAGS_CONST = Object.freeze({
-    events: "eventos",
-    git : "git"
+    events : "eventos",
+    git : "git",
+    books : "libros",
+    personal_experience : "experiencia-personal",
+    architecture : "arquitectura",
+    games : "games",
+    test : "test",
+    katas : "katas"
 });
 
 export default FormatterTags();

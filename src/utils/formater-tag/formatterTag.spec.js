@@ -31,7 +31,4 @@ describe("Formatter Tag",() =>{
 
         expect(rawFunction).to.throw("tag \'eventas\' does not exist in const list");
     });
-
-
-
 });

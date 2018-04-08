@@ -32,6 +32,7 @@ export const pageQuery = graphql`
           excerpt
           frontmatter {
            title
+           tags
             image_article {
              relativePath
             }
