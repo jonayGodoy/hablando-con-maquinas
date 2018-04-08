@@ -36,6 +36,7 @@ class BoxArticles extends React.Component {
                     {/*todo: implementar tags*/}
                     <li className="tags">
                         <ul>
+                            {/*todo: enlaces no trabajan */}
                             {formattedTag.format(post.node.frontmatter.tags)
                                 .map(tag => (
                                     <li>
@@ -55,7 +56,6 @@ class BoxArticles extends React.Component {
                     </Link>
                 </h3>
                 <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
-                {/*todo: enlaces no trabajan */}
                 <Link
                     className="read-more"
                     style={{ boxShadow: "none" }}
@@ -65,24 +65,6 @@ class BoxArticles extends React.Component {
             </div>
         </div>
     );
-
-      return (
-        <div>
-            <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
-                <img  className="img-thumbnail-new image-article-BoxArticle" src={this.cover} />
-            </Link>
-            <h3>
-                <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
-                    {post.node.frontmatter.title}
-                </Link>
-            </h3>
-            <p dangerouslySetInnerHTML={{ __html: post.node.excerpt }} />
-            <small>
-                {post.node.frontmatter.date}
-            </small>
-            <hr/>
-        </div>
-      )
   }
 }
 
