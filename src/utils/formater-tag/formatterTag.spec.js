@@ -1,16 +1,20 @@
 import { expect } from "chai";
+import {TAGS_CONST} from "./formatterTags"
 import formatter from "./formatterTags"
 
 describe("Formatter Tag",() =>{
     it("return convert raw tags in tag", () => {
         let rawTags = "eventos";
         let tags = formatter.format(rawTags);
-        expect(tags).to.deep.equal(["eventos"]);
+        expect(tags).to.deep.equal([TAGS_CONST.events]);
     });
 
     it("return convert several tag", () => {
         let rawTags = "eventos,git";
         let tags = formatter.format(rawTags);
-        expect(tags).to.deep.equal(["eventos","git"]);
+        expect(tags).to.deep.equal([
+            TAGS_CONST.events,
+            TAGS_CONST.git
+        ]);
     });
 });

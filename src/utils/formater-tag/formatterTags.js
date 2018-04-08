@@ -10,5 +10,10 @@ function FormatterTags() {
     };
 }
 
+export const TAGS_CONST = Object.freeze({
+    events: "eventos",
+    git : "git"
+});
+
 
 export default FormatterTags();
