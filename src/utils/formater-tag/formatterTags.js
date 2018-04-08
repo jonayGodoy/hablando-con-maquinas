@@ -1,7 +1,7 @@
 function FormatterTags() {
     function proxyFormat(rawTags) {
         const tags = format(rawTags);
-        tags.forEach(x => existTag(x) );
+        tags.forEach(x => existTag(x.toLowerCase()) );
 
         return tags;
         function format(rawTags){
@@ -14,13 +14,11 @@ function FormatterTags() {
             }
         }
         function existTag(tag){
-            let lowerTag =  tag.toLowerCase();
-
             const rawConst = Object
                 .values(TAGS_CONST)
-                .includes(lowerTag);
+                .includes(tag);
             if(!rawConst){
-                throw new Error("tag '"+lowerTag+"' does not exist in const list");
+                throw new Error("tag '"+tag+"' does not exist in const list");
             }
         }
     }
