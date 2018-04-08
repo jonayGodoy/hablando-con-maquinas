@@ -33,7 +33,6 @@ class BoxArticles extends React.Component {
                         </Link>
                     </li>
                     <li className="date">{/*Aug. 24, 2015 Darle formato a la fecha*/post.node.frontmatter.date}</li>
-                    {/*todo: implementar tags*/}
                     <li className="tags">
                         <ul>
                             {/*todo: enlaces no trabajan */}
