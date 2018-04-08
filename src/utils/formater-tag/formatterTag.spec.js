@@ -17,4 +17,12 @@ describe("Formatter Tag",() =>{
             TAGS_CONST.git
         ]);
     });
+
+    it("ignore empty", () => {
+        let rawTags = "eventos,";
+        let tags = formatter.format(rawTags);
+
+        expect(tags).to.deep.equal([TAGS_CONST.events]);
+    });
+
 });

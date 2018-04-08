@@ -1,8 +1,12 @@
 function FormatterTags() {
 
     function format(rawTags){
-        let tags = rawTags.split(',');
-        return tags;
+
+
+        let tagsSeparate = rawTags.split(',');
+        let tagsWithoutEmpty = tagsSeparate.filter(x => !!x);
+
+        return tagsWithoutEmpty;
     }
 
     return {
