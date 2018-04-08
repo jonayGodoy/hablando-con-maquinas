@@ -2,7 +2,7 @@ import React from "react"
 import get from "lodash/get"
 import BoxArticle from '../components/boxArticle/BoxArticle';
 import Helmet from "react-helmet";
-import '../components/commons/template-with-sidebar/template-with-sidebar.css';
+import './index.css';
 
 import  RecentArticles from "../components/widgets/recentArticles/RecentArticles";
 
