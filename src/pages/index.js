@@ -1,19 +1,36 @@
 import React from "react"
 import get from "lodash/get"
 import BoxArticle from '../components/boxArticle/BoxArticle';
+import Helmet from "react-helmet";
+import '../components/commons/template-with-sidebar/template-with-sidebar.css';
 
-import TemplateWithSidebar from '../components/commons/template-with-sidebar/TemplateWithSidebarNotComponent'
+import  RecentArticles from "../components/widgets/recentArticles/RecentArticles";
+
 
 class BlogIndex extends  React.Component {
     render () {
         const posts =  get(this, "props.data.allMarkdownRemark.edges");
-        let bodyHome = posts.map((post,index) => {
-            if (post.node.path !== "/404/") {
-                return <BoxArticle key={index} post={post}/>
-            }
-        });
 
-        return TemplateWithSidebar(bodyHome, posts);
+        return (<div className="container-new">
+            <div className="article">
+                <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
+                <ul>
+                    {
+                        posts.map((post,index) => {
+                            if (post.node.path !== "/404/") {
+                                return <BoxArticle key={index} post={post}/>
+                            }
+                        })
+                    }
+                </ul>
+            </div>
+            <div className="sidebar-column">
+                <div>
+                    <RecentArticles posts={posts}/>
+                </div>
+            </div>
+            <div className="parchForSizeContainer"/>
+        </div>);
     }
 }
 

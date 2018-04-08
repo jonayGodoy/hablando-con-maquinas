@@ -4,8 +4,6 @@ import config from "../../config-blog";
 
 import DisqusComments  from 'react-disqus-comments';
 
-import TemplateWithSidebar from '../components/commons/template-with-sidebar/TemplateWithSidebarNotComponent'
-
 import "./md.css";
 
 const imagesAllArticles = require.context("../pages/", true,  /\.(png|jpg|gif)$/);
@@ -21,7 +19,7 @@ class BlogPostTemplate extends React.Component {
     render () {
         const posts =  this.props.data.allMarkdownRemark.edges;
 
-        let bodyPost = (
+        return (
             <div>
                 <img className="img-thumbnail-new" src={this.cover} />
                 <h1>{this.post.frontmatter.title}</h1>
@@ -35,7 +33,6 @@ class BlogPostTemplate extends React.Component {
                 />
             </div>);
 
-        return TemplateWithSidebar(bodyPost,posts);
     }
 
 
