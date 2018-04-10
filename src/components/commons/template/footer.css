@@ -6,20 +6,17 @@
     padding: 5px;
 
     background-color: #3F3F3F;
-
     border: 1px solid #a0a0a0;
 }
 
 .title-footer{
     flex-grow: 8;
     color: #e5e4e4;
-
 }
 
 .icons-footer{
     flex-grow: 0;
 }
-
 
 .icon-footer{
     width: 30px;
