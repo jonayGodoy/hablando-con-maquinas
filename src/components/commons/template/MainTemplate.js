@@ -17,7 +17,6 @@ class MainTemplate extends React.Component {
         super(props, context);
     }
 
-
     render () {
         return (
             <div>
@@ -35,7 +34,6 @@ class MainTemplate extends React.Component {
                         <div className="icons-footer">
                             <a href={config_blog.social_networks.twitter} target="_blank">
                                 <img className="icon-footer" src={icon_twitter} />
-
                             </a>
                             <a href={config_blog.social_networks.github} target="_blank">
                                 <img className="icon-footer" src={icon_github} />
@@ -43,7 +41,6 @@ class MainTemplate extends React.Component {
                         </div>
                     </footer>
                 </div>
-
             </div>
         )
     }
