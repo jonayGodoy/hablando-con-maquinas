@@ -30,9 +30,9 @@ class MainTemplate extends React.Component {
                         {this.props.children()}
                     </div>
                     <footer className="footer">
-                        <Link className="title-footer" style={{ boxShadow: "none" }} to={"/"}>
+                        <p className="title-footer">
                             {config_blog.blogTitle}
-                        </Link>
+                        </p>
                         <div className="icons-footer">
                             <Link style={{ boxShadow: "none" }} to={"/"}>
                                 <img className="icon-footer" src={icon_twitter} />
