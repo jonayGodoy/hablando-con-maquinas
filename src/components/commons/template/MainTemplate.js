@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from "gatsby-link";
 
 import MenuNav from '../menuNav/MenuNav';
 import MenuMobile from '../menuMobile/MenuMobile';
