@@ -7,12 +7,12 @@
 
     background-color: #3F3F3F;
 
-    border: 1px solid #000000;
+    border: 1px solid #a0a0a0;
 }
 
 .title-footer{
     flex-grow: 8;
-    color: #8c8b8b;
+    color: #e5e4e4;
 
 }
 
@@ -24,6 +24,5 @@
 .icon-footer{
     width: 30px;
     height: 30px;
-    margin: 5px;
-    margin-left: 30px;
+    margin: 5px 5px 5px 30px;
 }
