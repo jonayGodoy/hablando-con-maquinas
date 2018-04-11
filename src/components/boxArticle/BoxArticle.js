@@ -38,9 +38,7 @@ class BoxArticles extends React.Component {
                             {formattedTag.format(post.node.frontmatter.tags)
                                 .map(tag => (
                                     <li>
-                                        <Link style={{ boxShadow: "none" }} >
-                                            {tag}
-                                        </Link>
+                                        {tag}
                                     </li>
                                 ))}
                         </ul>
