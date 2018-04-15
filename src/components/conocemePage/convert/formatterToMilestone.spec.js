@@ -1,6 +1,11 @@
 import { expect } from "chai";
 import formatter from "./formatterToMilestone";
 
+/*
+todo:
+- testear el caso donde work sea vacio,
+- quitar fragilidad en los test en el summario del milestone
+ */
 
 describe("convert linkedin entities to milestone",() =>{
     it("convert work in milestone", () =>{
