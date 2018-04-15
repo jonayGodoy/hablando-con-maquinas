@@ -32,10 +32,11 @@ h6, .h6 {
 }
 
 a{
-    color: #404040;
+  color: #34a392;
+  font-weight: bold;
 }
 a:hover{
-    color: #000000;
+    color: #2a8372;
 }
 
 a:hover,
