@@ -1,6 +1,10 @@
 import { expect } from "chai";
 import formatter from "./formatterToMilestone";
 
+/*todo
+* usar las propiedades de cv para construir el milestone en los test
+* */
+
 describe("convert linkedin entities to milestone",() =>{
     it("convert work in milestone", () =>{
         const workSummary = "-Aprender. A través de practicas como mob-programming, libros, cursos e implementando\nfuncionalidades en algunos proyectos siempre buscando hacerlo de le mejor manera posible.\nAsi como metodologias como integración continua y TDD\n-Las tecnologías que utilizamos fueron javascript, react-redux y springboot(java). Asi como\nherramientas complementarias para testear Jest, mocha, junit, selenium.";
