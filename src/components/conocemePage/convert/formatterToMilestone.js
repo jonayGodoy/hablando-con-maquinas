@@ -14,6 +14,10 @@ function FormatterMilestone(){
                         }
                     })
                 : [];
+            function shortenParagraph(string){
+                const end = 150;
+                return string.substring(0, end) + "...";
+            }
         }
         function convertEducationToMilestone(education){
             return education ?
@@ -26,10 +30,6 @@ function FormatterMilestone(){
                     }
                 })
                 : [];
-        }
-        function shortenParagraph(string){
-            const end = 150;
-            return string.substring(0, end) + "...";
         }
     }
 
