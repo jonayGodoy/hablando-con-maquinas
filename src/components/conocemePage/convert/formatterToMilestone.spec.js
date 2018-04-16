@@ -4,7 +4,7 @@ import formatter from "./formatterToMilestone";
 describe("convert linkedin entities to milestone",() =>{
     it("convert work in milestone", () =>{
         const workSummary = "-Aprender. A través de practicas como mob-programming, libros, cursos e implementando\nfuncionalidades en algunos proyectos siempre buscando hacerlo de le mejor manera posible.\nAsi como metodologias como integración continua y TDD\n-Las tecnologías que utilizamos fueron javascript, react-redux y springboot(java). Asi como\nherramientas complementarias para testear Jest, mocha, junit, selenium.";
-        let work = {
+        let cv = {
             "work": [
             {
                 "company": "Codesai",
@@ -26,7 +26,7 @@ describe("convert linkedin entities to milestone",() =>{
                 }
             ];
 
-        expect(formatter.linkedinToMilestone(work))
+        expect(formatter.linkedinToMilestone(cv))
             .to.deep.equal(milestone);
     });
 
@@ -39,7 +39,7 @@ describe("convert linkedin entities to milestone",() =>{
     });
 
     it("convert education in milestone", () =>{
-        let education = {
+        let cv = {
             "education": [
                 {
                     "institution": "CIFP Villa de Agüimes",
@@ -62,20 +62,20 @@ describe("convert linkedin entities to milestone",() =>{
         ];
 
 
-    expect(formatter.linkedinToMilestone(education))
+    expect(formatter.linkedinToMilestone(cv))
         .to.deep.equal(milestone);
     });
 
     it("return empty when education is undefined", () =>{
-        let education = {};
+        let cv = {};
         let milestone = [];
 
-        expect(formatter.linkedinToMilestone(education))
+        expect(formatter.linkedinToMilestone(cv))
             .to.deep.equal(milestone);
     });
 
     it("convert honors awards in milestone", () =>{
-        let honors_awards = {
+        let cv = {
             "honors_awards": [
                 {
                     "Title": "Ganador de segundo puesto en el HackForGood 2017 en Las Palmas con el proyecto Amidi",
@@ -88,15 +88,15 @@ describe("convert linkedin entities to milestone",() =>{
     let milestone =
         [
             {
-                "title": honors_awards.honors_awards[0].Title,
-                "date": honors_awards.honors_awards[0].Issue_Date,
-                "summary": honors_awards.honors_awards[0].Description.substring(0,150)+"...",
-                "description" : honors_awards.honors_awards[0].Description
+                "title": cv.honors_awards[0].Title,
+                "date": cv.honors_awards[0].Issue_Date,
+                "summary": cv.honors_awards[0].Description.substring(0,150)+"...",
+                "description" : cv.honors_awards[0].Description
             }
         ];
 
 
-    expect(formatter.linkedinToMilestone(honors_awards))
+    expect(formatter.linkedinToMilestone(cv))
         .to.deep.equal(milestone);
     });
 
