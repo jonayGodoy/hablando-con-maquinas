@@ -64,13 +64,47 @@ describe("convert linkedin entities to milestone",() =>{
 
     expect(formatter.linkedinToMilestone(education))
         .to.deep.equal(milestone);
-});
+    });
 
     it("return empty when education is undefined", () =>{
         let education = {};
         let milestone = [];
 
         expect(formatter.linkedinToMilestone(education))
+            .to.deep.equal(milestone);
+    });
+
+    it("convert honors awards in milestone", () =>{
+        let honors_awards = {
+            "honors_awards": [
+                {
+                    "Title": "Ganador de segundo puesto en el HackForGood 2017 en Las Palmas con el proyecto Amidi",
+                    "Description": "HackForGood es un evento promovido por Telefónica y organizado junto a la ETSI de Telecomunicación de la Universidad Politécnica de Madrid, la Fundación HazloPosible y la startup MashmeTV con el apoyo de la Red de Cátedras Telefónica en el que Hackers ForGood de toda España proponen retos y desarrollan soluciones para construir un mundo mejor.",
+                    "Issuer": "Fundación Parque Cientifico Tecnologico de la ULPGC",
+                    "Issue_Date": "3/2017"
+                }]
+    };
+
+    let milestone =
+        [
+            {
+                "title": honors_awards.honors_awards[0].Title,
+                "date": honors_awards.honors_awards[0].Issue_Date,
+                "summary": honors_awards.honors_awards[0].Description.substring(0,150)+"...",
+                "description" : honors_awards.honors_awards[0].Description
+            }
+        ];
+
+
+    expect(formatter.linkedinToMilestone(honors_awards))
+        .to.deep.equal(milestone);
+    });
+
+    it("return empty when honors_awards is undefined", () =>{
+        let honors_awards = {};
+        let milestone = [];
+
+        expect(formatter.linkedinToMilestone(honors_awards))
             .to.deep.equal(milestone);
     });
 });

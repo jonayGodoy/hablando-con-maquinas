@@ -1,7 +1,8 @@
 function FormatterMilestone(){
     function linkedinToMilestone(cv){
         return convertWorkToMilestone(cv.work)
-                .concat(convertEducationToMilestone(cv.education));
+                .concat(convertEducationToMilestone(cv.education))
+                .concat(convertHonorsAwardsToMilestone(cv.honors_awards));
 
         function convertWorkToMilestone(work){
             return work ?
@@ -14,10 +15,10 @@ function FormatterMilestone(){
                         }
                     })
                 : [];
-            function shortenParagraph(string){
-                const end = 150;
-                return string.substring(0, end) + "...";
-            }
+        }
+        function shortenParagraph(string){
+            const end = 150;
+            return string.substring(0, end) + "...";
         }
         function convertEducationToMilestone(education){
             return education ?
@@ -31,6 +32,19 @@ function FormatterMilestone(){
                 })
                 : [];
         }
+        function convertHonorsAwardsToMilestone(honors_awards){
+            return honors_awards ?
+                honors_awards.map(x => {
+                    return {
+                        "title": x.Title,
+                        "date": x.Issue_Date,
+                        "summary": shortenParagraph(x.Description),
+                        "description" : x.Description
+                    }
+                })
+                : [];
+        }
+
     }
 
     return {
