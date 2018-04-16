@@ -1,6 +1,7 @@
 function FormatterMilestone(){
     function linkedinToMilestone(cv){
-        return convertWorkToMilestone(cv.work);
+        return convertWorkToMilestone(cv.work)
+                .concat(convertEducationToMilestone(cv.education));
 
         function convertWorkToMilestone(work){
             return work ?
@@ -12,6 +13,18 @@ function FormatterMilestone(){
                             "description" : x.summary
                         }
                     })
+                : [];
+        }
+        function convertEducationToMilestone(education){
+            return education ?
+                education.map(x => {
+                    return {
+                        "title" : x.studyType,
+                        "date" : x.startDate,
+                        "summary": "",
+                        "description" : ""
+                    }
+                })
                 : [];
         }
         function shortenParagraph(string){
