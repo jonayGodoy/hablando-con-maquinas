@@ -3,12 +3,12 @@ import formatter from "./formatterToMilestone";
 
 /*
 todo:
-- testear el caso donde work sea vacio,
 - quitar fragilidad en los test en el summario del milestone
  */
 
 describe("convert linkedin entities to milestone",() =>{
     it("convert work in milestone", () =>{
+        const workSummary = "-Aprender. A través de practicas como mob-programming, libros, cursos e implementando\nfuncionalidades en algunos proyectos siempre buscando hacerlo de le mejor manera posible.\nAsi como metodologias como integración continua y TDD\n-Las tecnologías que utilizamos fueron javascript, react-redux y springboot(java). Asi como\nherramientas complementarias para testear Jest, mocha, junit, selenium.";
         let work = {
             "work": [
             {
@@ -16,7 +16,7 @@ describe("convert linkedin entities to milestone",() =>{
                 "position": "Alumno Practicas",
                 "website": "",
                 "startDate": "2017-03-01",
-                "summary": "-Aprender. A través de practicas como mob-programming, libros, cursos e implementando\nfuncionalidades en algunos proyectos siempre buscando hacerlo de le mejor manera posible.\nAsi como metodologias como integración continua y TDD\n-Las tecnologías que utilizamos fueron javascript, react-redux y springboot(java). Asi como\nherramientas complementarias para testear Jest, mocha, junit, selenium.",
+                "summary": workSummary,
                 "highlights": [],
                 "endDate": "2017-06-01"
             }]
@@ -26,8 +26,8 @@ describe("convert linkedin entities to milestone",() =>{
                 {
                     "title": "Alumno Practicas",
                     "date":"2017-03-01",
-                    "summary": "-Aprender. A través de practicas como mob-programming, libros, cursos e implementando\nfuncionalidades en algunos proyectos siempre buscando hacerlo de...",
-                    "description" : "-Aprender. A través de practicas como mob-programming, libros, cursos e implementando\nfuncionalidades en algunos proyectos siempre buscando hacerlo de le mejor manera posible.\nAsi como metodologias como integración continua y TDD\n-Las tecnologías que utilizamos fueron javascript, react-redux y springboot(java). Asi como\nherramientas complementarias para testear Jest, mocha, junit, selenium."
+                    "summary": workSummary.substring(0,150)+"...",
+                    "description" : workSummary
                 }
             ];
 
