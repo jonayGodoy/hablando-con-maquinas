@@ -34,4 +34,11 @@ describe("convert linkedin entities to milestone",() =>{
         expect(formatter.linkedinToMilestone(work))
             .to.deep.equal(milestone);
     });
+    it("return empty when work is undefined", () =>{
+        let work = {};
+        let milestone = [];
+
+        expect(formatter.linkedinToMilestone(work))
+            .to.deep.equal(milestone);
+    });
 });
