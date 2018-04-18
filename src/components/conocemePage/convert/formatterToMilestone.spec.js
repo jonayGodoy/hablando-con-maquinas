@@ -19,7 +19,8 @@ describe("convert linkedin entities to milestone",() =>{
         let milestone =
              [
                 {
-                    "title":  first(cv.work).company+" - "+first(cv.work).position,
+                    "milestoneType":"Experiencia",
+                    "title":  first(cv.work).company+" "+first(cv.work).position,
                     "date": first(cv.work).startDate,
                     "summary": first(cv.work).summary.substring(0,150)+"...",
                     "description" : first(cv.work).summary
@@ -54,6 +55,7 @@ describe("convert linkedin entities to milestone",() =>{
     let milestone =
         [
             {
+                "milestoneType":"Estudios",
                 "title": first(cv.education).studyType,
                 "date": first(cv.education).startDate,
                 "summary": "",
@@ -88,6 +90,7 @@ describe("convert linkedin entities to milestone",() =>{
     let milestone =
         [
             {
+                "milestoneType":"Premios y otros",
                 "title": first(cv.honors_awards).Title,
                 "date": first(cv.honors_awards).Issue_Date,
                 "summary": first(cv.honors_awards).Description.substring(0,150)+"...",
@@ -124,12 +127,14 @@ describe("convert linkedin entities to milestone",() =>{
         let milestone =
             [
                 {
+                    "milestoneType":"Estudios",
                     "title": first(cv.education).studyType,
                     "date": first(cv.education).startDate,
                     "summary": "",
                     "description" : ""
                 },
                 {
+                    "milestoneType":"Premios y otros",
                     "title": first(cv.honors_awards).Title,
                     "date": first(cv.honors_awards).Issue_Date,
                     "summary": first(cv.honors_awards).Description.substring(0,150)+"...",

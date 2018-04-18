@@ -27,12 +27,14 @@ class ConocemePage extends React.Component {
                         <div>
                             <ul className="timeline">
                                 <li>
+
                                     <div className={IsPar(index) ? "direction-r" : "direction-l" }>
                                         <div className="flag-wrapper">
+                                            <div>{milestone.milestoneType}</div>
                                             <span className="flag">{milestone.title}</span>
                                             <span className="time-wrapper">
-                                        <span className="time">{milestone.date}</span>
-                                    </span>
+                                                <span className="time">{milestone.date}</span>
+                                            </span>
                                         </div>
                                         <div className="desc">{milestone.summary}</div>
                                     </div>

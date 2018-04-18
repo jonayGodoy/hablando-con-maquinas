@@ -10,7 +10,8 @@ function FormatterMilestone(){
             return work ?
                     work.map(x => {
                         return {
-                            "title" : x.company+" - "+x.position,
+                            "milestoneType": "Experiencia",
+                            "title" : x.company+"\n"+x.position,
                             "date" : x.startDate,
                             "summary": createSummary(x.summary),
                             "description" : x.summary
@@ -26,6 +27,7 @@ function FormatterMilestone(){
             return education ?
                 education.map(x => {
                     return {
+                        "milestoneType":"Estudios",
                         "title" : x.studyType,
                         "date" : x.startDate,
                         "summary": "",
@@ -38,6 +40,7 @@ function FormatterMilestone(){
             return honors_awards ?
                 honors_awards.map(x => {
                     return {
+                        "milestoneType":"Premios y otros",
                         "title": x.Title,
                         "date": x.Issue_Date,
                         "summary": createSummary(x.Description),
