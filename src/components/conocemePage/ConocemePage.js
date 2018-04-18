@@ -6,7 +6,6 @@ import formatted from "./convert/formatterToMilestone"
 import imgCV from '../../assets/img/fot_carnet.jpg';
 
 import './conoceme.css';
-import './conoceme1.css';
 import './timeLine.css'
 
 
