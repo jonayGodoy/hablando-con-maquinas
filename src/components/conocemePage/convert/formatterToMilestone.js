@@ -1,4 +1,6 @@
 function FormatterMilestone(){
+
+    /*todo: extraer estructura del milestone a un solo sitio*/
     function linkedinToMilestone(cv){
         return convertWorkToMilestone(cv.work)
                 .concat(convertEducationToMilestone(cv.education))
@@ -8,7 +10,7 @@ function FormatterMilestone(){
             return work ?
                     work.map(x => {
                         return {
-                            "title" : x.position,
+                            "title" : x.company+" - "+x.position,
                             "date" : x.startDate,
                             "summary": createSummary(x.summary),
                             "description" : x.summary

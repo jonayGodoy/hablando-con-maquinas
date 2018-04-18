@@ -19,7 +19,7 @@ describe("convert linkedin entities to milestone",() =>{
         let milestone =
              [
                 {
-                    "title": first(cv.work).position,
+                    "title":  first(cv.work).company+" - "+first(cv.work).position,
                     "date": first(cv.work).startDate,
                     "summary": first(cv.work).summary.substring(0,150)+"...",
                     "description" : first(cv.work).summary
