@@ -72,7 +72,8 @@ function FormatterMilestone(){
                     title : x.title,
                     date : preFormatForOrderDate(x.date)
                 }
-            )).sort(compareDate);
+            )).sort(compareDate)
+                .reverse();
 
             return preformatForSort
                 .map(x => milestones

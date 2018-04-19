@@ -127,18 +127,18 @@ describe("convert linkedin entities to milestone",() =>{
         let milestone =
             [
                 {
-                    "milestoneType":"Estudios",
-                    "title": first(cv.education).studyType,
-                    "date": first(cv.education).startDate,
-                    "summary": "",
-                    "description" : ""
-                },
-                {
                     "milestoneType":"Premios y otros",
                     "title": first(cv.honors_awards).Title,
                     "date": "2017-03",
                     "summary": first(cv.honors_awards).Description.substring(0,150)+"...",
                     "description" : first(cv.honors_awards).Description
+                },
+                {
+                    "milestoneType":"Estudios",
+                    "title": first(cv.education).studyType,
+                    "date": first(cv.education).startDate,
+                    "summary": "",
+                    "description" : ""
                 }
             ];
 
@@ -179,8 +179,8 @@ describe("convert linkedin entities to milestone",() =>{
 
         const milestones = formatter.linkedinToMilestone(cv);
 
-        expect(milestones[0].date).to.equal("2017-03-01");
-        expect(milestones[1].date).to.equal("2017-03");
+        expect(milestones[0].date).to.equal("2017-03");
+        expect(milestones[1].date).to.equal("2017-03-01");
     });
 
 
@@ -217,9 +217,9 @@ describe("convert linkedin entities to milestone",() =>{
 
         const milestones = formatter.linkedinToMilestone(cv);
 
-        expect(milestones[0].title).to.equal(first(cv.education).studyType);
+        expect(milestones[2].title).to.equal(first(cv.education).studyType);
         expect(milestones[1].title).to.equal(first(cv.work).company+" "+first(cv.work).position);
-        expect(milestones[2].title).to.equal(first(cv.honors_awards).Title);
+        expect(milestones[0].title).to.equal(first(cv.honors_awards).Title);
 
     });
 });
