@@ -22,18 +22,18 @@ class ConocemePage extends React.Component {
                     <div className="name-cv">
                         Jonay Eliezer Godoy Reyes
                     </div>
-                    <div>Nací en Gran canaria en 1991</div>
+                    <div>Nací en Gran canaria en 1991.</div>
                     <p>
-                        Empece a programar en CIFP Villa de Agüimes, poco despues
+                        Empecé a programar en C.I.F.P. Villa de Agüimes, poco despues
                         de terminar mi primer ciclo superior descubrí a la comunidad de
-                        software craftmanship de Gran canaria.Gracias a ellos redescubrí
+                        software craftsmanship de Gran canaria.Gracias a ellos redescubrí
                         la programación y me di cuenta de todo lo que me quedaba por aprender.
-                        Tras ello, tuve la oportunidad de hacer las practicas con Carlos Ble.
+                        Tras ello, tuve la oportunidad de hacer las practicas con Carlos Blé.
                     </p>
                     <p>
                         En parte, para agradecer todo lo que la comunidad me ha ayudado a crecer.
-                        He impartido cursos de TDD, clases en centros educactivos, he organizado
-                        el globalcoderetreat y he sido voluntario en la asociación canaria
+                        He impartido cursos de TDD, clases en centros educativos, he organizado
+                        el global coderetreat y he sido voluntario en la asociación canaria
                         desarrolladores de videojuegos.
                     </p>
                     <p>
