@@ -1,3 +1,19 @@
+.introduction-cv{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #cfc7cf;
+
+    -webkit-box-shadow: 3px 7px 12px -3px rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 7px 12px -3px rgba(0, 0, 0, 0.3);
+}
+
+.name-cv{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+
 .cv{
     background-color: #f3f3f3;
     border-style: dashed;

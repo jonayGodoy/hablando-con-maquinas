@@ -18,8 +18,10 @@ function IsPar(n){
 class ConocemePage extends React.Component {
     render () {
         return(<div>
-                <div>
-                    <div>Jonay Eliezer Godoy Reyes</div>
+                <div className="introduction-cv">
+                    <div className="name-cv">
+                        Jonay Eliezer Godoy Reyes
+                    </div>
                     <div>Nací en Gran canaria en 1991</div>
                     <p>
                         Empece a programar en CIFP Villa de Agüimes, poco despues
@@ -36,7 +38,7 @@ class ConocemePage extends React.Component {
                     </p>
                     <p>
                         A finales de 2017 buscando nuevas aventuras decido
-                        trasladarme a Madrid para trabajar en SaludOnNet
+                        trasladarme a Madrid para trabajar en SaludOnNet.
                     </p>
                 </div>
                 {
