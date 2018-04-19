@@ -1,6 +1,8 @@
 function FormatterMilestone(){
 
-    /*todo: extraer estructura del milestone a un solo sitio*/
+    /*todo: extraer estructura del milestone a un solo sitio
+    * ordenar por fecha
+    * */
     function linkedinToMilestone(cv){
         return convertWorkToMilestone(cv.work)
                 .concat(convertEducationToMilestone(cv.education))

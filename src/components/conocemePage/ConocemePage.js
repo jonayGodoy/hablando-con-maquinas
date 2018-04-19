@@ -9,18 +9,37 @@ import './conoceme.css';
 import './timeLine.css'
 
 
+const milestones = formatted.linkedinToMilestone(cv);
+
 function IsPar(n){
     return (n % 2 === 0);
 }
 
 class ConocemePage extends React.Component {
-
-
-
     render () {
-        const milestones = formatted.linkedinToMilestone(cv);
-
-        return(<div>{
+        return(<div>
+                <div>
+                    <div>Jonay Eliezer Godoy Reyes</div>
+                    <div>Nací en Gran canaria en 1991</div>
+                    <p>
+                        Empece a programar en CIFP Villa de Agüimes, poco despues
+                        de terminar mi primer ciclo superior descubrí a la comunidad de
+                        software craftmanship de Gran canaria.Gracias a ellos redescubrí
+                        la programación y me di cuenta de todo lo que me quedaba por aprender.
+                        Tras ello, tuve la oportunidad de hacer las practicas con Carlos Ble.
+                    </p>
+                    <p>
+                        En parte, para agradecer todo lo que la comunidad me ha ayudado a crecer.
+                        He impartido cursos de TDD, clases en centros educactivos, he organizado
+                        el globalcoderetreat y he sido voluntario en la asociación canaria
+                        desarrolladores de videojuegos.
+                    </p>
+                    <p>
+                        A finales de 2017 buscando nuevas aventuras decido
+                        trasladarme a Madrid para trabajar en SaludOnNet
+                    </p>
+                </div>
+                {
                 milestones.map((milestone, index) => {
                     return (
                         <div>
