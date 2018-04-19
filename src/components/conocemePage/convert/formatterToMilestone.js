@@ -14,16 +14,23 @@ function FormatterMilestone(){
                         return {
                             "milestoneType": "Experiencia",
                             "title" : x.company+" "+x.position,
-                            "date" : x.startDate,
+                            "date" : formatDate(x.startDate),
                             "summary": createSummary(x.summary),
                             "description" : x.summary
                         }
                     })
                 : [];
         }
+
         function createSummary(string){
             const end = 150;
             return string.substring(0, end) + "...";
+        }
+        function formatDate(date){
+            if(date.includes("/")){
+                return date.split("/").reverse().join("-");
+            }
+            return date;
         }
         function convertEducationToMilestone(education){
             return education ?
@@ -31,7 +38,7 @@ function FormatterMilestone(){
                     return {
                         "milestoneType":"Estudios",
                         "title" : x.studyType,
-                        "date" : x.startDate,
+                        "date" : formatDate(x.startDate),
                         "summary": "",
                         "description" : ""
                     }
@@ -44,7 +51,7 @@ function FormatterMilestone(){
                     return {
                         "milestoneType":"Premios y otros",
                         "title": x.Title,
-                        "date": x.Issue_Date,
+                        "date": formatDate(x.Issue_Date),
                         "summary": createSummary(x.Description),
                         "description" : x.Description
                     }
