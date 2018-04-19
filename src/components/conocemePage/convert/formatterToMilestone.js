@@ -1,12 +1,32 @@
 function FormatterMilestone(){
 
-    /*
-    * ordenar por fecha
-    * */
     function linkedinToMilestone(cv){
-        return convertWorkToMilestone(cv.work)
-                .concat(convertEducationToMilestone(cv.education))
-                .concat(convertHonorsAwardsToMilestone(cv.honors_awards));
+
+        const milestones = convertWorkToMilestone(cv.work)
+            .concat(convertEducationToMilestone(cv.education))
+            .concat(convertHonorsAwardsToMilestone(cv.honors_awards));
+        orderById(milestones);
+        return milestones;
+
+        function orderById(milestones){
+           let milestoneReferenceShortDate = milestones.map(x => (
+                {
+                    title : x.title,
+                    date : preformatForOrderDate(x.date)
+                }
+            ));
+
+           console.log(milestoneReferenceShortDate);
+           function preformatForOrderDate(date){
+               let year = date.split("-")[0] || "01";
+               let month = date.split("-")[1] || "01";
+               let day = date.split("-")[2] || "01";
+               return Number(year+""+month+""+day);
+           }
+           function compareDate(a, b){
+               return a - b;
+           }
+        }
 
         function convertWorkToMilestone(work){
             return work ?

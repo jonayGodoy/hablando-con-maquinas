@@ -180,11 +180,11 @@ describe("convert linkedin entities to milestone",() =>{
         const milestones = formatter.linkedinToMilestone(cv);
 
         expect(milestones[0].date).to.equal("2017-03-01");
-        expect(milestones[1].date).to.equal("2017-3");
+        expect(milestones[1].date).to.equal("2017-03");
     });
 
 
-    xit("milestones ordered by date from highest to lowest", () =>{
+    it("milestones ordered by date from highest to lowest", () =>{
         let cv = {
             "education": [
                 {
