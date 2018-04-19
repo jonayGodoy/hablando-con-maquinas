@@ -92,7 +92,7 @@ describe("convert linkedin entities to milestone",() =>{
             {
                 "milestoneType":"Premios y otros",
                 "title": first(cv.honors_awards).Title,
-                "date": "2017-3",
+                "date": "2017-03",
                 "summary": first(cv.honors_awards).Description.substring(0,150)+"...",
                 "description" : first(cv.honors_awards).Description
             }
@@ -136,7 +136,7 @@ describe("convert linkedin entities to milestone",() =>{
                 {
                     "milestoneType":"Premios y otros",
                     "title": first(cv.honors_awards).Title,
-                    "date": "2017-3",
+                    "date": "2017-03",
                     "summary": first(cv.honors_awards).Description.substring(0,150)+"...",
                     "description" : first(cv.honors_awards).Description
                 }

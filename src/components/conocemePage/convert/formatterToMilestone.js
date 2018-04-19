@@ -51,7 +51,10 @@ function FormatterMilestone(){
             };
             function formatDate(date){
                 if(date.includes("/")){
-                    return date.split("/").reverse().join("-");
+                    return date.split("/")
+                        .reverse()
+                        .map(x => x >= 10 ? x : "0"+x)
+                        .join("-");
                 }
                 return date;
             }
