@@ -1,6 +1,6 @@
 function FormatterMilestone(){
 
-    /*todo: extraer estructura del milestone a un solo sitio
+    /*
     * ordenar por fecha
     * */
     function linkedinToMilestone(cv){
@@ -11,50 +11,55 @@ function FormatterMilestone(){
         function convertWorkToMilestone(work){
             return work ?
                     work.map(x => {
-                        return {
-                            "milestoneType": "Experiencia",
-                            "title" : x.company+" "+x.position,
-                            "date" : formatDate(x.startDate),
-                            "summary": createSummary(x.summary),
-                            "description" : x.summary
-                        }
+                        return buildMilestone({
+                            type : "Experiencia",
+                            title : x.company+" "+x.position,
+                            date : x.startDate,
+                            description : x.summary
+                        });
                     })
                 : [];
         }
-
-        function createSummary(string){
-            const end = 150;
-            return string.substring(0, end) + "...";
-        }
-        function formatDate(date){
-            if(date.includes("/")){
-                return date.split("/").reverse().join("-");
+        function buildMilestone(dataForBuild){
+            dataForBuild = dataForBuild || {};
+            return {
+                "milestoneType": dataForBuild.type || "",
+                "title" : dataForBuild.title || "",
+                "date" : formatDate(dataForBuild.date) || "",
+                "summary": dataForBuild.description ? createSummary(dataForBuild.description) : "",
+                "description" : dataForBuild.description || ""
+            };
+            function formatDate(date){
+                if(date.includes("/")){
+                    return date.split("/").reverse().join("-");
+                }
+                return date;
             }
-            return date;
+            function createSummary(string){
+                const end = 150;
+                return string.substring(0, end) + "...";
+            }
         }
         function convertEducationToMilestone(education){
             return education ?
                 education.map(x => {
-                    return {
-                        "milestoneType":"Estudios",
-                        "title" : x.studyType,
-                        "date" : formatDate(x.startDate),
-                        "summary": "",
-                        "description" : ""
-                    }
+                    return buildMilestone({
+                        type : "Estudios",
+                        title : x.studyType,
+                        date : x.startDate,
+                    });
                 })
                 : [];
         }
         function convertHonorsAwardsToMilestone(honors_awards){
             return honors_awards ?
                 honors_awards.map(x => {
-                    return {
-                        "milestoneType":"Premios y otros",
-                        "title": x.Title,
-                        "date": formatDate(x.Issue_Date),
-                        "summary": createSummary(x.Description),
-                        "description" : x.Description
-                    }
+                    return buildMilestone({
+                        type : "Premios y otros",
+                        title : x.Title,
+                        date : x.Issue_Date,
+                        description: x.Description
+                    });
                 })
                 : [];
         }
