@@ -5,28 +5,8 @@ function FormatterMilestone(){
         const milestones = convertWorkToMilestone(cv.work)
             .concat(convertEducationToMilestone(cv.education))
             .concat(convertHonorsAwardsToMilestone(cv.honors_awards));
-        orderById(milestones);
-        return milestones;
 
-        function orderById(milestones){
-           let milestoneReferenceShortDate = milestones.map(x => (
-                {
-                    title : x.title,
-                    date : preformatForOrderDate(x.date)
-                }
-            ));
-
-           console.log(milestoneReferenceShortDate);
-           function preformatForOrderDate(date){
-               let year = date.split("-")[0] || "01";
-               let month = date.split("-")[1] || "01";
-               let day = date.split("-")[2] || "01";
-               return Number(year+""+month+""+day);
-           }
-           function compareDate(a, b){
-               return a - b;
-           }
-        }
+        return orderByDate(milestones);
 
         function convertWorkToMilestone(work){
             return work ?
@@ -86,7 +66,28 @@ function FormatterMilestone(){
                 })
                 : [];
         }
+        function orderByDate(milestones){
+            let preformatForSort = milestones.map(x => (
+                {
+                    title : x.title,
+                    date : preFormatForOrderDate(x.date)
+                }
+            )).sort(compareDate);
 
+            return preformatForSort
+                .map(x => milestones
+                    .filter(y => x.title === y.title)[0]);
+
+            function preFormatForOrderDate(date){
+                let year = date.split("-")[0] || "01";
+                let month = date.split("-")[1] || "01";
+                let day = date.split("-")[2] || "01";
+                return Number(year+""+month+""+day);
+            }
+            function compareDate(a, b){
+                return a.date - b.date;
+            }
+        }
     }
 
     return {

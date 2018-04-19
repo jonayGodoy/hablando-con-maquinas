@@ -217,9 +217,10 @@ describe("convert linkedin entities to milestone",() =>{
 
         const milestones = formatter.linkedinToMilestone(cv);
 
-        expect(milestones[0].title).to.equal(first(cv.work).company+" "+first(cv.work).position);
-        expect(milestones[1].title).to.equal(first(cv.honors_awards).Title);
-        expect(milestones[2].title).to.equal(first(cv.education).studyType);
+        expect(milestones[0].title).to.equal(first(cv.education).studyType);
+        expect(milestones[1].title).to.equal(first(cv.work).company+" "+first(cv.work).position);
+        expect(milestones[2].title).to.equal(first(cv.honors_awards).Title);
+
     });
 });
 
