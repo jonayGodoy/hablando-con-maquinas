@@ -13,7 +13,7 @@ function FormatterMilestone(){
                     work.map(x => {
                         return {
                             "milestoneType": "Experiencia",
-                            "title" : x.company+"\n"+x.position,
+                            "title" : x.company+" "+x.position,
                             "date" : x.startDate,
                             "summary": createSummary(x.summary),
                             "description" : x.summary
