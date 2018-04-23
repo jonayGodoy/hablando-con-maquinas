@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from "gatsby-link"
+import "./recent-articles.css"
 import './sidebar.css'
 
 
@@ -15,22 +16,22 @@ class RecentArticles extends React.Component {
 
     render () {
         return (
-            <div className="module-sidebar">
+            <div className="recent-articles widget">
                 <h5 className="sidebar-module-title">Articulos Recientes</h5>
                 <hr/>
-                <ul>
+                <div>
                     {this.posts.map((post) => {
                         if (post.node.path !== "/404/") {
                           return(
-                              <li key={post.node.frontmatter.title}>
-                                <Link style={{ boxShadow: "none" }} to={post.node.frontmatter.path}>
+                              <div key={post.node.frontmatter.title} className="link-recent-articles">
+                                <Link to={post.node.frontmatter.path}>
                                     {post.node.frontmatter.title}
                                 </Link>
-                              </li>
+                              </div>
                           )}
                     })
                     }
-                </ul>
+                </div>
             </div>
         )
     }

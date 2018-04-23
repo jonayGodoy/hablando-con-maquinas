@@ -27,10 +27,6 @@
     z-index: 5;
 }
 
-.timeline li {
-    padding: 1em 0;
-}
-
 .timeline li:after {
     content: "";
     display: block;
@@ -182,10 +178,6 @@
     .timeline {
         width: 100%;
         padding: 4em 0 1em 0;
-    }
-
-    .timeline li {
-        padding: 2em 0;
     }
 
     .direction-l,

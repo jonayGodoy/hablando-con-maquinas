@@ -1,14 +1,18 @@
 .footer{
-    display: inline-flex;
+    /*add after  display: inline-flex;*/
     align-items: center;
     width: 100%;
 
-    padding: 5px;
-    padding-left: 15px;
-    padding-right: 9%;
-
     background-color: #3F3F3F;
     border: 1px solid #a0a0a0;
+}
+
+/*path after remove typhografy*/
+.path-typography-footer{
+    padding: 10px;
+    /*remove after*/
+    display: inline-flex;
+    width: 100%;
 }
 
 .title-footer{
@@ -17,11 +21,12 @@
 }
 
 .icons-footer{
-    flex-grow: 0;
+    width: 180px;
 }
 
 .icon-footer{
-    width: 30px;
-    height: 30px;
-    margin: 5px 5px 5px 15px;
+    width: 50px;
+    height: 50px;
+    padding: 3px;
+    padding-left: 10px;
 }

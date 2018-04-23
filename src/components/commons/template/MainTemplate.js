@@ -28,16 +28,18 @@ class MainTemplate extends React.Component {
                         {this.props.children()}
                     </div>
                     <footer className="footer">
-                        <p className="title-footer">
-                            {config_blog.blogTitle}
-                        </p>
-                        <div className="icons-footer">
-                            <a href={config_blog.social_networks.twitter} target="_blank">
-                                <img className="icon-footer" src={icon_twitter} />
-                            </a>
-                            <a href={config_blog.social_networks.github} target="_blank">
-                                <img className="icon-footer" src={icon_github} />
-                            </a>
+                        <div className="path-typography-footer">
+                            <p className="title-footer">
+                                {config_blog.blogTitle}
+                            </p>
+                            <div className="icons-footer">
+                                <a href={config_blog.social_networks.twitter} target="_blank">
+                                    <img className="icon-footer" src={icon_twitter} />
+                                </a>
+                                <a href={config_blog.social_networks.github} target="_blank">
+                                    <img className="icon-footer" src={icon_github} />
+                                </a>
+                            </div>
                         </div>
                     </footer>
                 </div>

@@ -11,9 +11,9 @@ import img_head from '../../../assets/img/head.jpg';
 const MenuNav = () => {
     return (
         <div className="header hidden-header">
-            <div>
-                <Link to={routesPath.inicio.path} className="img-logo">
-                    <img src={img_head}/>
+            <div className="pathPadding">
+                <Link to={routesPath.inicio.path}>
+                    <div className="img-logo" style={ { backgroundImage: `url(${img_head})`} } />
                 </Link>
                 <div className="blog-nav">
                     <Link to={routesPath.inicio.path} className="title-header">

@@ -24,7 +24,7 @@ class MenuMobile extends React.Component {
     };
 
     componentDidUpdate(){
-        document.documentElement.style.overflowY = !this.state.isHidden ? "hidden-new" : "";
+        document.documentElement.style.overflowY = !this.state.isHidden ? "hidden" : "";
     }
 
     render(){
@@ -32,19 +32,18 @@ class MenuMobile extends React.Component {
             <div className="hidden-header-mobile">
 
                 <div className="head-mobile">
-                        <img className="btn-hamburger" src={svg_menu_hamburger} onClick={this.toggle} />
-                        <Link to={'/'} className="title-header-mobile">
-                            <h2 >{config.blogTitle}</h2>
-                        </Link>
+                    <img className="btn-hamburger" src={svg_menu_hamburger} onClick={this.toggle} />
+                    <Link to={'/'} className="title-header-mobile">
+                        <h2 >{config.blogTitle}</h2>
+                    </Link>
                 </div>
                 <div id="drawer" className={ this.state.isHidden ? "" : "background-menu-mobile"}
                      onClick={this.toggle}>
                     <div className="drawer-panel panel-new"
                          style={this.state.isHidden ? { left: "-500px"} :{left: "0" }}>
                         <div>
-                            {/* todo: extraer boxShadow a un style general para el link */}
-                            <Link to={'/'} style={{ boxShadow: 'none' }} onClick={this.toggle}>
-                                <img className="img_logo_mobile" src={img_head}/>
+                            <Link to={'/'} onClick={this.toggle}>
+                                <div className="img_logo_mobile" style={ { backgroundImage: `url(${img_head})`} } />
                             </Link>
                             <div onClick={this.toggle}>
                                 {routesPath.menu.map((routePath, index) =>(

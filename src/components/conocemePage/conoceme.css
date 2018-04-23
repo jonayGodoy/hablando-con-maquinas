@@ -3,6 +3,8 @@
     border-radius: 3px;
     border: 1px solid #cfc7cf;
 
+    display: flex;
+
     -webkit-box-shadow: 3px 7px 12px -3px rgba(0, 0, 0, 0.3);
     box-shadow: 3px 7px 12px -3px rgba(0, 0, 0, 0.3);
 }
@@ -12,96 +14,40 @@
     font-weight: bold;
 }
 
-
-
-.cv{
-    background-color: #f3f3f3;
-    border-style: dashed;
-    padding: 40px;
-    margin: 20px;
+.details-cv{
+    flex: 5;
+    padding-right: 5px;
 }
 
+.profilePicture{
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #a0a0a0;
+    height: 400px;
+    width: 400px;
 
-.basic-data{
-    margin-right: 5px;
-    text-align: center;
-}
-.cv-image{
-    float:none;
-    width: 100px;
-    display: block !important;
-    margin-right: auto;
-    margin-left: auto;
+    flex: 2;
 }
 
-.summary{
-    text-align: center;
-}
-
-/*todo: repair colocarse el nombre a la izquierda
-
-
-.cv-image{
-    float:left;
-    width: 100px;
-}
-
-@media (min-width: 690px){
-    .basic-data{
-        text-align: left;
-        margin-right: 5px;
-        width: 100%;
-    }
-}
-*/
-.cv hr{
-    height: 0.2em;
-    margin-top: 5px;
-}
-
-.block-linkedin{
-    display: inline-block;
-}
-
-.block-linkedin-left{
-    float:left;
-    width: 30%;
-}
-
-.block-linkedin-right{
-    margin-left: auto;
-    float:left;
-    width: 70%;
-}
-
-@media (max-width: 690px) {
-    .cv-image{
-        float:none;
-        width: 100px;
-        display: block !important;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .block-linkedin-right {
-        width: 100%;
-        text-align: center;
-    }
-    .block-linkedin-left {
-        width: 100%;
-        text-align: center;
-    }
-    .tableSkills table{
-        width: 100%;
-        margin-right:auto;
+@media screen and (max-width: 660px) {
+    .introduction-cv{
         display: inline-block;
     }
-    .tableSkills td{
-        width: 100%;
-        text-align: center;
-        display: inline-block;
+    .profilePicture{
+        margin: auto;
     }
-    .tableSkills tr{
-        width: 100%;
-        display: inline-block;
+
+    .details-cv{
+        text-align: center;
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .profilePicture{
+        height: 200px;
+        width: 200px;
     }
 }

@@ -16,6 +16,14 @@ export default {
 },
 "work": [
     {
+        "company": "SaludOnNet",
+        "position": "Programador",
+        "website": "",
+        "startDate": "2017-12-01",
+        "summary": "",
+        "highlights": []
+    },
+    {
         "company": "Codesai",
         "position": "Alumno Practicas",
         "website": "",

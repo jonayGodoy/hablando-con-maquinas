@@ -25,7 +25,7 @@ function getStubPosts(numPosts){
 
 function findLink(numPosts){
     let wrapper = shallow(<RecentArticle posts={getStubPosts(numPosts)} />);
-    return wrapper.find("li");
+    return wrapper.find(".link-recent-articles");
 }
 
 

@@ -1,8 +1,12 @@
 .img-logo {
     float: left;
-    max-width: 350px;
-    width: 30%;
-    box-shadow: none;
+
+    width: 300px;
+    height: 125px;
+
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .img-logo:hover,
@@ -13,12 +17,17 @@
 
 .header{
     display: inline-block;
-    padding-left: 5%;
-    padding-top: 5%;
+
     width: 100%;
     border-bottom-size: 1px;
     border-bottom-style: inset;
     border-bottom-color: #3F3F3F;
+}
+
+/*path for repair after remove typographic*/
+.pathPadding{
+    padding: 30px;
+    padding-bottom: 150px;
 }
 
 .hidden-header{}
@@ -26,11 +35,7 @@
 .title-header{
     text-align: center;
     padding-bottom: 1em;
-}
-
-.title-header:hover,
-.title-header:focus{
-    text-decoration: none;
+    font-weight: normal;
 }
 
 .blog-nav{
@@ -41,18 +46,16 @@
 .blog-nav-item {
     font-size: 1em;
     font-family: Consolas;
+    font-weight: normal;
 
     padding: 10px;
     color: #a5a5a5;
-    text-decoration: none;
-    /*parch of a*/
-     box-shadow: 0 0;
+
 }
 
 .blog-nav-item:hover,
 .blog-nav-item:focus {
     color: #4d4d4d;
-    text-decoration: none;
 }
 
 @media (max-width: 770px) {

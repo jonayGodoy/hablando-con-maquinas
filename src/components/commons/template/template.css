@@ -4,12 +4,6 @@
     background: white;
 }
 
-.blog-main {
-    font-size: 18px;
-    line-height: 1.5;
-    background: white;
-}
-
 @media (min-width: 768px) {
     .blog-main {
         margin: 40px auto;
@@ -23,16 +17,20 @@
         box-sizing:border-box;
     }
     .page-main{
-        padding-right: 30px;
-        padding-left: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
         padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    .page-main ul{
+
+        -webkit-padding-start: 0px;
     }
 }
 
 @media (max-width: 768px) {
-    .blog-main {
 
-    }
     .page-main{
         padding: 5px 10px 10px;
     }
