@@ -3,6 +3,7 @@
     display:block;
     margin:auto;
 
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
 }
