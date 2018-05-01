@@ -1,5 +1,4 @@
 import React from 'react';
-import { rhythm, scale } from '../utils/typography';
 import config from "../../config-blog";
 
 import DisqusComments  from 'react-disqus-comments';
