@@ -6,6 +6,7 @@ import DisqusComments  from 'react-disqus-comments';
 
 import "./md.css";
 import "./blog-post.css"
+import "./zenburn.css"
 
 const imagesAllArticles = require.context("../pages/", true,  /\.(png|jpg|gif)$/);
 
