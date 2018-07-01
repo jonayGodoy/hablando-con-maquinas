@@ -36,7 +36,8 @@ export const TAGS_CONST = Object.freeze({
     architecture : "arquitectura",
     games : "games",
     test : "test",
-    katas : "katas"
+    katas : "katas",
+    "3D" : "3D"
 });
 
 export default FormatterTags();
