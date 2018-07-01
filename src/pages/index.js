@@ -14,7 +14,7 @@ class BlogIndex extends  React.Component {
         return (<div className="container-new">
             <div className="article">
                 <Helmet title={get(this, "props.data.site.siteMetadata.title")} />
-                <ul>
+                <div>
                     {
                         posts.map((post,index) => {
                             if (post.node.path !== "/404/") {
@@ -22,7 +22,7 @@ class BlogIndex extends  React.Component {
                             }
                         })
                     }
-                </ul>
+                </div>
             </div>
             <div className="sidebar-column">
                 <div>
