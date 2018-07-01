@@ -1,14 +1,14 @@
 ---
 title: "Sweet Home 3D"
-date: "2018-02-19T02:40:32.169Z"
+date: "2018-07-01T02:40:32.169Z"
 path: "/sweet-home-crea-habitaciones-en-3d/"
 image_article: "cover.jpg"
 tags: "games"
 ---
 
-Llevo tiempo queriendo escribir un articulo sobre este programa que ha sido
-bastante útil en algunas ocasiones generalmente esas ocasiones eran jams de videojuegos
-y que siempre me ha parecido muy fácil y cómodo de usar.
+Llevo tiempo queriendo escribir un articulo sobre este programa que me ha sido
+bastante útil en algunas ocasiones, generalmente esas ocasiones eran jams de videojuegos.
+Siempre me ha parecido muy fácil y cómodo de usar.
 Aunque por supuesto como todas las herramientas tiene sus limitaciones.
 
 Sweet home 3d es un programa que te permite crea interiores de habitaciones o casas
@@ -39,7 +39,6 @@ esta base, empezar a mejorarla en una herramienta de más calidad como el blende
 
 ![interfaz](intefaz.jpg)
 
-
 - Tiene una opción de visita virtual, que simula el punto de vista de una 
 persona que se mueve por la habitación.
 
@@ -68,6 +67,9 @@ y permitirte no ser del todo exacto.Vale, esto no es punto débil como tal.
 Por ejemplo, las opciones para añadir texturas al suelo y las paredes
 son escasas se reducen a pintar con un color o poner una textura como si fueran molduras.
 
+-Acabo de descubrir que el programa no sabe construir techos en diagonal.
+ Pero esto es tan fácil de arreglar una vez se importa en otro programa que no lo cuento como punto debil.
+
 
 **En resumen**, Sweet home 3D, es un programa muy útil y tan facil de manejar que si
 alguien se aburre puede dedicar una tarde a jugar con el programa.
@@ -75,16 +77,18 @@ Yo lo he hecho en alguna ocasión, he construido una reproducción de mi habitac
 3D o **he diseñado mi casa ideal**.
 
 Dejo por aquí una reconstrucción de mi habitación de Madrid que hice en 1 hora y media 2 horas.
-Después lo metí en unity por lo que aquí tenéis una demo.
-Acabo de descubrir que el programa no sabe construir techos en diagonal.
-Pero esto es tan fácil de arreglar una vez se importa en otro programa que no lo cuento como punto debil.
+Con más tiempo y complementandolo con otros programas se puede conseguir un resultado más profesional.
+Hice una demo para que podaís recorrer la habitación usando unity.
+
 
 - Mi habitación real.
-![my-true-room-1]()
-![my-true-room-2]()
 
-- Mi habitación en sweet home 3D-
-![my-room](my-room.jpg)
+    ![my-true-room-1](my-true-room-1.jpg)
+    
+    ![my-true-room-2](my-true-room-2.jpg)
+
+- Mi habitación en sweet home 3D.
+    ![my-room](my-room.jpg)
 
 - Mi habitación en un demo con Unity 3D.
 <iframe src="https://itch.io/embed-upload/943355?color=333333" allowfullscreen="" width="980" height="320" frameborder="0"></iframe>
