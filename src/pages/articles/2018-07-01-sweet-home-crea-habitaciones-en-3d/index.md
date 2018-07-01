@@ -87,4 +87,5 @@ Hice una demo para que podaís recorrer la habitación usando unity.
     ![my-room](my-room.jpg)
 
 - Mi habitación en una demo creada con Unity 3D.
+Recomiendo probar la demo en pantalla completa.
 <iframe src="https://itch.io/embed-upload/943355?color=333333" allowfullscreen="" width="980" height="320" frameborder="0"></iframe>
