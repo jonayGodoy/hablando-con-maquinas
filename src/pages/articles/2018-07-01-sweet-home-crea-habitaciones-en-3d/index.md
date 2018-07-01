@@ -61,14 +61,12 @@ en concreto o para comparar varias mesas tengo que abrir rebuscar por varias car
 
 - Si vas a reproducir lugares de mundo real quieres total exactitud. Tendrás que saber modelar
 muebles, usar un programa para crear muebles en 3D o aceptar colocar un mueble que se le parezca
-y permitirte no ser del todo exacto.Vale, esto no es punto débil como tal.
+y permitirte no ser del todo exacto. Por otro lado, acabo de descubrir que el programa no sabe construir techos en diagonal.
+Pero estos detalles no los considero realmente puntos debiles más bien son cosas con las que me encontrado.
 
 - Algunas opciones son un poco escasas sobretodo al añadir detalles.
 Por ejemplo, las opciones para añadir texturas al suelo y las paredes
 son escasas se reducen a pintar con un color o poner una textura como si fueran molduras.
-
--Acabo de descubrir que el programa no sabe construir techos en diagonal.
- Pero esto es tan fácil de arreglar una vez se importa en otro programa que no lo cuento como punto debil.
 
 
 **En resumen**, Sweet home 3D, es un programa muy útil y tan facil de manejar que si
@@ -90,5 +88,5 @@ Hice una demo para que podaís recorrer la habitación usando unity.
 - Mi habitación en sweet home 3D.
     ![my-room](my-room.jpg)
 
-- Mi habitación en un demo con Unity 3D.
+- Mi habitación en una demo creada con Unity 3D.
 <iframe src="https://itch.io/embed-upload/943355?color=333333" allowfullscreen="" width="980" height="320" frameborder="0"></iframe>
