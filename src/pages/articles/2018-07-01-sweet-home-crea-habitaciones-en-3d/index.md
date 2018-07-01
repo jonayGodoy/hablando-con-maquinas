@@ -70,7 +70,7 @@ Pero estos detalles no los considero realmente puntos debiles más bien son cosa
 
 **En resumen**, Sweet home 3D, es un programa muy útil y tan facil de manejar que si
 alguien se aburre puede dedicar una tarde a jugar con el programa.
-Yo lo he hecho en alguna ocasión, he construido una reproducción de mi habitación en o **he diseñado mi casa ideal**.
+Yo lo he hecho en alguna ocasión, he construido una reproducción de mi habitación o **he diseñado mi casa ideal**.
 
 Dejo por aquí una reconstrucción de mi habitación de Madrid que hice en 1 hora y media 2 horas.
 Con más tiempo y complementandolo con otros programas se puede conseguir un resultado más profesional.
