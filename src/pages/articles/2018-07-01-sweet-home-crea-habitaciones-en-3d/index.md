@@ -11,13 +11,14 @@ bastante útil en algunas ocasiones, generalmente esas ocasiones eran jams de vi
 Siempre me ha parecido muy fácil y cómodo de usar.
 Aunque por supuesto como todas las herramientas tiene sus limitaciones.
 
-Sweet home 3d es un programa que te permite crea interiores de habitaciones o casas
-en 3D de una manera muy muy facil.Si has podido jugar a los sims puede usar este programa.
+Sweet home 3D es un programa que te permite crea interiores de habitaciones o casas
+en 3D de una manera muy muy fácil.**Si has podido jugar a los sims puede usar este programa.**
 Además es open source.
 
 
+
 <a href="http://www.sweethome3d.com/es/" target="_blank">
-    Sweet Home 3D
+    Página web de Sweet Home 3D
 </a>
 
 Puntos fuertes
@@ -27,11 +28,10 @@ Puntos fuertes
 aun más modelos con las mismas características.Y por supuesto puedes añadir los tuyos.
 Trae pocos modelos por lo que si tenéis en la cabeza trabajar un poco con el, y no solo jugar
 un rato recomendaría descargar inmediatamente un pack en su propia página con más muebles.
-El pack que suelo usar añade 469 modelos y se usan.Sobre todo porque tipo de habitación
+El pack que suelo usar añade 469 modelos y se usan.Sobre todo porque cada tipo de habitación
 necesita su propia variedad de muebles, obviamente no es lo mismo una cocina que un dormitorio.
 
-- Yo no soy modelador, pero estoy un poco familiarizado
-con el blender y otras herramientas de creación 3d. Este programa da a
+- Yo no soy modelador, este programa da a
 personas como yo la oportunidad de crear espacios en 3D
 de manera muy rápida y con una calidad bastante aceptable.También es una opción
 valida crear una habitación básica con este programa para más tarde con
@@ -55,24 +55,22 @@ el tiempo de unir la diferentes mallas con algún programa de edición 3D.
 ![scroll infinito](big-scroll.jpg)
 
 
-- Se hace necesario un buscador de muebles. De momento los modelos se almacenas por carpetas
-pero yo que solo lo uso esporádicamente esto se me hace corto y pierdo tiempo buscando un mueble
-en concreto o para comparar varias mesas tengo que abrir rebuscar por varias carpetas
+- Se hace necesario un buscador de muebles. De momento los modelos solo se almacenan por carpetas
+ por esto pierdo tiempo buscando un mueble en concreto o cuando intento comparar varios muebles similares como mesas.
+
+- Algunas opciones son un poco escasas sobretodo al añadir detalles.
+Por ejemplo, las opciones para añadir texturas al suelo y las paredes
+son escasas se reducen a pintar con un color o poner una textura como si fueran molduras.
 
 - Si vas a reproducir lugares de mundo real quieres total exactitud. Tendrás que saber modelar
 muebles, usar un programa para crear muebles en 3D o aceptar colocar un mueble que se le parezca
 y permitirte no ser del todo exacto. Por otro lado, acabo de descubrir que el programa no sabe construir techos en diagonal.
 Pero estos detalles no los considero realmente puntos debiles más bien son cosas con las que me encontrado.
 
-- Algunas opciones son un poco escasas sobretodo al añadir detalles.
-Por ejemplo, las opciones para añadir texturas al suelo y las paredes
-son escasas se reducen a pintar con un color o poner una textura como si fueran molduras.
-
 
 **En resumen**, Sweet home 3D, es un programa muy útil y tan facil de manejar que si
 alguien se aburre puede dedicar una tarde a jugar con el programa.
-Yo lo he hecho en alguna ocasión, he construido una reproducción de mi habitación en
-3D o **he diseñado mi casa ideal**.
+Yo lo he hecho en alguna ocasión, he construido una reproducción de mi habitación en o **he diseñado mi casa ideal**.
 
 Dejo por aquí una reconstrucción de mi habitación de Madrid que hice en 1 hora y media 2 horas.
 Con más tiempo y complementandolo con otros programas se puede conseguir un resultado más profesional.
