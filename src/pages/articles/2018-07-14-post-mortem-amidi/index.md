@@ -1,5 +1,5 @@
 ---
-title: "Post Mortem Amidi"
+title: "Post Mortem, Amidi"
 date: "2018-07-14T02:40:32.169Z"
 path: "/post-mortem-amidi/"
 image_article: "cover.jpg"
@@ -8,10 +8,10 @@ tags: "experiencia-personal,post-mortem"
 
 Me pareció interesante el concepto de analizar los errores que han llevado al fracaso de un proyecto
 y documentarlo. Puede que al escribirlo ordene un par de ideas en mi cabeza, al documentarlo
-me asegure que no se me olvide y me acostumbre un poco al hablar de mis fracasos
-y así empezar ha aceptar que por muy inteligente que me vuelva siempre cometeré errores.
-Y aunque con este proyecto en general no cometí ninguno grave si que cargo con algunas cicatrices.
-Pero no me atrevo a empezar con los proyectos en los que
+me asegure que no se me olvide y me acostumbre un poco al hablar de mis fracasos.
+Asi empezaré a aceptar que por muy inteligente que me vuelva siempre cometeré errores.
+Y aunque con este proyecto en general no cometí ninguno grave si que cargo con algunas cicatrices de otros proyectos 
+y de lo que no son proyectos.Pero no me atrevo a empezar con los proyectos en los que
 la culpa fue totalmente o mayormente mía, quizás mañana tenga la autoestima más alta y haga pero hoy no.
 
 
@@ -47,7 +47,7 @@ Por aqui dejo la página del proyecto.
 Dejo la foto del equipo.
 ![equipo-amidi](equipo-amidi.jpg)
 
-No me juzgáis esa la cara es la de alguien 
+Ya lo se salgo horrible en la fot.Esa es la cara de alguien 
 que dormido solo 1 hora y no bebe cafe ni burn. Conclusión 
 podeís trabajar igual de bien sin burn, ni cafe que la personas
 que las toman pero en las fotos saldréis hechos basura a diferencia
