@@ -5,3 +5,131 @@ path: "/post-mortem-amidi/"
 image_article: "cover.jpg"
 tags: "experiencia-personal,post-mortem"
 ---
+
+Me parecio interesante el concepto de analizar los errores que han llevado al fracaso de un proyecto 
+y documentarlo. Puede que al escribirlo ordene un par de ideas en mi cabeza, al documentarlo
+me asegure que no se me olvide y me acostumbre un poco al hablar de mis fracasos 
+y asi empezar ha aceptar que por muy inteligente que me vuelva siempre cometeré errores.
+Y aunque con este proyecto en general no cometi ninguno grave si que cargo con algunas cicatrices.
+Pero no me atrevo a empezar con los proyectos en los que 
+la culpa fue totalmente o mayormente mia, quizas mañana.
+
+Este fue el articulo que me dio la idea.
+<a href="https://www.genbetadev.com/trabajar-como-desarrollador/por-que-escribir-un-post-mortem-por-cada-proyecto-de-software-fallido-deberian-ser-obligatorio" target="_blank">
+    ¿Por que escribir un post mortem?
+</a>
+
+
+El Proyecto
+----------------------
+
+¿Que fue Amidi? Amidi, empezó como un reto presentado en una de las ediciones del hackForGood.
+Uno de los representantes de un colectivo con 30 años de vida.
+Queria traer al mundo virtual un juego de mesa de cultura canaria
+para poder llevarlo a las escuela porque no se podia permitir los coste de los materiales
+y la distribución del juego.
+Tras ese fin de semana de estrés y 1 hora de sueño.
+Quedamos en un más que respetable segundo puesto sino recuerdo mal.
+
+El resultado final fue un quiz, estilo duolingo donde se pueden ir recuperando páginas
+de las historias canaria que nuestra simpatica cabrita se comio por error.
+Pudimos a través de unrespeca llegar a la final nacional del hackforGood.
+Por aqui tengo otro articulo hablando de ello
+ <a href="../hack-for-good-big-day/" target="_blank">
+HackForGood BigDay
+</a>.
+Por aqui dejo la página del proyecto.
+<a href="http://www.aprendeconamidi.com/" target="_blank">
+    Aprende con Amidi
+</a>
+
+Dejo la foto del equipo.
+![equipo-amidi](equipo-amidi.jpg)
+
+No me juzgais esa la cara es la de alguien 
+que dormido solo 1 hora y no bebe cafe ni burn. Conclusión 
+podeís trabajar igual de bien sin burn, ni cafe que la personas
+que las toman pero en las fotos saldréis hechos basura a diferencia
+de vuestro compañeros que tienen un brillo especial en los ojos
+a causa de las drogas. ;)
+ 
+ 
+Linea temporal de eventos
+-----------------------------
+- línea temporal desde que se originó el problema
+
+A la hora de escribir un post mortem debemos ser honestos con nosotros mismo
+ y con el equipo
+
+Problemas a nivel de equipo.
+----------------------
+
+Es interesante, pero teniamos la mayoria de cosas que muchos proyectos
+desearian tener para empezar una comunidad en la que partir.
+
+- Partimos de 600€ del premio en hackaton para gastos varios.
+- Quien presento el reto tenia detrás de el una gran comunidad de potenciales
+usuarios y contactos para introducir el juego en las escuelas canarias.
+ - Al ser un proyecto de cultura tradicional y tecnologia teniamos posiblidad
+reales de conseguir financiación por distintas vias.
+- Un equipo que tenia perfiles que se complementaban.
+
+Que es lo que puede destruir este buena base, **problemas en el equipo**. Como esto es muy vago en
+las siguientes lineas describire con más detalle los problemas que surgieron.Y aunque 
+no lo parezca ninguno de ellos fue por discusiones la verdad es que todos ellos me caian bien
+entonces y me siguen cayendo bien hoy.
+
+- **Miembros del equipo que no ayudan pero no perjudican**.Si estas en un equipo no te ves trabajando,
+pero no quieres irte porque piensa que el proyecto es interesante. No te quedes, o deja claro
+perfectamente lo que estás dispuesto esto aportar y solo eso.
+Si no lo haces vas a perjudicar al equipo aunque no quieras.Metiendo ruido 
+a las personas que están organizando las distintas tareas porque te tienen en cuentan y van
+a perder su tiempo llendo detrás tuya. Quizás en un primer momento no lo veas pero cuando
+te des cuenta de que no vas a trabajar se honesto contigo mismo y **comunicalo** al equipo.
+
+- **No avisan de que no van a entregar el trabajo acordado**.
+En nuestro caso era un proyecto que haciamos en nuestro tiempo libre.
+Se entiende que hay circuntancias personales por lo que no puedas cumplir las tareas o incluso
+si eres solo un vago realmente no importa, no importa que las tareas se acaben o no hay algo
+más importante que eso.Levanta la mano y **comunica** que no vas a cumplir con la fecha de entrega
+o que directamente no la vas a hacer.No importa si no la vas a hacer, yo lo hago 
+pero por favor dimelo el ruido que tuve a veces en la cabeza por no saber quien estaba trabajando
+.Al final supones que nadie trabaja y eso hace mucho daño a la moral. 
+Este fue un sentimiento que sufrienron varios miembros del equipo incluyendome.
+
+Problemas a nivel personal.
+----------------------
+ 
+Creo mi principal error fue ver estos problemas y no atajarlos.No estoy ciego los veia.
+No hablo de enfadarse y gritar, mi actual jefe es increible hablando y manejando los problemas
+a nivel de equipo y no nesecita de esa clase de cosas para que el equipo avance.
+Te dire un secreto, hagan bien las cosas o las hagan mal, tratar a las personas como seres humanos 
+por extrano que parezca es lo que mejor resultados produce.
+
+Como dije antes no habia ninguna persona toxica en el equipo.
+Tener el **coraje** no solo para hablar de los problemas de manera honesta comprendiendo las necesidades
+de los demás, dando a conocer las mis nesecidades y las del equipo. 
+
+También me falto el **coraje** para analizar los distintos problemas que surgiar.
+Para ser sincero no me atrevi ni siquiera a pensar en estos problemas en su momento.
+**Mi peor comportamiento** fue evitar analizar los problemas a nivel de equipo.
+Supongo que si los analizaba tendría que enfrentarlos y ya solo eso me asustaba.
+Casi como un reflejo evitaba pensar en ello.
+**No pude enfrentarme a la realidad**.
+
+
+Despedida
+----------
+Cuando escucha que 2 de los principales valores del extreme programming son la comunicación
+y coraje. No piensas hasta que punto estos 2 simples valores son tan dificiles de cumplir.
+
+Por otro, lado a veces veo cosas que me recuerdan a Amidi y una parte de mi quiere que siga
+vivo. Ya se pasandole el proyecto a un compañero retomandolo yo, pero probablemente esto
+no pase. Habian tantas personas que nos apoyaban y quierian que el proyecto avanzara
+que es triste decirle adios. Sin embargo, en mi contexto actual no seria inteligente
+dedicarle tiempo iria en contra de mis necesidades.
+Si os fijaís no puedo evitar usar palabras como "probablemente" o "contexto actual" esa 
+es la parte de mi que se niega a dejarlo morir 
+aunque sepa que ya nunca más voy a trabajar en ese proyecto.
+
+ 
