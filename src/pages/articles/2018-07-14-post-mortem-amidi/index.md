@@ -133,3 +133,38 @@ aunque sepa que ya nunca más voy a trabajar en ese proyecto.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AKh0HpbfRF8" frameborder="0" encrypted-media" allowfullscreen></iframe>
 
+![equipo](equipo-amidi.jpg)
+
+![h4g](h4g.jpg)
+
+![7](7.jpg)
+
+![1](1.jpg)
+
+![2](2.jpg)
+
+![2](3.jpg)
+
+![4](4.jpg)
+
+![5](5.jpg)
+
+![6](6.jpg)
+
+![8](8.jpg)
+
+![9](9.jpg)
+
+![10](10.jpg)
+
+![11](11.jpg)
+
+![12](12.jpg)
+
+![13](13.jpg)
+
+![14](14.jpg)
+
+![15](15.jpeg)
+
+![16](16.jpg)
