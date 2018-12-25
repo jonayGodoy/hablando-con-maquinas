@@ -19,10 +19,11 @@ class MainTemplate extends React.Component {
 
     render () {
         return (
-            <div>
-                <MenuMobile/>
                 <div className="blog-main" >
-                    <MenuNav />
+                    <header>
+                        <MenuMobile/>
+                        <MenuNav/>
+                    </header>
                     <main id="pageMain" className="page-main">
                         {/* Main Content */}
                         {this.props.children()}
@@ -43,7 +44,6 @@ class MainTemplate extends React.Component {
                         </div>
                     </footer>
                 </div>
-            </div>
         )
     }
 }
