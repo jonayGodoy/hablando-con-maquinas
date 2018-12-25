@@ -24,11 +24,11 @@ class BlogIndex extends  React.Component {
                     }
                 </div>
             </div>
-            <div className="sidebar-column">
+            <aside className="sidebar-column">
                 <div>
                     <RecentArticles posts={posts}/>
                 </div>
-            </div>
+            </aside>
             <div className="parchForSizeContainer"/>
         </div>);
     }

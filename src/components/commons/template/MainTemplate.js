@@ -23,10 +23,10 @@ class MainTemplate extends React.Component {
                 <MenuMobile/>
                 <div className="blog-main" >
                     <MenuNav />
-                    <div id="pageMain" className="page-main">
+                    <main id="pageMain" className="page-main">
                         {/* Main Content */}
                         {this.props.children()}
-                    </div>
+                    </main>
                     <footer className="footer">
                         <div className="path-typography-footer">
                             <p className="title-footer">

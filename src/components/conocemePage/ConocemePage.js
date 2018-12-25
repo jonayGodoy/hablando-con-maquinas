@@ -16,8 +16,8 @@ function IsPar(n){
 
 class ConocemePage extends React.Component {
     render () {
-        return(<div>
-                <div className="introduction-cv">
+        return(<main>
+                <section className="introduction-cv">
                     <div className="details-cv">
                         <div className="name-cv">
                             Jonay Eliezer Godoy Reyes
@@ -42,8 +42,8 @@ class ConocemePage extends React.Component {
                         </p>
                     </div>
                     <div className="profilePicture" style={{ backgroundImage: `url(${profilePicture})`}}/>
-                </div>
-                <div>
+                </section>
+                <section>
                     <ul className="timeline">
                         {
                             milestones.map((milestone, index) => {
@@ -65,8 +65,8 @@ class ConocemePage extends React.Component {
                             })
                         }
                     </ul>
-                </div>
-            </div>
+                </section>
+            </main>
         );
     }
 }

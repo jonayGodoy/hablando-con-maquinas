@@ -19,7 +19,7 @@ class BlogPostTemplate extends React.Component {
 
     render () {
         return (
-            <div>
+            <article>
                 <div className="img-cover" style={ { backgroundImage: `url(${this.cover})`} } />
                 <h1>{this.post.frontmatter.title}</h1>
 
@@ -30,7 +30,7 @@ class BlogPostTemplate extends React.Component {
                     identifier={this.post.frontmatter.title}
                     title={this.post.frontmatter.title}
                 />
-            </div>);
+            </article>);
 
     }
 
