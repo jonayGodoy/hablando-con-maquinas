@@ -18,7 +18,7 @@ class BoxArticles extends React.Component {
     const {post} = this.props;
 
     return(
-        <section className="blog-card">
+        <article className="blog-card">
             <div className="photo-details">
                 <Link to={post.node.frontmatter.path}>
                     <div className="photo-card" style={ { backgroundImage: `url(${this.cover})`} } />
@@ -58,7 +58,7 @@ class BoxArticles extends React.Component {
                         Seguir leyendo
                 </Link>
             </div>
-        </section>
+        </article>
     );
   }
 }
